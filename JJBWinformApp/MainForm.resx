@@ -1,0 +1,4041 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_select_file.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 79</value>
+  </data>
+  <data name="btn_select_file.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 34</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_select_file.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btn_select_file.Text" xml:space="preserve">
+    <value>选择文件</value>
+  </data>
+  <data name="&gt;&gt;btn_select_file.Name" xml:space="preserve">
+    <value>btn_select_file</value>
+  </data>
+  <data name="&gt;&gt;btn_select_file.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_select_file.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_select_file.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbl_file_path.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_file_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 84</value>
+  </data>
+  <data name="lbl_file_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 24</value>
+  </data>
+  <data name="lbl_file_path.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_file_path.Text" xml:space="preserve">
+    <value>请选择一个表格文件</value>
+  </data>
+  <data name="&gt;&gt;lbl_file_path.Name" xml:space="preserve">
+    <value>lbl_file_path</value>
+  </data>
+  <data name="&gt;&gt;lbl_file_path.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_file_path.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_file_path.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbx_members.ItemHeight" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lbx_members.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 123</value>
+  </data>
+  <data name="lbx_members.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 484</value>
+  </data>
+  <data name="lbx_members.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbx_members.Name" xml:space="preserve">
+    <value>lbx_members</value>
+  </data>
+  <data name="&gt;&gt;lbx_members.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbx_members.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbx_members.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="memberBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 33</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>列名:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="lbl_column_name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_column_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 33</value>
+  </data>
+  <data name="lbl_column_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 24</value>
+  </data>
+  <data name="lbl_column_name.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lbl_column_name.Text" xml:space="preserve">
+    <value>AA</value>
+  </data>
+  <data name="&gt;&gt;lbl_column_name.Name" xml:space="preserve">
+    <value>lbl_column_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_column_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_column_name.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_column_name.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 33</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>序号:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="lbl_index.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_index.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 33</value>
+  </data>
+  <data name="lbl_index.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 24</value>
+  </data>
+  <data name="lbl_index.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lbl_index.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;lbl_index.Name" xml:space="preserve">
+    <value>lbl_index</value>
+  </data>
+  <data name="&gt;&gt;lbl_index.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_index.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_index.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 33</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>汉语姓名:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="lbl_chinese_name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_chinese_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 33</value>
+  </data>
+  <data name="lbl_chinese_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="lbl_chinese_name.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lbl_chinese_name.Text" xml:space="preserve">
+    <value>张小花</value>
+  </data>
+  <data name="&gt;&gt;lbl_chinese_name.Name" xml:space="preserve">
+    <value>lbl_chinese_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_chinese_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_chinese_name.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_chinese_name.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="lbl_korean_name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_korean_name.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_korean_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 33</value>
+  </data>
+  <data name="lbl_korean_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 24</value>
+  </data>
+  <data name="lbl_korean_name.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lbl_korean_name.Text" xml:space="preserve">
+    <value>장소화</value>
+  </data>
+  <data name="&gt;&gt;lbl_korean_name.Name" xml:space="preserve">
+    <value>lbl_korean_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_korean_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_korean_name.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_korean_name.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 33</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>韩语姓名:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 63</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>国籍:</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="lbl_country.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_country.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 63</value>
+  </data>
+  <data name="lbl_country.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
+  </data>
+  <data name="lbl_country.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lbl_country.Text" xml:space="preserve">
+    <value>중화인민공화국</value>
+  </data>
+  <data name="&gt;&gt;lbl_country.Name" xml:space="preserve">
+    <value>lbl_country</value>
+  </data>
+  <data name="&gt;&gt;lbl_country.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_country.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_country.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 63</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>身份证生日:</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="lbl_idcard_birthday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_idcard_birthday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 63</value>
+  </data>
+  <data name="lbl_idcard_birthday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
+  </data>
+  <data name="lbl_idcard_birthday.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lbl_idcard_birthday.Text" xml:space="preserve">
+    <value>730930</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_birthday.Name" xml:space="preserve">
+    <value>lbl_idcard_birthday</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_birthday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_birthday.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_birthday.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 33</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>性别:</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="lbl_gender.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_gender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 33</value>
+  </data>
+  <data name="lbl_gender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="lbl_gender.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lbl_gender.Text" xml:space="preserve">
+    <value>여</value>
+  </data>
+  <data name="&gt;&gt;lbl_gender.Name" xml:space="preserve">
+    <value>lbl_gender</value>
+  </data>
+  <data name="&gt;&gt;lbl_gender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_gender.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_gender.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type_comment.Name" xml:space="preserve">
+    <value>lbl_cd_type_comment</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type_comment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type_comment.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type_comment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbl_sibling_relationship.Name" xml:space="preserve">
+    <value>lbl_sibling_relationship</value>
+  </data>
+  <data name="&gt;&gt;lbl_sibling_relationship.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_sibling_relationship.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_sibling_relationship.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbl_final_education.Name" xml:space="preserve">
+    <value>lbl_final_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_final_education.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_final_education.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_final_education.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbl_maternal_faith.Name" xml:space="preserve">
+    <value>lbl_maternal_faith</value>
+  </data>
+  <data name="&gt;&gt;lbl_maternal_faith.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_maternal_faith.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_maternal_faith.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lbl_years_of_faith.Name" xml:space="preserve">
+    <value>lbl_years_of_faith</value>
+  </data>
+  <data name="&gt;&gt;lbl_years_of_faith.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_years_of_faith.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_years_of_faith.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lbl_position.Name" xml:space="preserve">
+    <value>lbl_position</value>
+  </data>
+  <data name="&gt;&gt;lbl_position.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_position.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_position.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lbl_church_name.Name" xml:space="preserve">
+    <value>lbl_church_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_church_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_church_name.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_church_name.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lbl_other_religion.Name" xml:space="preserve">
+    <value>lbl_other_religion</value>
+  </data>
+  <data name="&gt;&gt;lbl_other_religion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_other_religion.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_other_religion.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lbl_birth_religion.Name" xml:space="preserve">
+    <value>lbl_birth_religion</value>
+  </data>
+  <data name="&gt;&gt;lbl_birth_religion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_birth_religion.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_birth_religion.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type.Name" xml:space="preserve">
+    <value>lbl_cd_type</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;lbl_is_married.Name" xml:space="preserve">
+    <value>lbl_is_married</value>
+  </data>
+  <data name="&gt;&gt;lbl_is_married.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_is_married.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_is_married.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;lbl_blood_type.Name" xml:space="preserve">
+    <value>lbl_blood_type</value>
+  </data>
+  <data name="&gt;&gt;lbl_blood_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_blood_type.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_blood_type.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;lbl_height.Name" xml:space="preserve">
+    <value>lbl_height</value>
+  </data>
+  <data name="&gt;&gt;lbl_height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_height.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_height.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;lbl_email.Name" xml:space="preserve">
+    <value>lbl_email</value>
+  </data>
+  <data name="&gt;&gt;lbl_email.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_email.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_email.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;lbl_phone.Name" xml:space="preserve">
+    <value>lbl_phone</value>
+  </data>
+  <data name="&gt;&gt;lbl_phone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_phone.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_phone.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_korean.Name" xml:space="preserve">
+    <value>lbl_current_address_korean</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_korean.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_korean.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_korean.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_chinese.Name" xml:space="preserve">
+    <value>lbl_current_address_chinese</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_chinese.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_chinese.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_chinese.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_korean.Name" xml:space="preserve">
+    <value>lbl_idcard_address_korean</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_korean.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_korean.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_korean.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_chinese.Name" xml:space="preserve">
+    <value>lbl_idcard_address_chinese</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_chinese.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_chinese.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_chinese.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;lbl_actual_birthday.Name" xml:space="preserve">
+    <value>lbl_actual_birthday</value>
+  </data>
+  <data name="&gt;&gt;lbl_actual_birthday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_actual_birthday.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_actual_birthday.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="gpx_basic_info.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 123</value>
+  </data>
+  <data name="gpx_basic_info.Size" type="System.Drawing.Size, System.Drawing">
+    <value>554, 484</value>
+  </data>
+  <data name="gpx_basic_info.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="gpx_basic_info.Text" xml:space="preserve">
+    <value>基本信息</value>
+  </data>
+  <data name="&gt;&gt;gpx_basic_info.Name" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;gpx_basic_info.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gpx_basic_info.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gpx_basic_info.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_cd_type_comment.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_cd_type_comment.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_cd_type_comment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 333</value>
+  </data>
+  <data name="lbl_cd_type_comment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="lbl_cd_type_comment.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="lbl_cd_type_comment.Text" xml:space="preserve">
+    <value>朋友</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type_comment.Name" xml:space="preserve">
+    <value>lbl_cd_type_comment</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type_comment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type_comment.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type_comment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 333</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>批注:</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_sibling_relationship.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_sibling_relationship.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 445</value>
+  </data>
+  <data name="lbl_sibling_relationship.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 24</value>
+  </data>
+  <data name="lbl_sibling_relationship.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="lbl_sibling_relationship.Text" xml:space="preserve">
+    <value>3男 1女 中 第3</value>
+  </data>
+  <data name="&gt;&gt;lbl_sibling_relationship.Name" xml:space="preserve">
+    <value>lbl_sibling_relationship</value>
+  </data>
+  <data name="&gt;&gt;lbl_sibling_relationship.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_sibling_relationship.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_sibling_relationship.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 445</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 24</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>兄弟姐妹关系:</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_final_education.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_final_education.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 445</value>
+  </data>
+  <data name="lbl_final_education.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="lbl_final_education.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="lbl_final_education.Text" xml:space="preserve">
+    <value>高中毕业</value>
+  </data>
+  <data name="&gt;&gt;lbl_final_education.Name" xml:space="preserve">
+    <value>lbl_final_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_final_education.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_final_education.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_final_education.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 445</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>最终学历:</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_maternal_faith.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_maternal_faith.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 417</value>
+  </data>
+  <data name="lbl_maternal_faith.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 24</value>
+  </data>
+  <data name="lbl_maternal_faith.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="lbl_maternal_faith.Text" xml:space="preserve">
+    <value>非모태신앙</value>
+  </data>
+  <data name="&gt;&gt;lbl_maternal_faith.Name" xml:space="preserve">
+    <value>lbl_maternal_faith</value>
+  </data>
+  <data name="&gt;&gt;lbl_maternal_faith.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_maternal_faith.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_maternal_faith.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 417</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>母胎信仰:</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_years_of_faith.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_years_of_faith.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 417</value>
+  </data>
+  <data name="lbl_years_of_faith.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="lbl_years_of_faith.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="lbl_years_of_faith.Text" xml:space="preserve">
+    <value>31年</value>
+  </data>
+  <data name="&gt;&gt;lbl_years_of_faith.Name" xml:space="preserve">
+    <value>lbl_years_of_faith</value>
+  </data>
+  <data name="&gt;&gt;lbl_years_of_faith.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_years_of_faith.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_years_of_faith.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 417</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>信仰时间:</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbl_position.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_position.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 417</value>
+  </data>
+  <data name="lbl_position.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="lbl_position.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="lbl_position.Text" xml:space="preserve">
+    <value>不填</value>
+  </data>
+  <data name="&gt;&gt;lbl_position.Name" xml:space="preserve">
+    <value>lbl_position</value>
+  </data>
+  <data name="&gt;&gt;lbl_position.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_position.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_position.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 417</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>职分:</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lbl_church_name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_church_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 388</value>
+  </data>
+  <data name="lbl_church_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>442, 24</value>
+  </data>
+  <data name="lbl_church_name.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="lbl_church_name.Text" xml:space="preserve">
+    <value>新西兰奥克兰圣公会圣保罗教堂和奥克兰天主教青年团</value>
+  </data>
+  <data name="&gt;&gt;lbl_church_name.Name" xml:space="preserve">
+    <value>lbl_church_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_church_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_church_name.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_church_name.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 388</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>教会名:</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lbl_other_religion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_other_religion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 360</value>
+  </data>
+  <data name="lbl_other_religion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 24</value>
+  </data>
+  <data name="lbl_other_religion.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="lbl_other_religion.Text" xml:space="preserve">
+    <value>基督教新西兰圣公会</value>
+  </data>
+  <data name="&gt;&gt;lbl_other_religion.Name" xml:space="preserve">
+    <value>lbl_other_religion</value>
+  </data>
+  <data name="&gt;&gt;lbl_other_religion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_other_religion.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_other_religion.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 360</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>其他宗教:</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lbl_birth_religion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_birth_religion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 360</value>
+  </data>
+  <data name="lbl_birth_religion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="lbl_birth_religion.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="lbl_birth_religion.Text" xml:space="preserve">
+    <value>其他宗教</value>
+  </data>
+  <data name="&gt;&gt;lbl_birth_religion.Name" xml:space="preserve">
+    <value>lbl_birth_religion</value>
+  </data>
+  <data name="&gt;&gt;lbl_birth_religion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_birth_religion.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_birth_religion.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 360</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>出身教团:</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lbl_cd_type.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_cd_type.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_cd_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 333</value>
+  </data>
+  <data name="lbl_cd_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 24</value>
+  </data>
+  <data name="lbl_cd_type.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="lbl_cd_type.Text" xml:space="preserve">
+    <value>知人（朋友/前后辈/同事）</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type.Name" xml:space="preserve">
+    <value>lbl_cd_type</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_cd_type.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 333</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>CD类型:</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lbl_is_married.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_is_married.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 306</value>
+  </data>
+  <data name="lbl_is_married.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 24</value>
+  </data>
+  <data name="lbl_is_married.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="lbl_is_married.Text" xml:space="preserve">
+    <value>기혼</value>
+  </data>
+  <data name="&gt;&gt;lbl_is_married.Name" xml:space="preserve">
+    <value>lbl_is_married</value>
+  </data>
+  <data name="&gt;&gt;lbl_is_married.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_is_married.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_is_married.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 306</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>婚否:</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lbl_blood_type.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_blood_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 306</value>
+  </data>
+  <data name="lbl_blood_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 24</value>
+  </data>
+  <data name="lbl_blood_type.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="lbl_blood_type.Text" xml:space="preserve">
+    <value>AB</value>
+  </data>
+  <data name="&gt;&gt;lbl_blood_type.Name" xml:space="preserve">
+    <value>lbl_blood_type</value>
+  </data>
+  <data name="&gt;&gt;lbl_blood_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_blood_type.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_blood_type.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 306</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>血型:</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lbl_height.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_height.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 306</value>
+  </data>
+  <data name="lbl_height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 24</value>
+  </data>
+  <data name="lbl_height.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="lbl_height.Text" xml:space="preserve">
+    <value>165</value>
+  </data>
+  <data name="&gt;&gt;lbl_height.Name" xml:space="preserve">
+    <value>lbl_height</value>
+  </data>
+  <data name="&gt;&gt;lbl_height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_height.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_height.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 306</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>身高:</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lbl_email.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_email.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 279</value>
+  </data>
+  <data name="lbl_email.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 24</value>
+  </data>
+  <data name="lbl_email.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lbl_email.Text" xml:space="preserve">
+    <value>sssssssss19990101@gmail.com</value>
+  </data>
+  <data name="&gt;&gt;lbl_email.Name" xml:space="preserve">
+    <value>lbl_email</value>
+  </data>
+  <data name="&gt;&gt;lbl_email.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_email.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_email.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 279</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>邮箱:</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="lbl_phone.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_phone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 279</value>
+  </data>
+  <data name="lbl_phone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 24</value>
+  </data>
+  <data name="lbl_phone.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="lbl_phone.Text" xml:space="preserve">
+    <value>130-0000-0000</value>
+  </data>
+  <data name="&gt;&gt;lbl_phone.Name" xml:space="preserve">
+    <value>lbl_phone</value>
+  </data>
+  <data name="&gt;&gt;lbl_phone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_phone.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_phone.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 279</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>电话：</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="lbl_current_address_korean.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_current_address_korean.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 229</value>
+  </data>
+  <data name="lbl_current_address_korean.Size" type="System.Drawing.Size, System.Drawing">
+    <value>436, 51</value>
+  </data>
+  <data name="lbl_current_address_korean.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lbl_current_address_korean.Text" xml:space="preserve">
+    <value>강서성 남창시 고신기술개발구 마구진 로계촌 고두산 장가자연촌 614호</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_korean.Name" xml:space="preserve">
+    <value>lbl_current_address_korean</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_korean.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_korean.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_korean.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 229</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>韩文翻译:</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="lbl_current_address_chinese.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_current_address_chinese.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 184</value>
+  </data>
+  <data name="lbl_current_address_chinese.Size" type="System.Drawing.Size, System.Drawing">
+    <value>457, 68</value>
+  </data>
+  <data name="lbl_current_address_chinese.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lbl_current_address_chinese.Text" xml:space="preserve">
+    <value>江西省 南昌市 高新技术开发区 麻丘镇 鲁溪村 叩头山 章家自然村 614号</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_chinese.Name" xml:space="preserve">
+    <value>lbl_current_address_chinese</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_chinese.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_chinese.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_current_address_chinese.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 184</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>现住址:</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="lbl_idcard_address_korean.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 139</value>
+  </data>
+  <data name="lbl_idcard_address_korean.Size" type="System.Drawing.Size, System.Drawing">
+    <value>436, 51</value>
+  </data>
+  <data name="lbl_idcard_address_korean.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lbl_idcard_address_korean.Text" xml:space="preserve">
+    <value>강서성 남창시 고신기술개발구 마구진 로계촌 고두산 장가자연촌 614호</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_korean.Name" xml:space="preserve">
+    <value>lbl_idcard_address_korean</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_korean.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_korean.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_korean.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 137</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>韩文翻译:</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="lbl_idcard_address_chinese.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 92</value>
+  </data>
+  <data name="lbl_idcard_address_chinese.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 50</value>
+  </data>
+  <data name="lbl_idcard_address_chinese.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lbl_idcard_address_chinese.Text" xml:space="preserve">
+    <value>江西省 南昌市 高新技术开发区 麻丘镇 鲁溪村 叩头山 章家自然村 614号</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_chinese.Name" xml:space="preserve">
+    <value>lbl_idcard_address_chinese</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_chinese.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_chinese.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_idcard_address_chinese.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 92</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>身份证地址:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="lbl_actual_birthday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_actual_birthday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>414, 63</value>
+  </data>
+  <data name="lbl_actual_birthday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 24</value>
+  </data>
+  <data name="lbl_actual_birthday.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lbl_actual_birthday.Text" xml:space="preserve">
+    <value>1973-09-30(+)</value>
+  </data>
+  <data name="&gt;&gt;lbl_actual_birthday.Name" xml:space="preserve">
+    <value>lbl_actual_birthday</value>
+  </data>
+  <data name="&gt;&gt;lbl_actual_birthday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_actual_birthday.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;lbl_actual_birthday.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 63</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>实际生日:</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>gpx_basic_info</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;btn_education_next.Name" xml:space="preserve">
+    <value>btn_education_next</value>
+  </data>
+  <data name="&gt;&gt;btn_education_next.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_education_next.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;btn_education_next.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_education_prev.Name" xml:space="preserve">
+    <value>btn_education_prev</value>
+  </data>
+  <data name="&gt;&gt;btn_education_prev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_education_prev.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;btn_education_prev.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_period.Name" xml:space="preserve">
+    <value>lbl_education_period</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_period.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_period.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_period.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_status.Name" xml:space="preserve">
+    <value>lbl_education_status</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_status.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_status.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_major.Name" xml:space="preserve">
+    <value>lbl_education_major</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_major.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_major.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_major.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_school_name.Name" xml:space="preserve">
+    <value>lbl_education_school_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_school_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_school_name.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_school_name.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_category.Name" xml:space="preserve">
+    <value>lbl_education_category</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_category.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_category.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_category.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="gpx_education.Location" type="System.Drawing.Point, System.Drawing">
+    <value>813, 123</value>
+  </data>
+  <data name="gpx_education.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 235</value>
+  </data>
+  <data name="gpx_education.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="gpx_education.Text" xml:space="preserve">
+    <value>学历信息</value>
+  </data>
+  <data name="&gt;&gt;gpx_education.Name" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;gpx_education.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gpx_education.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gpx_education.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btn_education_next.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 184</value>
+  </data>
+  <data name="btn_education_next.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 34</value>
+  </data>
+  <data name="btn_education_next.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btn_education_next.Text" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="&gt;&gt;btn_education_next.Name" xml:space="preserve">
+    <value>btn_education_next</value>
+  </data>
+  <data name="&gt;&gt;btn_education_next.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_education_next.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;btn_education_next.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_education_prev.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 184</value>
+  </data>
+  <data name="btn_education_prev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 34</value>
+  </data>
+  <data name="btn_education_prev.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btn_education_prev.Text" xml:space="preserve">
+    <value>上一个</value>
+  </data>
+  <data name="&gt;&gt;btn_education_prev.Name" xml:space="preserve">
+    <value>btn_education_prev</value>
+  </data>
+  <data name="&gt;&gt;btn_education_prev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_education_prev.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;btn_education_prev.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_education_period.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_education_period.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 145</value>
+  </data>
+  <data name="lbl_education_period.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 24</value>
+  </data>
+  <data name="lbl_education_period.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbl_education_period.Text" xml:space="preserve">
+    <value>1993.9-1996.7</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_period.Name" xml:space="preserve">
+    <value>lbl_education_period</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_period.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_period.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_period.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 145</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>期间:</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_education_status.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_education_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 117</value>
+  </data>
+  <data name="lbl_education_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="lbl_education_status.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lbl_education_status.Text" xml:space="preserve">
+    <value>毕业</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_status.Name" xml:space="preserve">
+    <value>lbl_education_status</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_status.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_status.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 117</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>状态:</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_education_major.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_education_major.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 89</value>
+  </data>
+  <data name="lbl_education_major.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="lbl_education_major.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_education_major.Text" xml:space="preserve">
+    <value>国际贸易</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_major.Name" xml:space="preserve">
+    <value>lbl_education_major</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_major.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_major.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_major.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 89</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>专业:</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_education_school_name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_education_school_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 61</value>
+  </data>
+  <data name="lbl_education_school_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 24</value>
+  </data>
+  <data name="lbl_education_school_name.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_education_school_name.Text" xml:space="preserve">
+    <value>中南财经政法大学</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_school_name.Name" xml:space="preserve">
+    <value>lbl_education_school_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_school_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_school_name.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_school_name.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 61</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>学校:</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbl_education_category.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_education_category.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 33</value>
+  </data>
+  <data name="lbl_education_category.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="lbl_education_category.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_education_category.Text" xml:space="preserve">
+    <value>大学</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_category.Name" xml:space="preserve">
+    <value>lbl_education_category</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_category.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_category.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;lbl_education_category.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 33</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>分类:</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>gpx_education</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_family_next.Name" xml:space="preserve">
+    <value>btn_family_next</value>
+  </data>
+  <data name="&gt;&gt;btn_family_next.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_family_next.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;btn_family_next.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_family_prev.Name" xml:space="preserve">
+    <value>btn_family_prev</value>
+  </data>
+  <data name="&gt;&gt;btn_family_prev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_family_prev.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;btn_family_prev.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_scj_number.Name" xml:space="preserve">
+    <value>lbl_family_scj_number</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_scj_number.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_scj_number.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_scj_number.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birth_church.Name" xml:space="preserve">
+    <value>lbl_family_birth_church</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birth_church.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birth_church.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birth_church.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label39.Name" xml:space="preserve">
+    <value>label39</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_other_religion.Name" xml:space="preserve">
+    <value>lbl_family_other_religion</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_other_religion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_other_religion.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_other_religion.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_religion.Name" xml:space="preserve">
+    <value>lbl_family_religion</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_religion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_religion.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_religion.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_relationship.Name" xml:space="preserve">
+    <value>lbl_family_relationship</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_relationship.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_relationship.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_relationship.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birthday.Name" xml:space="preserve">
+    <value>lbl_family_birthday</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birthday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birthday.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birthday.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_gender.Name" xml:space="preserve">
+    <value>lbl_family_gender</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_gender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_gender.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_gender.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_name.Name" xml:space="preserve">
+    <value>lbl_family_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_name.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_name.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="gpx_family.Location" type="System.Drawing.Point, System.Drawing">
+    <value>813, 364</value>
+  </data>
+  <data name="gpx_family.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 243</value>
+  </data>
+  <data name="gpx_family.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="gpx_family.Text" xml:space="preserve">
+    <value>家族事项</value>
+  </data>
+  <data name="&gt;&gt;gpx_family.Name" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;gpx_family.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gpx_family.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gpx_family.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_family_next.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_family_next.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 194</value>
+  </data>
+  <data name="btn_family_next.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 34</value>
+  </data>
+  <data name="btn_family_next.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btn_family_next.Text" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="&gt;&gt;btn_family_next.Name" xml:space="preserve">
+    <value>btn_family_next</value>
+  </data>
+  <data name="&gt;&gt;btn_family_next.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_family_next.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;btn_family_next.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_family_prev.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_family_prev.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 194</value>
+  </data>
+  <data name="btn_family_prev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 34</value>
+  </data>
+  <data name="btn_family_prev.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btn_family_prev.Text" xml:space="preserve">
+    <value>上一个</value>
+  </data>
+  <data name="&gt;&gt;btn_family_prev.Name" xml:space="preserve">
+    <value>btn_family_prev</value>
+  </data>
+  <data name="&gt;&gt;btn_family_prev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_family_prev.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;btn_family_prev.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_family_scj_number.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_family_scj_number.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 154</value>
+  </data>
+  <data name="lbl_family_scj_number.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 24</value>
+  </data>
+  <data name="lbl_family_scj_number.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbl_family_scj_number.Text" xml:space="preserve">
+    <value>00390630-00214</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_scj_number.Name" xml:space="preserve">
+    <value>lbl_family_scj_number</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_scj_number.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_scj_number.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_scj_number.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 154</value>
+  </data>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 24</value>
+  </data>
+  <data name="label40.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>SCJ工号:</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_family_birth_church.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_family_birth_church.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 129</value>
+  </data>
+  <data name="lbl_family_birth_church.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="lbl_family_birth_church.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lbl_family_birth_church.Text" xml:space="preserve">
+    <value>大同堂</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birth_church.Name" xml:space="preserve">
+    <value>lbl_family_birth_church</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birth_church.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birth_church.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birth_church.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 129</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="label39.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>出身教会:</value>
+  </data>
+  <data name="&gt;&gt;label39.Name" xml:space="preserve">
+    <value>label39</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_family_other_religion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_family_other_religion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 104</value>
+  </data>
+  <data name="lbl_family_other_religion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="lbl_family_other_religion.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbl_family_other_religion.Text" xml:space="preserve">
+    <value>恩典福音</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_other_religion.Name" xml:space="preserve">
+    <value>lbl_family_other_religion</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_other_religion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_other_religion.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_other_religion.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label38.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 104</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="label38.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>教团-其他:</value>
+  </data>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_family_religion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_family_religion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 80</value>
+  </data>
+  <data name="lbl_family_religion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="lbl_family_religion.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbl_family_religion.Text" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_religion.Name" xml:space="preserve">
+    <value>lbl_family_religion</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_religion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_religion.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_religion.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 79</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label37.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>教团:</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbl_family_relationship.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_family_relationship.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 54</value>
+  </data>
+  <data name="lbl_family_relationship.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="lbl_family_relationship.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lbl_family_relationship.Text" xml:space="preserve">
+    <value>夫人</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_relationship.Name" xml:space="preserve">
+    <value>lbl_family_relationship</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_relationship.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_relationship.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_relationship.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 54</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>关系:</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lbl_family_birthday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_family_birthday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 54</value>
+  </data>
+  <data name="lbl_family_birthday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
+  </data>
+  <data name="lbl_family_birthday.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_family_birthday.Text" xml:space="preserve">
+    <value>1971.3.5</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birthday.Name" xml:space="preserve">
+    <value>lbl_family_birthday</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birthday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birthday.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_birthday.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 54</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label35.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>生日:</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lbl_family_gender.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_family_gender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 29</value>
+  </data>
+  <data name="lbl_family_gender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="lbl_family_gender.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_family_gender.Text" xml:space="preserve">
+    <value>녀</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_gender.Name" xml:space="preserve">
+    <value>lbl_family_gender</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_gender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_gender.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_gender.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 29</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>性别:</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lbl_family_name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_family_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 29</value>
+  </data>
+  <data name="lbl_family_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="lbl_family_name.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_family_name.Text" xml:space="preserve">
+    <value>张素霞</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_name.Name" xml:space="preserve">
+    <value>lbl_family_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_name.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;lbl_family_name.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 29</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>姓名:</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>gpx_family</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btn_check_all.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 9pt</value>
+  </data>
+  <data name="btn_check_all.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 618</value>
+  </data>
+  <data name="btn_check_all.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 34</value>
+  </data>
+  <data name="btn_check_all.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="btn_check_all.Text" xml:space="preserve">
+    <value>一键检查</value>
+  </data>
+  <data name="&gt;&gt;btn_check_all.Name" xml:space="preserve">
+    <value>btn_check_all</value>
+  </data>
+  <data name="&gt;&gt;btn_check_all.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_check_all.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_check_all.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_create_bak_file.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 9pt</value>
+  </data>
+  <data name="btn_create_bak_file.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_create_bak_file.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1064, 618</value>
+  </data>
+  <data name="btn_create_bak_file.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 34</value>
+  </data>
+  <data name="btn_create_bak_file.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="btn_create_bak_file.Text" xml:space="preserve">
+    <value>生成修改备注文档</value>
+  </data>
+  <data name="&gt;&gt;btn_create_bak_file.Name" xml:space="preserve">
+    <value>btn_create_bak_file</value>
+  </data>
+  <data name="&gt;&gt;btn_create_bak_file.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_create_bak_file.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_create_bak_file.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_open_compare_form.Location" type="System.Drawing.Point, System.Drawing">
+    <value>889, 618</value>
+  </data>
+  <data name="btn_open_compare_form.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 34</value>
+  </data>
+  <data name="btn_open_compare_form.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="btn_open_compare_form.Text" xml:space="preserve">
+    <value>比较表格差异</value>
+  </data>
+  <data name="&gt;&gt;btn_open_compare_form.Name" xml:space="preserve">
+    <value>btn_open_compare_form</value>
+  </data>
+  <data name="&gt;&gt;btn_open_compare_form.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_open_compare_form.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_open_compare_form.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_select_2_kj_jjb_hz.Name" xml:space="preserve">
+    <value>btn_select_2_kj_jjb_hz</value>
+  </data>
+  <data name="&gt;&gt;btn_select_2_kj_jjb_hz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_select_2_kj_jjb_hz.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;btn_select_2_kj_jjb_hz.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbx_phone.Name" xml:space="preserve">
+    <value>cbx_phone</value>
+  </data>
+  <data name="&gt;&gt;cbx_phone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbx_phone.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;cbx_phone.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_config_first_column.Name" xml:space="preserve">
+    <value>txt_config_first_column</value>
+  </data>
+  <data name="&gt;&gt;txt_config_first_column.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_config_first_column.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;txt_config_first_column.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label41.Name" xml:space="preserve">
+    <value>label41</value>
+  </data>
+  <data name="&gt;&gt;label41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbx_backcolor.Name" xml:space="preserve">
+    <value>cbx_backcolor</value>
+  </data>
+  <data name="&gt;&gt;cbx_backcolor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbx_backcolor.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;cbx_backcolor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="gpx_config.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="gpx_config.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1234, 61</value>
+  </data>
+  <data name="gpx_config.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="gpx_config.Text" xml:space="preserve">
+    <value>文件选项</value>
+  </data>
+  <data name="&gt;&gt;gpx_config.Name" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;gpx_config.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gpx_config.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gpx_config.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_select_2_kj_jjb_hz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 22</value>
+  </data>
+  <data name="btn_select_2_kj_jjb_hz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 34</value>
+  </data>
+  <data name="btn_select_2_kj_jjb_hz.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="btn_select_2_kj_jjb_hz.Text" xml:space="preserve">
+    <value>配置汇总表格</value>
+  </data>
+  <data name="&gt;&gt;btn_select_2_kj_jjb_hz.Name" xml:space="preserve">
+    <value>btn_select_2_kj_jjb_hz</value>
+  </data>
+  <data name="&gt;&gt;btn_select_2_kj_jjb_hz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_select_2_kj_jjb_hz.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;btn_select_2_kj_jjb_hz.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbx_phone.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbx_phone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbx_phone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 27</value>
+  </data>
+  <data name="cbx_phone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 28</value>
+  </data>
+  <data name="cbx_phone.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cbx_phone.Text" xml:space="preserve">
+    <value>仅读取手机号列</value>
+  </data>
+  <data name="&gt;&gt;cbx_phone.Name" xml:space="preserve">
+    <value>cbx_phone</value>
+  </data>
+  <data name="&gt;&gt;cbx_phone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbx_phone.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;cbx_phone.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_config_first_column.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 24</value>
+  </data>
+  <data name="txt_config_first_column.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 30</value>
+  </data>
+  <data name="txt_config_first_column.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txt_config_first_column.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txt_config_first_column.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txt_config_first_column.Name" xml:space="preserve">
+    <value>txt_config_first_column</value>
+  </data>
+  <data name="&gt;&gt;txt_config_first_column.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_config_first_column.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;txt_config_first_column.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label41.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 27</value>
+  </data>
+  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="label41.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>首列：</value>
+  </data>
+  <data name="&gt;&gt;label41.Name" xml:space="preserve">
+    <value>label41</value>
+  </data>
+  <data name="&gt;&gt;label41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbx_backcolor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbx_backcolor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 27</value>
+  </data>
+  <data name="cbx_backcolor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 28</value>
+  </data>
+  <data name="cbx_backcolor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbx_backcolor.Text" xml:space="preserve">
+    <value>仅读取背景列</value>
+  </data>
+  <data name="&gt;&gt;cbx_backcolor.Name" xml:space="preserve">
+    <value>cbx_backcolor</value>
+  </data>
+  <data name="&gt;&gt;cbx_backcolor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbx_backcolor.Parent" xml:space="preserve">
+    <value>gpx_config</value>
+  </data>
+  <data name="&gt;&gt;cbx_backcolor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_create_hzgl_table.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 618</value>
+  </data>
+  <data name="btn_create_hzgl_table.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 34</value>
+  </data>
+  <data name="btn_create_hzgl_table.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="btn_create_hzgl_table.Text" xml:space="preserve">
+    <value>生成汇总关联表格</value>
+  </data>
+  <data name="&gt;&gt;btn_create_hzgl_table.Name" xml:space="preserve">
+    <value>btn_create_hzgl_table</value>
+  </data>
+  <data name="&gt;&gt;btn_create_hzgl_table.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_create_hzgl_table.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_create_hzgl_table.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1258, 664</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEASEgAAAEAIACIVAAAFgAAACgAAABIAAAAkAAAAAEAIAAAAAAAYFQAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABQAA
+        AAkTExMNERERDw8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8P
+        DxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8P
+        DxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8P
+        DxEPDw8RDw8PEQ8PDxEPDw8RDw8PEQ8PDxEPDw8RERERDxMTEw0AAAAJAAAABQAAAAIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBUVFQwXFxcWERERHhQUFCYXFxcsFRUVMBQU
+        FDIUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQU
+        FDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQU
+        FDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQUFDMUFBQzFBQUMxQU
+        FDMUFBQzFBQUMxQUFDMUFBQyFRUVMBcXFywUFBQmERERHhcXFxYVFRUMAAAABAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAEERERDxMTExoUFBQlFBQUMRsiG0IdJh1PGiMdVxskG1wbIxtdGyMbXRsj
+        G10bIxtdGyMbXRsjG10bIxtdGyMbXRsjG10bIxtdGyEbXB8fH1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8f
+        H1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8f
+        H1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8fH1ofHx9aHx8fWh8f
+        H1ocHBxYHh4eVB4eHkscHBw/FBQUMRQUFCYTExMaERERDwAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAEERERDxMTExocQBw/HXAgyh+BJvkigyj7IoMo+yKDKPsigin8IoIp/CKCKfwigin8IoIp/CKC
+        Kfwigij8IoIo/CKCKPwgfib8T3tQ+4GBgfqAgID6gICA+oCAgPqAgID6gICA+oCAgPqAgID6gICA+oCA
+        gPqBgYH6gYGB+oGBgfqBgYH6gYGB+oGBgfqBgYH6gICA+oCAgPqAgID6gICA+oCAgPqAgID6gICA+oCA
+        gPqAgID6gICA+oCAgPqAgID6gICA+oCAgPqAgID6gICA+oCAgPqAgID6f39/+n9/f/p/f3/6gICA+YCA
+        gPl8fHz3YmJixTc3NzwTExMaERERDwAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBUV
+        FQwcdCDDKp87/yioPf8nqDz/J6g8/yeoPf8nqD3/J6k9/yepPf8nqT3/J6k9/yeoPf8nqD3/J6g8/yeo
+        PP8rnjv/fat//9fX1//V1dX/1dXV/9XV1f/V1dX/1dXV/9bW1v/W1tb/1tbW/9bW1v/W1tb/1tbW/9bW
+        1v/W1tb/1tbW/9bW1v/W1tb/1tbW/9bW1v/W1tb/1dXV/9XV1f/V1dX/1dXV/9XV1f/U1NT/1NTU/9TU
+        1P/U1NT/09PT/9PT0//T09P/0tLS/9LS0v/R0dH/0dHR/9HR0f/Q0ND/0NDQ/8/Pz//Pz8//vLy8/2Vl
+        Zb0VFRUMAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB9fPwgdgib3Jac7/xuk
+        M/8bpTP/HKUz/xylNP8cpTT/HKU0/xymNP8cpTT/HKU0/xylNP8cpTP/HKUz/xykM/8nnTj/fKp+/9TU
+        1P/R0dH/0dHR/9HR0f/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/T09P/0tLS/9LS
+        0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/R0dH/0dHR/9HR0f/R0dH/0NDQ/9DQ0P/Q0ND/z8/P/8/P
+        z//Pz8//zs7O/87Ozv/Nzc3/zc3N/83Nzf/MzMz/zMzM/8vLy//Ly8v/zs7O/319ffVmZmYFAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0ehCb5Iac5/xymNP8cpjX/HKc1/x2n
+        Nf8dpzb/Hac2/x2nNv8dpzb/Hac2/x2nNf8cpzX/HKY1/xymNf8knTb/fKt+/9XV1f/S0tL/0tLS/9LS
+        0v/S0tL/09PT/9PT0//T09P/09PT/9PT0//T09P/09PT/9PT0//T09P/09PT/9PT0//T09P/09PT/9PT
+        0//T09P/09PT/9PT0//S0tL/0tLS/9LS0v/R0dH/0dHR/9HR0f/R0dH/0NDQ/9DQ0P/Pz8//z8/P/8/P
+        z//Ozs7/zs7O/83Nzf/Nzc3/zMzM/8zMzP/Ly8v/zc3N/4GBgfdfX18IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0ehSf5Iqk6/x2nNv8dqDb/Hag3/x2pN/8dqTf/Hak3/x2p
+        OP8dqTj/Hak3/x2pN/8dqDf/Hag3/x2oNv8knjf/fKt//9XV1f/S0tL/09PT/9XV1f/W1tb/1tbW/9bW
+        1v/W1tb/1tbW/9bW1v/W1tb/19fX/9fX1//X19f/19fX/9fX1//W1tb/1tbW/9bW1v/W1tb/1tbW/9bW
+        1v/W1tb/1dXV/9XV1f/V1dX/1dXV/9TU1P/U1NT/1NTU/9PT0//T09P/09PT/9LS0v/S0tL/0dHR/9HR
+        0f/Q0ND/zs7O/8zMzP/MzMz/zc3N/4GBgfdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADp1Og0ehij5I6s8/x2pOP8eqjj/Hqo5/x6qOf8eqjn/Hqs5/x6rOf8eqzn/Hqo5/x6q
+        Of8eqjn/Hqo4/x6pOP8koDn/fayA/9bW1v/T09P/09PT/66urv+lpaX/paWl/6Wlpf+lpaX/pKSk/6Wl
+        pf+lpaX/paWl/6Wlpf+lpaX/paWl/6Wlpf+lpaX/pKSk/6Wlpf+lpaX/paWl/6Wlpf+lpaX/paWl/6Wl
+        pf+lpaX/paWl/6Ojo/+lpaX/paWl/6Wlpf+lpaX/paWl/6Wlpf+lpaX/pKSk/6SkpP+kpKT/uLi4/83N
+        zf/MzMz/zs7O/4KCgvdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1
+        Og0ehyn5I6w9/x6rOf8eqzr/H6w6/x+sO/8frDv/H6w7/x+sO/8frDv/H6w7/x+sO/8frDv/Hqs6/x+r
+        Ov8loTr/fa2A/9fX1//U1NT/1NTU/56env+0tLT/tLS0/7S0tP+srKz/r6+v/9PT0//T09P/09PT/9PT
+        0//T09P/09PT/9PT0//CwsL/r6+v/9PT0//T09P/0tLS/9LS0v/S0tL/0tLS/9LS0v/R0dH/0dHR/6Cg
+        oP/Ozs7/0NDQ/9DQ0P/Pz8//z8/P/87Ozv/Ozs7/zc3N/83Nzf+8vLz/ra2t/87Ozv/Nzc3/zs7O/4OD
+        g/dfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0fiCv5JK5A/x+s
+        O/8frTz/H608/x+tPf8frj3/IK49/yCuPf8grj3/H649/x+uPf8frTz/H608/x+tPP8lozv/fq6B/9fX
+        1//U1NT/1dXV/56env+zs7P/tLS0/7S0tP+srKz/srKy/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ
+        2f/Gxsb/srKy/9jY2P/Y2Nj/2NjY/9jY2P/Y2Nj/19fX/9fX1//X19f/19fX/6Kiov/U1NT/1tbW/9XV
+        1f/V1dX/1dXV/9TU1P/U1NT/09PT/9PT0//BwcH/rq6u/87Ozv/Ozs7/z8/P/4ODg/dfX18IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0fiSz5Ja9B/x+uPf8grj7/IK8+/yCv
+        Pv8grz//ILA//yCwP/8gsD//IK8//yCvPv8grz7/IK8+/yCuPf8mpD3/fq+C/9jY2P/V1dX/1dXV/52d
+        nf+bm5v/m5ub/5ubm/+YmJj/mZmZ/6ampv+mpqb/pqam/6ampv+mpqb/pqam/6ampv+fn5//mZmZ/6am
+        pv+mpqb/pqam/6ampv+mpqb/pqam/6ampv+lpaX/paWl/5OTk/+lpaX/paWl/6Wlpf+lpaX/paWl/6Wl
+        pf+lpaX/paWl/6Wlpf+enp7/rq6u/8/Pz//Ozs7/0NDQ/4SEhPdfX18IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0giy35JbFD/yCwP/8gsD//IbFA/yGxQP8hsUD/IbFB/yGx
+        Qf8hsUH/IbFA/yGxQP8hsUD/ILA//yGwP/8npj7/fq+C/9nZ2f/W1tb/1tbW/5+fn/+zs7P/s7Oz/7Oz
+        s/+srKz/sLCw/9XV1f/V1dX/1dXV/9XV1f/V1dX/1dXV/9XV1f/Dw8P/sLCw/9XV1f/V1dX/1dXV/9TU
+        1P/U1NT/1NTU/9TU1P/T09P/09PT/6Ghof/Q0ND/0tLS/9LS0v/R0dH/0dHR/9DQ0P/Q0ND/z8/P/8/P
+        z/++vr7/rq6u/8/Pz//Pz8//0NDQ/4SEhPdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADp1Og0gjC75JrNF/yGxQf8hskH/IbJB/yGzQv8is0L/IrNC/yKzQv8is0L/IrNC/yGz
+        Qv8hskL/IbJB/yGyQf8np0D/f7CD/9nZ2f/X19f/19fX/5+fn/+zs7P/tLS0/7S0tP+srKz/s7Oz/9vb
+        2//b29v/29vb/9vb2//b29v/29vb/9vb2//Hx8f/s7Oz/9vb2//a2tr/2tra/9ra2v/a2tr/2tra/9nZ
+        2f/Z2dn/2dnZ/6Kiov/W1tb/2NjY/9fX1//X19f/1tbW/9bW1v/V1dX/1dXV/9TU1P/CwsL/r6+v/9DQ
+        0P/Pz8//0dHR/4WFhfdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1
+        Og0gjS75J7RG/yKzQv8is0P/IrRD/yK0RP8itET/IrVE/yK1RP8itUT/IrVE/yK0RP8itEP/IrRD/yKz
+        Q/8oqEH/f7GD/9ra2v/X19f/2NjY/52dnf+YmJj/mJiY/5iYmP+Wlpb/l5eX/6Ojo/+jo6P/o6Oj/6Oj
+        o/+jo6P/o6Oj/6Ojo/+dnZ3/l5eX/6Ojo/+jo6P/o6Oj/6Ojo/+jo6P/o6Oj/6Ojo/+jo6P/o6Oj/5KS
+        kv+ioqL/o6Oj/6Ojo/+jo6P/o6Oj/6Ojo/+jo6P/o6Oj/6Ojo/+dnZ3/r6+v/9HR0f/Q0ND/0dHR/4aG
+        hvdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0gji/5KLZI/yK1
+        RP8jtUX/I7ZF/yO2Rf8jtkb/I7ZG/yO2Rv8jtkb/I7ZG/yO2Rf8jtkX/I7VF/yO1RP8oqkP/f7KE/9vb
+        2//Y2Nj/2NjY/5+fn/+zs7P/tLS0/7S0tP+srKz/s7Oz/9ra2v/a2tr/2tra/9ra2v/a2tr/2tra/9ra
+        2v/Hx8f/s7Oz/9ra2v/a2tr/2dnZ/9nZ2f/Z2dn/2dnZ/9jY2P/Y2Nj/2NjY/6Kiov/V1dX/1tbW/9bW
+        1v/W1tb/1dXV/9XV1f/U1NT/1NTU/9PT0//BwcH/r6+v/9HR0f/R0dH/0tLS/4aGhvdfX18IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0gjzD5KLhK/yO2Rv8jt0b/I7dH/yS4
+        R/8kuEf/JLhI/yS4SP8kuEj/JLhH/yS4R/8kt0f/I7dG/yO2Rv8pq0T/f7KE/9vb2//Z2dn/2dnZ/5+f
+        n/+zs7P/tLS0/7S0tP+srKz/tLS0/93d3f/d3d3/3d3d/93d3f/d3d3/3d3d/93d3f/Jycn/tLS0/93d
+        3f/d3d3/3Nzc/9zc3P/c3Nz/3Nzc/9vb2//b29v/29vb/6Ojo//Y2Nj/2tra/9nZ2f/Z2dn/2NjY/9jY
+        2P/X19f/19fX/9bW1v/Dw8P/sLCw/9LS0v/R0dH/09PT/4eHh/dfX18IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0gkDH5KblL/yS4R/8kuEj/JLlJ/yS5Sf8kuUn/JbpJ/yW6
+        Sf8lukn/JLlJ/yS5Sf8kuUn/JLlI/yS4SP8prUX/gLOF/9zc3P/a2tr/2tra/56env+YmJj/mJiY/5iY
+        mP+VlZX/mZmZ/6ampv+mpqb/pqam/6ampv+mpqb/pqam/6ampv+goKD/mZmZ/6ampv+mpqb/pqam/6am
+        pv+mpqb/pqam/6ampv+mpqb/pqam/5OTk/+lpaX/pqam/6ampv+mpqb/pqam/6Wlpf+lpaX/paWl/6Wl
+        pf+fn5//sLCw/9LS0v/S0tL/09PT/4iIiPdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADp1Og0hkTL5KrtN/yS5Sf8lukr/JbtK/yW7S/8lu0v/JbtL/yW7S/8lu0v/JbtL/yW7
+        S/8lu0r/JbpK/yW6Sv8qrkf/gLOF/93d3f/a2tr/29vb/6CgoP+0tLT/tLS0/7S0tP+srKz/srKy/9ra
+        2v/a2tr/2tra/9ra2v/a2tr/2tra/9ra2v/Hx8f/srKy/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2NjY/9jY
+        2P/Y2Nj/19fX/6Kiov/U1NT/1tbW/9bW1v/V1dX/1dXV/9TU1P/U1NT/09PT/9LS0v/AwMD/sLCw/9PT
+        0//S0tL/1NTU/4iIiPdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1
+        Og0hkjP5KrxP/yW7S/8lvEz/JrxM/ya9TP8mvU3/Jr1N/ya9Tf8mvU3/Jr1N/ya9Tf8mvEz/JbxM/ya7
+        S/8rsEj/gLSG/93d3f/b29v/29vb/6CgoP+zs7P/tLS0/7S0tP+srKz/tbW1/9/f3//f39//39/f/9/f
+        3//f39//39/f/9/f3//Ly8v/tbW1/9/f3//f39//39/f/97e3v/e3t7/3t7e/97e3v/d3d3/3d3d/6Oj
+        o//a2tr/3Nzc/9vb2//b29v/2tra/9ra2v/Z2dn/2dnZ/9jY2P/FxcX/sLCw/9TU1P/T09P/1NTU/4mJ
+        ifdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0hkzT5K75R/ya9
+        Tf8mvU3/Jr5O/ya+Tv8nvk//J79P/ye/T/8nv0//J79P/ya+Tv8mvk7/Jr5O/ya9Tf8rsUr/gLWG/97e
+        3v/c3Nz/3Nzc/56env+bm5v/nJyc/5ycnP+YmJj/mZmZ/6enp/+np6f/p6en/6enp/+np6f/p6en/6en
+        p/+goKD/mZmZ/6enp/+np6f/p6en/6enp/+np6f/p6en/6enp/+np6f/pqam/5OTk/+mpqb/pqam/6am
+        pv+mpqb/pqam/6ampv+mpqb/pqam/6ampv+fn5//sLCw/9TU1P/U1NT/1dXV/4qKivdfX18IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0hlDX5LL9T/ya+Tv8nv0//J79Q/yfA
+        UP8nwFD/J8BR/yfAUf8nwFH/J8BQ/yfAUP8nwFD/J79P/ye/T/8sskv/gLWH/9/f3//c3Nz/3d3d/6Cg
+        oP+zs7P/s7Oz/7Ozs/+srKz/tLS0/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/IyMj/tLS0/9zc
+        3P/c3Nz/29vb/9vb2//b29v/2tra/9ra2v/a2tr/2dnZ/6Kiov/W1tb/2NjY/9jY2P/X19f/19fX/9bW
+        1v/V1dX/1dXV/9TU1P/CwsL/sbGx/9XV1f/U1NT/1dXV/4qKivdfX18IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0ilTX5LcFU/yfAUP8nwVH/KMFR/yjCUv8owlL/KMJS/yjC
+        Uv8owlL/KMJS/yjCUv8owVH/J8FR/yjAUf8ts03/gbaH/9/f3//d3d3/3d3d/6Ghof+zs7P/tLS0/7S0
+        tP+srKz/tra2/+Hh4f/h4eH/4eHh/+Li4v/i4uL/4eHh/+Hh4f/MzMz/tra2/+Hh4f/h4eH/4eHh/+Dg
+        4P/g4OD/4ODg/+Dg4P/f39//39/f/6SkpP/b29v/3t7e/93d3f/c3Nz/3Nzc/9vb2//b29v/2tra/9ra
+        2v/Gxsb/sbGx/9XV1f/V1dX/1tbW/4uLi/dfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADp1Og0iljf5LcJW/yjCUv8owlP/KMNT/yjDVP8pxFT/KcRU/ynEVP8pxFT/KcRU/ynD
+        VP8ow1P/KMJT/yjCUv8ttU7/gbeI/+Dg4P/e3t7/3t7e/5+fn/+ZmZn/mZmZ/5mZmf+Wlpb/mJiY/6Sk
+        pP+kpKT/pKSk/6SkpP+kpKT/pKSk/6SkpP+enp7/mJiY/6SkpP+kpKT/pKSk/6SkpP+kpKT/pKSk/6Sk
+        pP+kpKT/pKSk/5KSkv+jo6P/pKSk/6SkpP+jo6P/o6Oj/6Ojo/+jo6P/o6Oj/6Ojo/+dnZ3/sbGx/9bW
+        1v/V1dX/1tbW/4uLi/dfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1
+        Og0ilzf5LsRX/ynDVP8pxFT/KcRV/ynFVf8pxVb/KsVW/yrFVv8qxVb/KcVW/ynFVf8pxVX/KcRU/ynE
+        VP8utk//gbiJ/+Hh4f/e3t7/39/f/6Ghof+zs7P/tLS0/7S0tP+srKz/tra2/+Hh4f/h4eH/4eHh/+Hh
+        4f/h4eH/4eHh/+Hh4f/MzMz/tra2/+Hh4f/g4OD/4ODg/+Dg4P/f39//39/f/9/f3//e3t7/3t7e/6Sk
+        pP/b29v/3Nzc/9zc3P/b29v/29vb/9ra2v/a2tr/2dnZ/9jY2P/FxcX/srKy/9bW1v/W1tb/19fX/4yM
+        jPdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0imDj5L8ZZ/ynF
+        Vf8pxlb/KsZX/yrHV/8qx1f/KsdY/yrHWP8qx1j/KsdX/yrHV/8qxlf/KsZW/yrFVv8uuFH/grmJ/+Hh
+        4f/f39//4ODg/6Ghof+zs7P/tLS0/7S0tP+srKz/t7e3/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj
+        4//Ozs7/t7e3/+Pj4//j4+P/4+Pj/+Li4v/i4uL/4uLi/+Hh4f/h4eH/4eHh/6SkpP/d3d3/39/f/9/f
+        3//e3t7/3t7e/93d3f/d3d3/3Nzc/9vb2//Hx8f/srKy/9fX1//W1tb/19fX/42NjfdfX18IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0jmTn5MMdb/yrGV/8qx1j/KshY/yvI
+        Wf8ryVn/K8lZ/yvJWf8ryVn/K8lZ/yvIWf8qyFn/KsdY/yrHWP8vuVL/grmK/+Li4v/g4OD/4ODg/5+f
+        n/+YmJj/mJiY/5iYmP+VlZX/mZmZ/6enp/+np6f/p6en/6enp/+np6f/p6en/6enp/+goKD/mZmZ/6en
+        p/+np6f/p6en/6enp/+np6f/p6en/6enp/+np6f/p6en/5OTk/+mpqb/p6en/6enp/+mpqb/pqam/6am
+        pv+mpqb/pqam/6ampv+fn5//srKy/9fX1//X19f/2NjY/42NjfdfX18IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADp1Og0jmjr5MMlc/yvIWf8ryVr/K8la/yvKW/8sylv/LMpb/yzK
+        W/8sylv/LMpb/yvKW/8rylr/K8la/yvIWf8wu1T/grqK/+Li4v/h4eH/4eHh/6Ghof+0tLT/tLS0/7S0
+        tP+tra3/tra2/+Dg4P/g4OD/4ODg/+Hh4f/h4eH/4ODg/+Dg4P/Ly8v/tra2/+Dg4P/g4OD/39/f/9/f
+        3//f39//3t7e/97e3v/e3t7/3d3d/6Ojo//a2tr/3Nzc/9vb2//b29v/2tra/9nZ2f/Z2dn/2NjY/9jY
+        2P/ExMT/srKy/9jY2P/X19f/2NjY/46OjvdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADqJOg0jmzv5Mcpe/yvKWv8rylv/LMtc/yzMXP8szF3/LMxd/yzMXf8szF3/LMxd/yzM
+        Xf8sy1z/LMtb/yzKW/8wvFX/g7uL/+Pj4//h4eH/4uLi/6Ghof+zs7P/tLS0/7S0tP+tra3/uLi4/+Xl
+        5f/m5ub/5ubm/+bm5v/m5ub/5ubm/+bm5v/Pz8//uLi4/+Xl5f/l5eX/5eXl/+Tk5P/k5OT/5OTk/+Pj
+        4//j4+P/4uLi/6Wlpf/f39//4eHh/+Hh4f/g4OD/39/f/9/f3//e3t7/3t7e/93d3f/IyMj/s7Oz/9jY
+        2P/Y2Nj/2dnZ/4+Pj/dfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJ
+        Og0knTv5Msxg/yzLXP8szF3/LM1e/y3NXv8tzl7/Lc5f/y3OX/8tzl//Lc5f/y3NXv8tzV7/LMxd/yzM
+        Xf8wvlf/g7uL/+Tk5P/i4uL/4uLi/5+fn/+cnJz/nJyc/5ycnP+ZmZn/mpqa/6ioqP+oqKj/qKio/6io
+        qP+oqKj/qKio/6ioqP+hoaH/mpqa/6ioqP+oqKj/qKio/6ioqP+oqKj/p6en/6enp/+np6f/p6en/5OT
+        k/+mpqb/p6en/6enp/+np6f/p6en/6enp/+np6f/p6en/6ampv+goKD/s7Oz/9nZ2f/Y2Nj/2dnZ/4+P
+        j/dfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJOg0knjz5Ms5h/yzN
+        Xv8tzl//Lc5f/y3PYP8uz2D/Ls9h/y7QYf8uz2H/Ls9g/y3PYP8tzmD/Lc5f/y3NXv8xv1j/g7yM/+Tk
+        5P/j4+P/4+Pj/6Kiov+zs7P/s7Oz/7Ozs/+srKz/t7e3/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj
+        4//Nzc3/t7e3/+Li4v/i4uL/4uLi/+Hh4f/h4eH/4eHh/+Dg4P/g4OD/39/f/6SkpP/c3Nz/3t7e/93d
+        3f/c3Nz/3Nzc/9vb2//b29v/2tra/9nZ2f/FxcX/s7Oz/9nZ2f/Z2dn/2tra/5CQkPdfX18IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0knz35M89j/y3OYP8uz2D/LtBh/y7Q
+        Yv8u0WL/LtFi/y7RYv8u0WL/LtFi/y7RYv8u0GH/Ls9h/y7PYP8xwFn/g7yM/+Xl5f/j4+P/5OTk/6Ki
+        ov+zs7P/tLS0/7S0tP+tra3/ubm5/+fn5//o6Oj/6Ojo/+jo6P/o6Oj/6Ojo/+jo6P/R0dH/ubm5/+fn
+        5//n5+f/5+fn/+bm5v/m5ub/5ubm/+Xl5f/l5eX/5OTk/6Wlpf/h4eH/4+Pj/+Li4v/i4uL/4eHh/+Dg
+        4P/g4OD/39/f/97e3v/Jycn/s7Oz/9ra2v/Z2dn/2tra/5CQkPdfX18IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0koD75M9Fl/y7QYf8u0WL/L9Jj/y/SY/8v02T/L9Nk/y/T
+        ZP8v02T/L9Nk/y/SZP8v0mP/LtFi/y7QYv8ywlv/hL2N/+bm5v/k5OT/5OTk/6CgoP+ZmZn/mZmZ/5mZ
+        mf+Wlpb/mJiY/6Wlpf+lpaX/paWl/6Wlpf+lpaX/paWl/6Wlpf+fn5//mJiY/6Wlpf+lpaX/paWl/6Wl
+        pf+lpaX/paWl/6Wlpf+lpaX/paWl/5OTk/+kpKT/pKSk/6SkpP+kpKT/pKSk/6SkpP+kpKT/pKSk/6Sk
+        pP+enp7/tLS0/9ra2v/a2tr/29vb/5GRkfdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADqJTg0koT/5NNJm/y/SY/8v02T/L9Nk/zDUZf8w1Gb/MNRm/zDVZv8w1Wb/MNRm/zDU
+        Zf8v02X/L9Nk/y/SY/8zw1z/hL6N/+bm5v/l5eX/5eXl/6Kiov+zs7P/tLS0/7S0tP+tra3/ubm5/+jo
+        6P/o6Oj/6Ojo/+jo6P/o6Oj/6Ojo/+jo6P/R0dH/ubm5/+fn5//n5+f/5+fn/+bm5v/m5ub/5eXl/+Xl
+        5f/k5OT/5OTk/6Wlpf/g4OD/4uLi/+Hh4f/h4eH/4ODg/9/f3//f39//3t7e/93d3f/IyMj/tLS0/9vb
+        2//a2tr/29vb/5GRkfdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJ
+        Tg0kokD5NdRo/y/TZf8w1GX/MNVm/zDVZ/8w1mf/MdZo/zHWaP8x1mj/MNZo/zDWZ/8w1Wb/MNRm/zDU
+        Zf8zxV3/hL+O/+fn5//l5eX/5ubm/6Kiov+zs7P/tLS0/7S0tP+tra3/urq6/+rq6v/q6ur/6urq/+rq
+        6v/q6ur/6urq/+rq6v/T09P/urq6/+np6f/p6en/6enp/+jo6P/o6Oj/5+fn/+fn5//m5ub/5ubm/6am
+        pv/i4uL/5OTk/+Tk5P/j4+P/4uLi/+Li4v/h4eH/4ODg/+Dg4P/Kysr/tLS0/9vb2//a2tr/3Nzc/5KS
+        kvdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0lo0D5NdVq/zDV
+        Zv8w1mf/MdZo/zHXaf8x2Gn/Mdhp/zHYav8x2Gn/Mdhp/zHXaf8x12j/MNZn/zDVZ/8zxl//hL+O/+fn
+        5//m5ub/5ubm/6CgoP+YmJj/mJiY/5iYmP+Wlpb/mpqa/6ioqP+oqKj/qKio/6mpqf+pqan/qKio/6io
+        qP+hoaH/mpqa/6ioqP+oqKj/qKio/6ioqP+oqKj/qKio/6ioqP+oqKj/qKio/5SUlP+np6f/p6en/6en
+        p/+np6f/p6en/6enp/+np6f/p6en/6enp/+goKD/tLS0/9zc3P/b29v/3Nzc/5OTk/dfX18IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0lpEL5Ntdr/zHWaP8x12n/Mdhq/zLZ
+        av8y2Wv/Mtlr/zLaa/8y2mv/Mtlr/zLZa/8x2Gr/Mdhp/zHXaP80x2D/hMCP/+jo6P/m5ub/5+fn/6Oj
+        o/+0tLT/tLS0/7S0tP+tra3/ubm5/+fn5//n5+f/5+fn/+fn5//n5+f/5+fn/+fn5//Q0ND/ubm5/+bm
+        5v/m5ub/5ubm/+Xl5f/l5eX/5OTk/+Tk5P/j4+P/4+Pj/6Wlpf/f39//4eHh/+Dg4P/g4OD/39/f/97e
+        3v/d3d3/3d3d/9zc3P/Hx8f/tLS0/9zc3P/b29v/3Nzc/5OTk/dfX18IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0lpUL5N9ht/zHYav8y2Wv/Mtpr/zLabP8y223/M9tt/zPb
+        bf8z223/M9tt/zLbbP8y2mz/Mtlr/zLYav81yGL/hcCP/+jo6P/n5+f/6Ojo/6Ojo/+zs7P/tLS0/7S0
+        tP+tra3/u7u7/+zs7P/s7Oz/7Ozs/+zs7P/s7Oz/7Ozs/+zs7P/U1NT/u7u7/+vr6//r6+v/6+vr/+rq
+        6v/q6ur/6enp/+np6f/o6Oj/6Ojo/6ampv/k5OT/5ubm/+Xl5f/l5eX/5OTk/+Pj4//i4uL/4uLi/+Hh
+        4f/Ly8v/tbW1/9zc3P/c3Nz/3d3d/5SUlPdfX18IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADqJTg0lpkP5ONlu/zLZa/8y2mz/M9tt/zPcbv8z3W7/M91v/zPdb/8z3W//M91v/zPc
+        bv8z3G3/Mttt/zLabP81yWP/hcGQ/+np6f/o6Oj/6Ojo/6Ghof+cnJz/nJyc/5ycnP+ZmZn/mpqa/6mp
+        qf+pqan/qamp/6mpqf+pqan/qamp/6mpqf+ioqL/mpqa/6mpqf+pqan/qamp/6mpqf+pqan/qKio/6io
+        qP+oqKj/qKio/5SUlP+np6f/qKio/6ioqP+oqKj/p6en/6enp/+np6f/p6en/6enp/+goKD/tbW1/93d
+        3f/c3Nz/3d3d/5SUlPd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJ
+        Tg0lp0T5ONtw/zLbbf8z3G7/M91v/zTecP803nD/NN9x/zTfcf8033H/NN5w/zTecP8z3W//M9xu/zPb
+        bf82y2T/hcKR/+np6f/o6Oj/6enp/6Ojo/+zs7P/s7Oz/7Ozs/+srKz/urq6/+np6f/p6en/6urq/+rq
+        6v/q6ur/6urq/+np6f/S0tL/urq6/+np6f/o6Oj/6Ojo/+fn5//n5+f/5ubm/+bm5v/l5eX/5eXl/6Wl
+        pf/g4OD/4+Pj/+Li4v/h4eH/4ODg/+Dg4P/f39//3t7e/93d3f/IyMj/tbW1/93d3f/c3Nz/3d3d/5WV
+        lfd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0mqEX5Odxx/zPc
+        bv803m//NN5w/zTfcf814HL/NeBy/zXgcv814HL/NeBy/zTfcv8033H/NN5w/zTdb/82zGb/hcOR/+rq
+        6v/p6en/6enp/6Ojo/+zs7P/tLS0/7S0tP+tra3/vb29/+7u7v/u7u7/7u7u/+7u7v/u7u7/7u7u/+7u
+        7v/V1dX/vb29/+3t7f/t7e3/7e3t/+zs7P/s7Oz/6+vr/+vr6//q6ur/6enp/6ampv/l5eX/5+fn/+fn
+        5//m5ub/5eXl/+Tk5P/k5OT/4+Pj/+Li4v/MzMz/tbW1/97e3v/d3d3/3t7e/5aWlvd/f38IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0mqkb5Ot5z/zTecP8033H/NeBy/zXh
+        c/814XT/NeJ0/zbidP814nT/NeJ0/zXhc/814HL/NN9x/zTecf83zWf/hsOS/+rq6v/p6en/6urq/6Gh
+        of+ZmZn/mZmZ/5mZmf+Wlpb/mZmZ/6ampv+mpqb/pqam/6ampv+mpqb/pqam/6ampv+fn5//mZmZ/6am
+        pv+mpqb/pqam/6ampv+lpaX/paWl/6Wlpf+lpaX/paWl/5OTk/+kpKT/paWl/6Wlpf+lpaX/paWl/6Wl
+        pf+lpaX/pKSk/6SkpP+enp7/tbW1/97e3v/d3d3/3t7e/5aWlvd/f38IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0nq0b5Ot90/zTfcf814XP/NeJ0/zbidf8243X/NuR2/zbk
+        dv825Hb/NuN2/zbjdf814nT/NeFz/zXgcv84z2j/hsSS/+vr6//q6ur/6+vr/6SkpP+zs7P/tLS0/7S0
+        tP+tra3/vb29/+7u7v/u7u7/7+/v/+/v7//v7+//7+/v/+/v7//W1tb/vb29/+7u7v/t7e3/7e3t/+zs
+        7P/s7Oz/6+vr/+rq6v/q6ur/6enp/6ampv/l5eX/5+fn/+bm5v/l5eX/5OTk/+Pj4//j4+P/4uLi/+Hh
+        4f/Ly8v/tbW1/97e3v/d3d3/3t7e/5eXl/d/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADqJTg0nrEf5O+B2/zXhc/814nT/NuN1/zbkd/835Xf/N+V4/zfleP835Xj/N+V3/zbk
+        d/825Hb/NuJ1/zbhdP840Gn/hsSS/+vr6//q6ur/6+vr/6SkpP+zs7P/tLS0/7S0tP+tra3/vb29//Dw
+        8P/w8PD/8PDw//Dw8P/w8PD/8PDw//Dw8P/X19f/vb29/+/v7//v7+//7+/v/+7u7v/t7e3/7e3t/+zs
+        7P/r6+v/6+vr/6enp//m5ub/6enp/+jo6P/n5+f/5ubm/+Xl5f/l5eX/5OTk/+Pj4//Nzc3/tra2/97e
+        3v/e3t7/39/f/5eXl/d/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJ
+        Tg0nrUj5O+J3/zXidP825Hb/N+V3/zfmeP835nn/OOd5/zjnev8453r/N+d5/zfmeP835Xf/NuR2/zbj
+        df850Wv/hsWT/+zs7P/r6+v/7Ozs/6Kiov+YmJj/mJiY/5iYmP+Wlpb/mpqa/6qqqv+qqqr/qqqq/6qq
+        qv+qqqr/qqqq/6qqqv+ioqL/mpqa/6mpqf+pqan/qamp/6mpqf+pqan/qamp/6mpqf+pqan/qamp/5SU
+        lP+np6f/qKio/6ioqP+oqKj/qKio/6ioqP+oqKj/p6en/6enp/+goKD/tra2/9/f3//e3t7/39/f/5iY
+        mPd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0nrkn5PON5/zbk
+        dv835Xf/N+Z5/zjnev846Hv/OOl7/zjpe/846Xv/OOh7/zjoev8353n/N+V4/zfkd/850mz/h8aT/+zs
+        7P/r6+v/7Ozs/6SkpP+0tLT/tLS0/7S0tP+tra3/vLy8/+3t7f/t7e3/7u7u/+7u7v/u7u7/7u7u/+3t
+        7f/V1dX/vLy8/+zs7P/s7Oz/6+vr/+vr6//q6ur/6enp/+np6f/o6Oj/5+fn/6ampv/j4+P/5eXl/+Tk
+        5P/j4+P/4uLi/+Hh4f/h4eH/4ODg/9/f3//Kysr/tra2/9/f3//e3t7/39/f/5iYmPd/f38IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0nr0r5POR6/zfld/835nn/OOh6/zjp
+        e/856nz/Oep9/znqff856n3/Oep9/zjpfP846Hv/N+d5/zfleP85023/h8aU/+3t7f/s7Oz/7e3t/6Sk
+        pP+zs7P/tLS0/7S0tP+tra3/vr6+//Ly8v/y8vL/8vLy//Ly8v/y8vL/8vLy//Ly8v/Y2Nj/vr6+//Hx
+        8f/x8fH/8PDw//Dw8P/v7+//7u7u/+3t7f/t7e3/7Ozs/6enp//o6Oj/6urq/+np6f/o6Oj/5+fn/+bm
+        5v/l5eX/5eXl/+Tk5P/Nzc3/tra2/9/f3//e3t7/39/f/5mZmfd/f38IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0nsEr5PeV7/zfmef846Hr/Oel8/znqff85637/Oux//zrs
+        f/867H//Oux+/znrff856nz/OOh7/zjnev861W7/h8eU/+3t7f/s7Oz/7e3t/6Kiov+cnJz/nJyc/5yc
+        nP+ZmZn/m5ub/6qqqv+qqqr/qqqq/6qqqv+qqqr/qqqq/6qqqv+ioqL/m5ub/6qqqv+qqqr/qqqq/6qq
+        qv+pqan/qamp/6mpqf+pqan/qamp/5SUlP+kqab/pKqm/6Sqpv+kqqb/pKqm/6Sppv+kqab/pKmm/6Sp
+        pf+eop//tra2/9/f3//f39//4ODg/5qamvd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADqJTg0nsUv5Ped9/zjnev846Xz/Oet9/zrsf/867YD/Ou6A/zvugf867oH/Ou2A/zrs
+        f/85637/Oep8/zjoe/861m//h8iV/+3t7f/t7e3/7e3t/6SkpP+zs7P/s7Oz/7Ozs/+tra3/vb29/+/v
+        7//w8PD/8PDw//Dw8P/w8PD/8PDw//Dw8P/X19f/vb29/+7u7v/u7u7/7e3t/+zs7P/s7Oz/6+vr/+rq
+        6v/p6en/6enp/6KnpP841G3/NNVq/zTVav801Wr/NNVq/zTVav801Wr/NNVq/zTVav9Kw3P/tra2/+Dg
+        4P/f39//4ODg/5qamvd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJ
+        Tg0oskz5Puh+/zjpe/856n3/Oux//zrtgP877oH/O++C/zvvg/8774L/O++C/zrugf867H//Oet+/znp
+        fP8713D/h8iV/+7u7v/t7e3/7u7u/6SkpP+zs7P/tLS0/7S0tP+tra3/v7+///T09P/09PT/9PT0//X1
+        9f/19fX/9fX1//T09P/a2tr/v7+///Pz8//y8vL/8vLy//Hx8f/w8PD/7+/v/+/v7//u7u7/7e3t/6Op
+        pf801Wv/Mddp/zHXaf8x12n/Mddp/zHXaf8x12n/Mddp/zHXaf9HxHH/tra2/+Dg4P/f39//4ODg/5qa
+        mvd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqJTg0oskz5Pul//znq
+        fP867H7/Ou2A/zvvgv878IP/PPGE/zzxhP888YT/O/CD/zvvgv867oH/Oux//znqff8713H/h8mW/+7u
+        7v/t7e3/7u7u/6Kiov+ZmZn/mZmZ/5mZmf+Wlpb/mZmZ/6enp/+np6f/p6en/6enp/+np6f/p6en/6en
+        p/+goKD/mZmZ/6ampv+mpqb/pqam/6ampv+mpqb/pqam/6ampv+mpqb/pqam/5KTkv95oYf/eKGG/3ih
+        hv94oYb/eKGG/3ihhv94oYb/eKGG/3ihhv99nIf/tra2/+Dg4P/f39//4ODg/5ubm/d/f38IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqcTg0os035P+mA/znrfv867YD/O++C/zvw
+        g/888oX/PPKG/z3yhv9D4H3/Q998/0Pee/8774L/Ou2A/zrrfv872HL/h8mW/+7u7v/u7u7/7u7u/6Sk
+        pP+zs7P/tLS0/7S0tP+tra3/v7+///T09P/19fX/9fX1//b29v/29vb/9fX1//X19f/a2tr/v7+///Pz
+        8//y8vL/8vLy//Hx8f/w8PD/7+/v/+7u7v/t7e3/7Ozs/6enp//o6Oj/6urq/+np6f/o6Oj/5+fn/+bm
+        5v/l5eX/5OTk/+Pj4//Nzc3/tra2/+Dg4P/f39//4ODg/5ycnPd/f38IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADqcTg0otE75P+qB/zrsf/867oH/PvCE/0HyiP9B84n/QPSJ/z3y
+        hv8fpT7/HqM8/x6jPP888IP/O+6B/zrsgP882XP/h8qW/+7u7v/u7u7/7+/v/6Wlpf+zs7P/tLS0/7S0
+        tP+tra3/wMDA//X19f/29vb/9vb2//f39//39/f/9/f3//b29v/b29v/wMDA//T09P/z8/P/8/Pz//Ly
+        8v/x8fH/8PDw/+/v7//v7+//7u7u/6enp//p6en/6+vr/+rq6v/p6en/6Ojo/+fn5//n5+f/5ubm/+Xl
+        5f/Ozs7/tra2/+Dg4P/f39//4ODg/5ycnPd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADqcTg0otU75QOuB/zrtf/8774L/NtRs/y+3VP8vt1T/Ntdv/z71if824nf/K8JZ/x6j
+        PP888YX/O++C/zvtgP882nT/h8qW/+7u7v/u7u7/7+/v/6Kiov+YmJj/mJiY/5iYmP+Wlpb/mpqa/6mp
+        qf+qqqr/qqqq/6qqqv+qqqr/qqqq/6qqqv+ioqL/mpqa/6mpqf+pqan/qamp/6mpqf+pqan/qamp/6io
+        qP+oqKj/qKio/5SUlP+np6f/qKio/6ioqP+oqKj/qKio/6enp/+np6f/p6en/6enp/+goKD/t7e3/+Dg
+        4P/f39//4ODg/52dnfd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqc
+        Tg0otk/5QOuC/zrtgP878IP/Lsph/x6jPP8mt0//Mtht/z/4i/8/94v/M9dt/ya3T/888ob/PPCD/zvu
+        gf8823X/h8uX/+7u7v/u7u7/7+/v/6SkpP+0tLT/tLS0/7S0tP+tra3/oKCg/7S0tP+1tbX/tbW1/7W1
+        tf+1tbX/tbW1/7W1tf+tra3/oKCg/7S0tP+0tLT/tLS0/7S0tP+0tLT/tLS0/7S0tP+0tLT/tLS0/5yc
+        nP+0tLT/tLS0/7S0tP+0tLT/tLS0/7S0tP+0tLT/tLS0/7S0tP+qqqr/t7e3/+Dg4P/f39//4ODg/52d
+        nfd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqcTg0ptlD5QOyD/zru
+        gf888IP/Lsph/x+lPv8+9In/P/mM/0D5jf9E+ZD/QfiN/z72if8984f/PPGE/zvvgv8923X/iMuX/+/v
+        7//u7u7/7+/v/6Wlpf+zs7P/tLS0/7S0tP+tra3/n5+f/7S0tP+0tLT/tLS0/7S0tP+0tLT/tLS0/7S0
+        tP+tra3/n5+f/7S0tP+0tLT/tLS0/7S0tP+0tLT/tLS0/7S0tP+0tLT/tLS0/5ycnP+zs7P/tLS0/7S0
+        tP+0tLT/tLS0/7S0tP+0tLT/tLS0/7S0tP+qqqr/t7e3/+Dg4P/f39//4ODg/52dnfd/f38IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqcTg0pt1D5QeyD/zvugf888YT/Lsph/x+l
+        Pv8+9Yr/QPqO/0D5jf8wu1j/ONhx/z72iv899If/PPKF/zvvgv893Hb/iMuX/+/v7//u7u7/7+/v/6Oj
+        o/+cnJz/nJyc/5ycnP+ZmZn/lZWV/5ycnP+dnZ3/nZ2d/52dnf+dnZ3/nZ2d/52dnf+ZmZn/lZWV/5yc
+        nP+cnJz/nJyc/5ycnP+cnJz/nJyc/5ycnP+cnJz/nJyc/5KSkv+cnJz/nJyc/5ycnP+cnJz/nJyc/5yc
+        nP+cnJz/nJyc/5ycnP+YmJj/uLi4/+Dg4P/f39//4ODg/56envd/f38IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADqcTg0puFH5QeyD/zvugf888YT/Lsti/x+kPv9E4X//RuWC/0Xk
+        gf8fpT7/L85l/z73iv899Ij/PPKF/zvvg/893Hb/iMyY/+/v7//u7u7/7+/v/+3t7f/u7u7/7+/v//Dw
+        8P/w8PD/8fHx//Pz8//z8/P/9PT0//X19f/19fX/9fX1//T09P/z8/P/8vLy//Hx8f/w8PD/7+/v/+7u
+        7v/u7u7/7e3t/+zs7P/r6+v/6urq/+jo6P/o6Oj/5+fn/+bm5v/l5eX/5OTk/+Pj4//i4uL/4eHh/+Hh
+        4f/g4OD/4ODg/+Dg4P/f39//4ODg/56envd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADqcTg0puVH5QeyD/zvugf888YT/Lsti/x6jPP8eozz/HqM8/x6jPP8eozz/L85l/z73
+        i/899Ij/PPKF/zzvg/893Xb/iMyY/+7u7v/u7u7/7+/v//Dw8P/x8fH/8vLy//Pz8//09PT/9fX1//b2
+        9v/29vb/9/f3//j4+P/4+Pj/+Pj4//f39//29vb/9fX1//T09P/z8/P/8vLy//Hx8f/w8PD/8PDw/+/v
+        7//u7u7/7e3t/+zs7P/r6+v/6urq/+np6f/o6Oj/5+fn/+bm5v/l5eX/5OTk/+Pj4//i4uL/4eHh/+Dg
+        4P/f39//4ODg/6CgoPd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqc
+        Tg0sulP5Re2G/zvugf888YT/Oel+/zbhdv8343j/N+V6/zjme/845Xv/O++D/z73iv899Ij/PPKF/zzv
+        g/9E3nr/iM2Y/+7u7v/u7u7/7+/v//Dw8P/x8fH/8vLy//Pz8//09PT/9PT0//X19f/29vb/9/f3//f3
+        9//39/f/9/f3//b29v/29vb/9fX1//T09P/z8/P/8vLy//Hx8f/w8PD/7+/v/+7u7v/u7u7/7e3t/+zs
+        7P/r6+v/6urq/+np6f/o6Oj/5+fn/+bm5v/l5eX/5OTk/+Pj4//i4uL/4eHh/+Dg4P/f39//4eHh/6Gh
+        ofd/f38IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+fXwgsuFL3T+6N/zvu
+        gf888YT/PfOH/z72if8/+Iz/QPqO/0D7j/9A+o7/P/mM/z72iv899If/PPGF/zzvg/9N34H/iM2Z/+7u
+        7v/u7u7/7+/v//Dw8P/x8fH/8fHx//Ly8v/z8/P/9PT0//X19f/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/19fX/9PT0//T09P/z8/P/8vLy//Hx8f/w8PD/7+/v/+7u7v/t7e3/7Ozs/+zs7P/r6+v/6urq/+np
+        6f/o6Oj/5+fn/+bm5v/l5eX/5OTk/+Pj4//i4uL/4eHh/+Dg4P/f39//4+Pj/6CgoPVmZmYFAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkq0a9V+KJ/1rwlf9W8pT/V/SX/1j2
+        mf9Z+Jv/Wfqc/1r6nf9a+pz/Wfmb/1j3mf9Y9Zf/V/OV/1fxk/9Y4Ij/ic+a//Hx8f/x8fH/8vLy//Pz
+        8//z8/P/9PT0//X19f/19fX/9vb2//b29v/39/f/9/f3//j4+P/4+Pj/9/f3//f39//39/f/9vb2//b2
+        9v/19fX/9PT0//T09P/z8/P/8vLy//Ly8v/x8fH/8PDw//Dw8P/v7+//7u7u/+3t7f/s7Oz/7Ozs/+vr
+        6//q6ur/6urq/+np6f/o6Oj/5+fn/+fn5//n5+f/19fX/46OjrcAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArp0YdJKxGvTC6V/c2vlz5Nr5d+Ta+Xfk2v175Nr9e+Ta/
+        Xvk2v175Nr9e+Ta/Xfk2vl35Nr5d+TW9XPkwuVb5Yql0+Kenp/enp6f3p6en96enp/enp6f3p6en96en
+        p/enp6f3p6en96enp/eoqKj3qKio96ioqPeoqKj3qKio96ioqPeoqKj3p6en96enp/enp6f3p6en96en
+        p/enp6f3p6en96enp/enp6f3pqam96ampvempqb3pqam96ampvempqb3pqam96ampvelpaX3paWl96Wl
+        pfelpaX3paWl96Wlpfejo6P0kJCQtomJiRoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+fXwg6nGINOpxiDTqcYg06nGINOpxiDTqcYg06nGINOpxiDTqc
+        Yg06nGINOpxiDTqcYg06nGINZplmCn9/fwh/f38If39/CH9/fwh/f38If39/CH9/fwh/f38If39/CH9/
+        fwh/f38If39/CH9/fwh/f38If39/CH9/fwh/f38If39/CH9/fwh/f38If39/CH9/fwh/f38If39/CH9/
+        fwh/f38If39/CH9/fwh/f38If39/CH9/fwh/f38If39/CH9/fwh/f38If39/CH9/fwh/f38If39/CH9/
+        fwhmZmYFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD///////////8A
+        AAD///////////8AAAD8AAAAAAAAAD8AAADwAAAAAAAAAA8AAADgAAAAAAAAAAcAAADgAAAAAAAAAAcA
+        AADwAAAAAAAAAA8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8A
+        AAD4AAAAAAAAAB8AAAD4AAAAAAAAAB8AAAD8AAAAAAAAAD8AAAD8AAAAAAAAAD8AAAD/AAAAAAAAAP8A
+        AAD///////////8AAAD///////////8AAAD///////////8AAAD///////////8AAAD///////////8A
+        AAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>JJB表格检查工具</value>
+  </data>
+  <data name="&gt;&gt;memberBindingSource.Name" xml:space="preserve">
+    <value>memberBindingSource</value>
+  </data>
+  <data name="&gt;&gt;memberBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
