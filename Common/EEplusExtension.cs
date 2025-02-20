@@ -86,13 +86,32 @@ namespace Common
                 }
             }
 
-            //复制纯色填充的背景色
-            //if (newCell.Style.Fill.PatternType == OfficeOpenXml.Style.ExcelFillStyle.Solid)
-            //{
-            //    cell.Style.Fill.PatternType = newCell.Style.Fill.PatternType;
-            //    var backgroundColor = ColorTranslator.FromHtml(newCell.Style.Fill.BackgroundColor.Rgb);
-            //    cell.Style.Fill.BackgroundColor.SetColor(backgroundColor);
-            //}
+            // 复制纯色填充的背景色
+            if (newCell.Style.Fill.PatternType == OfficeOpenXml.Style.ExcelFillStyle.Solid)
+            {
+                string backgroundRgbValue = newCell.Style.Fill.BackgroundColor.Rgb;
+                if (backgroundRgbValue.Length >= 6)
+                {
+                    cell.Style.Fill.PatternType = newCell.Style.Fill.PatternType;
+                    string backgroundHexColor = "#" + backgroundRgbValue.Substring(backgroundRgbValue.Length - 6);
+                    var backgroundColor = ColorTranslator.FromHtml(backgroundHexColor);
+                    cell.Style.Fill.SetBackground(backgroundColor);
+                }
+            }
+
+            string fontRgbValue = newCell.Style.Font.Color.Rgb;
+            if (fontRgbValue != null && fontRgbValue.Length >= 6)
+            {
+                string fontHexColor = "#" + fontRgbValue.Substring(fontRgbValue.Length - 6);
+                var fontColor = ColorTranslator.FromHtml(fontHexColor);
+                cell.Style.Font.Color.SetColor(fontColor);
+            }
+        }
+
+        public static void MarkYellow(this ExcelRange cell)
+        {
+            cell.Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
+            cell.Style.Fill.SetBackground(ColorTranslator.FromHtml("#FFFF00"));
         }
 
         public static void SetCell(this ExcelRange cell, string value)

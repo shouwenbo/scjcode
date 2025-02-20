@@ -20,6 +20,7 @@ namespace BatchTranslateApp
             this.btn_normal_translate.Click += (s, e) => SelectForm(this.btn_normal_translate, new NormalTranslateForm());
             this.btn_jjb_translate.Click += (s, e) => SelectForm(this.btn_jjb_translate, new JJBTranslateForm());
             this.btn_once_open_translate.Click += (s, e) => SelectForm(this.btn_once_open_translate, new OnceOpenTranslateForm());
+            this.btn_twice_open_translate.Click += (s, e) => SelectForm(this.btn_twice_open_translate, new TwiceOpenTranslateForm());
             SelectForm(this.btn_normal_translate, new NormalTranslateForm());
         }
 

@@ -29,6 +29,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="TwiceOpenTranslateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="OnceOpenTranslateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -42,6 +45,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="template\一开韩文模板.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="template\二开韩文模板.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="template\二开韩文模板（未加密）.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="template\韩文模板.xlsx">

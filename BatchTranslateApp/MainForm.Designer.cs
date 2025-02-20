@@ -32,6 +32,7 @@
             panel_content = new Panel();
             lbl_title = new Label();
             panel_tab_list = new Panel();
+            btn_twice_open_translate = new Button();
             btn_once_open_translate = new Button();
             btn_jjb_translate = new Button();
             btn_normal_translate = new Button();
@@ -60,6 +61,7 @@
             // 
             // panel_tab_list
             // 
+            panel_tab_list.Controls.Add(btn_twice_open_translate);
             panel_tab_list.Controls.Add(btn_once_open_translate);
             panel_tab_list.Controls.Add(btn_jjb_translate);
             panel_tab_list.Controls.Add(btn_normal_translate);
@@ -67,6 +69,15 @@
             panel_tab_list.Name = "panel_tab_list";
             panel_tab_list.Size = new Size(137, 332);
             panel_tab_list.TabIndex = 1;
+            // 
+            // btn_twice_open_translate
+            // 
+            btn_twice_open_translate.Location = new Point(0, 87);
+            btn_twice_open_translate.Name = "btn_twice_open_translate";
+            btn_twice_open_translate.Size = new Size(137, 23);
+            btn_twice_open_translate.TabIndex = 3;
+            btn_twice_open_translate.Text = "二开翻译";
+            btn_twice_open_translate.UseVisualStyleBackColor = true;
             // 
             // btn_once_open_translate
             // 
@@ -106,7 +117,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Mainform";
-            Text = "韩文翻译工具（版本：42020402）";
+            Text = "韩文翻译工具（版本：42022401）";
             FormClosing += Mainform_FormClosing;
             panel_content.ResumeLayout(false);
             panel_content.PerformLayout();
@@ -122,5 +133,6 @@
         private Label lbl_title;
         private Button btn_jjb_translate;
         private Button btn_once_open_translate;
+        private Button btn_twice_open_translate;
     }
 }

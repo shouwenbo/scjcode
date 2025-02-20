@@ -34,6 +34,7 @@ namespace BatchTranslateApp
                     if (files.Length > 0)
                     {
                         var file = files[0];
+                        
                         onFileSelected(file);
                     }
                 }
@@ -48,6 +49,11 @@ namespace BatchTranslateApp
                     onFileSelected(file);
                 }
             };
+        }
+
+        public void InitExcelSelector(GroupBox gbx, Button selectFileBtn)
+        {
+            InitExcelSelector(gbx, selectFileBtn, str => { });
         }
     }
 }
