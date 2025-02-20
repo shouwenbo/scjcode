@@ -35,6 +35,7 @@
             btn_once_open_translate = new Button();
             btn_jjb_translate = new Button();
             btn_normal_translate = new Button();
+            btn_twice_open_translate = new Button();
             panel_content.SuspendLayout();
             panel_tab_list.SuspendLayout();
             SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             // panel_tab_list
             // 
+            panel_tab_list.Controls.Add(btn_twice_open_translate);
             panel_tab_list.Controls.Add(btn_once_open_translate);
             panel_tab_list.Controls.Add(btn_jjb_translate);
             panel_tab_list.Controls.Add(btn_normal_translate);
@@ -95,6 +97,15 @@
             btn_normal_translate.Text = "普通翻译";
             btn_normal_translate.UseVisualStyleBackColor = true;
             // 
+            // btn_twice_open_translate
+            // 
+            btn_twice_open_translate.Location = new Point(0, 87);
+            btn_twice_open_translate.Name = "btn_twice_open_translate";
+            btn_twice_open_translate.Size = new Size(137, 23);
+            btn_twice_open_translate.TabIndex = 3;
+            btn_twice_open_translate.Text = "二开翻译";
+            btn_twice_open_translate.UseVisualStyleBackColor = true;
+            // 
             // Mainform
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -122,5 +133,6 @@
         private Label lbl_title;
         private Button btn_jjb_translate;
         private Button btn_once_open_translate;
+        private Button btn_twice_open_translate;
     }
 }
