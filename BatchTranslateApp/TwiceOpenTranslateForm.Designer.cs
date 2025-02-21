@@ -37,8 +37,8 @@
             lbl_once_file_name = new Label();
             btn_select_once_file = new Button();
             lbl_once_file_path = new Label();
-            lbl_cdb_password = new Label();
-            txt_cdb_password = new TextBox();
+            lbl_once_password = new Label();
+            txt_once_password = new TextBox();
             btn_select_drop_file = new Button();
             lbl_drop_file_path = new Label();
             gbx_drop_file = new GroupBox();
@@ -48,6 +48,10 @@
             gbx_change_file = new GroupBox();
             lbl_change_file_name = new Label();
             btn_run = new Button();
+            txt_drop_password = new TextBox();
+            lbl_drop_password = new Label();
+            txt_change_password = new TextBox();
+            lbl_change_password = new Label();
             gbx_once_file.SuspendLayout();
             gbx_drop_file.SuspendLayout();
             gbx_change_file.SuspendLayout();
@@ -55,12 +59,12 @@
             // 
             // txt_check_result
             // 
-            txt_check_result.Location = new Point(409, 146);
+            txt_check_result.Location = new Point(409, 173);
             txt_check_result.Multiline = true;
             txt_check_result.Name = "txt_check_result";
             txt_check_result.ReadOnly = true;
             txt_check_result.ScrollBars = ScrollBars.Vertical;
-            txt_check_result.Size = new Size(296, 139);
+            txt_check_result.Size = new Size(296, 112);
             txt_check_result.TabIndex = 6;
             // 
             // lbl_task
@@ -139,22 +143,22 @@
             lbl_once_file_path.TabIndex = 3;
             lbl_once_file_path.Text = "或将 表格（一开） 拖拽到此处";
             // 
-            // lbl_cdb_password
+            // lbl_once_password
             // 
-            lbl_cdb_password.AutoSize = true;
-            lbl_cdb_password.Location = new Point(13, 152);
-            lbl_cdb_password.Name = "lbl_cdb_password";
-            lbl_cdb_password.Size = new Size(68, 17);
-            lbl_cdb_password.TabIndex = 13;
-            lbl_cdb_password.Text = "表格密码：";
+            lbl_once_password.AutoSize = true;
+            lbl_once_password.Location = new Point(13, 145);
+            lbl_once_password.Name = "lbl_once_password";
+            lbl_once_password.Size = new Size(116, 17);
+            lbl_once_password.TabIndex = 13;
+            lbl_once_password.Text = "表格（一开）密码：";
             // 
-            // txt_cdb_password
+            // txt_once_password
             // 
-            txt_cdb_password.Location = new Point(96, 149);
-            txt_cdb_password.Name = "txt_cdb_password";
-            txt_cdb_password.Size = new Size(100, 23);
-            txt_cdb_password.TabIndex = 14;
-            txt_cdb_password.Text = "wh0217";
+            txt_once_password.Location = new Point(137, 142);
+            txt_once_password.Name = "txt_once_password";
+            txt_once_password.Size = new Size(100, 23);
+            txt_once_password.TabIndex = 14;
+            txt_once_password.Text = "wh12000";
             // 
             // btn_select_drop_file
             // 
@@ -248,7 +252,7 @@
             // 
             // btn_run
             // 
-            btn_run.Location = new Point(247, 146);
+            btn_run.Location = new Point(247, 173);
             btn_run.Name = "btn_run";
             btn_run.Size = new Size(134, 26);
             btn_run.TabIndex = 15;
@@ -256,16 +260,54 @@
             btn_run.UseVisualStyleBackColor = true;
             btn_run.Click += btn_run_Click;
             // 
+            // txt_drop_password
+            // 
+            txt_drop_password.Location = new Point(371, 142);
+            txt_drop_password.Name = "txt_drop_password";
+            txt_drop_password.Size = new Size(100, 23);
+            txt_drop_password.TabIndex = 17;
+            txt_drop_password.Text = "wh0217";
+            // 
+            // lbl_drop_password
+            // 
+            lbl_drop_password.AutoSize = true;
+            lbl_drop_password.Location = new Point(247, 145);
+            lbl_drop_password.Name = "lbl_drop_password";
+            lbl_drop_password.Size = new Size(116, 17);
+            lbl_drop_password.TabIndex = 16;
+            lbl_drop_password.Text = "表格（韩掉）密码：";
+            // 
+            // txt_change_password
+            // 
+            txt_change_password.Location = new Point(605, 142);
+            txt_change_password.Name = "txt_change_password";
+            txt_change_password.Size = new Size(100, 23);
+            txt_change_password.TabIndex = 19;
+            txt_change_password.Text = "wh0217";
+            // 
+            // lbl_change_password
+            // 
+            lbl_change_password.AutoSize = true;
+            lbl_change_password.Location = new Point(481, 145);
+            lbl_change_password.Name = "lbl_change_password";
+            lbl_change_password.Size = new Size(116, 17);
+            lbl_change_password.TabIndex = 18;
+            lbl_change_password.Text = "表格（变更）密码：";
+            // 
             // TwiceOpenTranslateForm
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(718, 294);
+            Controls.Add(txt_change_password);
+            Controls.Add(lbl_change_password);
+            Controls.Add(txt_drop_password);
+            Controls.Add(lbl_drop_password);
             Controls.Add(btn_run);
             Controls.Add(gbx_change_file);
             Controls.Add(gbx_drop_file);
-            Controls.Add(txt_cdb_password);
-            Controls.Add(lbl_cdb_password);
+            Controls.Add(txt_once_password);
+            Controls.Add(lbl_once_password);
             Controls.Add(gbx_once_file);
             Controls.Add(txt_check_result);
             Controls.Add(lbl_task_title);
@@ -295,8 +337,8 @@
         private GroupBox gbx_once_file;
         private Button btn_select_once_file;
         private Label lbl_once_file_path;
-        private Label lbl_cdb_password;
-        private TextBox txt_cdb_password;
+        private Label lbl_once_password;
+        private TextBox txt_once_password;
         private Button btn_select_drop_file;
         private Label lbl_drop_file_path;
         private GroupBox gbx_drop_file;
@@ -307,5 +349,9 @@
         private Label lbl_once_file_name;
         private Label lbl_drop_file_name;
         private Label lbl_change_file_name;
+        private TextBox txt_drop_password;
+        private Label lbl_drop_password;
+        private TextBox txt_change_password;
+        private Label lbl_change_password;
     }
 }
