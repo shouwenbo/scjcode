@@ -150,7 +150,7 @@ namespace BatchTranslateApp
                 {
                     saveFileDialog.Filter = "Excel 工作簿 (*.xlsx)|*.xlsx";
                     saveFileDialog.Title = "保存 Excel 文件";
-                    saveFileDialog.FileName = $"一开（{string.Join(" ", periods)}） 韩.xlsx";
+                    saveFileDialog.FileName = $"二开（{string.Join(" ", periods)}） 韩.xlsx";
 
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
@@ -475,28 +475,22 @@ namespace BatchTranslateApp
 
                                         #endregion
 
-                                        #region 排序整理
-
-                                        var resultList = onceStudentList
-                                        .OrderBy(member => member.Period.Text)
-                                        .ThenBy(member => dropStudentList.Exists(p => p.Period.Text == member.Period.Text && p.ChineseName.Text == member.ChineseName.Text) ? 1 : 0)
-                                        .ToList();
-
-                                        #endregion
-
                                         #region 掉落信息设置
 
-                                        foreach (var member in resultList)
+                                        foreach (var member in onceStudentList)
                                         {
                                             var dropMember = dropStudentList.FirstOrDefault(p => p.Period.Text == member.Period.Text && p.ChineseName.Text == member.ChineseName.Text);
                                             if (dropMember != null)
                                             {
-
-                                                member.DropType.SetCell(dropMember.DropType);
+                                                if (dropMember.DropType.Text != "초등")
+                                                {
+                                                    member.DropType.SetCell(dropMember.DropType);
+                                                }
                                                 member.DropStep.SetCell(dropMember.DropStep);
                                                 member.DropReason.SetCell(dropMember.DropReason);
                                                 member.DropManage.SetCell(dropMember.DropManage);
                                                 member.DropReasonDesc.SetCell(dropMember.DropReasonDesc);
+                                                member.IsEnding.SetCell("", true);
                                             }
 
                                             /*
@@ -516,10 +510,60 @@ namespace BatchTranslateApp
 
                                         #endregion
 
+                                        #region 重新计算部署
+
+                                        foreach (var member in onceStudentList)
+                                        {
+                                            if (string.IsNullOrEmpty(member.DropStep.Text))
+                                            {
+                                                if (int.TryParse(member.IDCardBirth.Text.Substring(0, 4), out int birthYear))
+                                                {
+                                                    var age = DateTime.Now.Year - birthYear;
+
+                                                    // 壮年/妇女 → 老年
+                                                    if ((member.Department.Text == "장년" || member.Department.Text == "부녀") && age >= 70)
+                                                    {
+                                                        member.Department.SetCell("자문");
+                                                        member.Department.MarkYellow();
+                                                    }
+
+                                                    // 壮年/妇女/老年 → 青年
+                                                    if (member.OriAge >= 40 && age < 40)
+                                                    {
+                                                        member.Department.MarkGreen();
+                                                        member.Department.AddComment("部署计算失败，因为不知道是否有子女，请手动调整");
+                                                    }
+
+                                                    // 老年 → 壮年/妇女
+                                                    if ((member.Department.Text == "자문") && (age >= 40 && age < 70))
+                                                    {
+                                                        member.Department.SetCell(member.Gender.Text == "남" ? "장년" : "부녀");
+                                                        member.Department.MarkYellow();
+                                                    }
+
+                                                    // 青年 → 壮年/妇女
+                                                    if ((member.Department.Text == "청년") && (age >= 40 && age < 70))
+                                                    {
+                                                        member.Department.SetCell(member.Gender.Text == "남" ? "장년" : "부녀");
+                                                        member.Department.MarkYellow();
+                                                    }
+
+                                                    // 青年 → 老年
+                                                    if ((member.Department.Text == "청년") && age >= 70)
+                                                    {
+                                                        member.Department.SetCell("자문");
+                                                        member.Department.MarkYellow();
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        #endregion
+
                                         #region 掉落的学生整行改变字体颜色
 
                                         var targetColor = Color.FromArgb(0, 112, 192); // 初级Drop颜色
-                                        foreach (var member in resultList)
+                                        foreach (var member in onceStudentList)
                                         {
                                             if (dropStudentList.Exists(p => (p.Period.Text == member.Period.Text && p.ChineseName.Text == member.ChineseName.Text)))
                                             {
@@ -541,9 +585,12 @@ namespace BatchTranslateApp
 
                                         #region 数据变更
 
-                                        foreach (var member in resultList)
+                                        foreach (var member in onceStudentList)
                                         {
-                                            var changeMember = changeStudentList.FirstOrDefault(p => p.Period.Text == member.Period.Text && p.ChineseName.Text == member.ChineseName.Text);
+                                            var changeMember = changeStudentList
+                                            .FirstOrDefault(p => p.Period.Text == member.Period.Text && 
+                                                                 p.ChineseName.Text == member.ChineseName.Text && 
+                                                                 p.IDCardBirth.Text == member.IDCardBirth.Text);
                                             if (changeMember != null)
                                             {
                                                 if (member.ChineseName.Text != changeMember.NewChineseName.Text)
@@ -561,6 +608,10 @@ namespace BatchTranslateApp
                                                 if (member.IDCardBirth.Text != changeMember.NewIDCardBirth.Text)
                                                 {
                                                     changeMember.NewIDCardBirth.MarkYellow();
+                                                }
+                                                if (int.TryParse(member.IDCardBirth.Text.Substring(0, 4), out int oriBirthYear))
+                                                {
+                                                    member.OriAge = DateTime.Now.Year - oriBirthYear; // 记录变更前的年龄
                                                 }
                                                 member.IDCardBirth.SetCell(changeMember.NewIDCardBirth);
 
@@ -602,30 +653,71 @@ namespace BatchTranslateApp
                                             }
                                         }
 
+                                        #endregion                 
+
+                                        #region 排序整理
+
+                                        var departmentSortDic = new Dictionary<string, int>
+                                        {
+                                            { "자문", 1 },
+                                            { "장년", 2 },
+                                            { "부녀", 3 },
+                                            { "청년", 4 }
+                                        };
+
+                                        const int defaultSortValue = int.MaxValue;
+
+                                        var resultList = onceStudentList
+                                        // 按照期数进行排序
+                                        .OrderBy(member => member.Period.Text)
+                                        // 按照是否掉落进行排序
+                                        .ThenBy(member => !string.IsNullOrEmpty(member.DropStep.Text) ? 1 : 0)
+                                        // 对掉落的学生进行课程排序
+                                        .ThenByDescending(member => 
+                                        {
+                                            if (!string.IsNullOrEmpty(member.DropStep.Text))
+                                            {
+                                                var courseNumber = Regex.Match(member.DropStep.Text, @"\d+").Value;
+                                                return int.TryParse(courseNumber, out int courseNumberMatchResult) ? courseNumberMatchResult : 0;
+                                            }
+                                            return 0;
+                                        })
+                                        // 对未掉落的学生进行老壮妇青排序
+                                        .ThenBy(student => string.IsNullOrEmpty(student.DropStep.Text)
+                                                           ? departmentSortDic.GetValueOrDefault(student.Department.Text, defaultSortValue)
+                                                           : defaultSortValue)
+                                        // 对未掉落的学生进行老壮妇青排序后再进行生日排序
+                                        .ThenBy(student => string.IsNullOrEmpty(student.DropStep.Text)
+                                                           ? student.IDCardBirth.Text
+                                                           : "")
+                                        .ToList();
+
+                                        #endregion             
+
+                                        #region 重新计算部署后，再按照老壮妇青排序
+
+                                        // var departmentSortDic = new Dictionary<string, int>
+                                        // {
+                                        //     { "자문", 1 },
+                                        //     { "장년", 2 },
+                                        //     { "부녀", 3 },
+                                        //     { "청년", 4 }
+                                        // };
+                                        // 
+                                        // const int defaultSortValue = int.MaxValue;
+                                        // 
+                                        // resultList = resultList
+                                        //     .OrderBy(student => student.Period.Text)
+                                        //     .ThenBy(student =>
+                                        //     {
+                                        //         return departmentSortDic.ContainsKey(student.Department.Text)
+                                        //             ? departmentSortDic[student.Department.Text]
+                                        //             : defaultSortValue;
+                                        //     })
+                                        //     .ThenBy(student => student.IDCardBirth.Text) // 按年龄从大到小排序
+                                        //     .ToList();
+
                                         #endregion
-
-                                        //var departmentSortDic = new Dictionary<string, int>
-                                        //{
-                                        //    { "자문", 1 },
-                                        //    { "장년", 2 },
-                                        //    { "부녀", 3 },
-                                        //    { "청년", 4 }
-                                        //};
-
-                                        //const int defaultSortValue = int.MaxValue;
-
-                                        //var sortedList = list
-                                        //    .OrderBy(student => student.Period.Text)
-                                        //    .ThenBy(student =>
-                                        //    {
-                                        //        // 使用字典中的值进行排序，如果不在字典中则使用默认排序值
-                                        //        return departmentSortDic.ContainsKey(student.Department.Text)
-                                        //            ? departmentSortDic[student.Department.Text]
-                                        //            : defaultSortValue;
-                                        //    })
-                                        //    .ThenBy(student => student.IDCardBirth.Text) // 按年龄从大到小排序
-                                        //    .ToList();
-
 
                                         Output(resultList);
                                     }
@@ -730,6 +822,8 @@ namespace BatchTranslateApp
         public ExcelRange StudyFruitNumber { get; set; } // BG
         public ExcelRange StudyRoomDetail { get; set; } // BH
         public ExcelRange StudyRoomNumber { get; set; } // BI
+
+        public int OriAge { get; set; } // 原始年龄
     }
 
     public class PeriodOnceStudentList

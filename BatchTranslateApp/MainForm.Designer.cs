@@ -117,7 +117,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Mainform";
-            Text = "韩文翻译工具（版本：42022401）";
+            Text = "韩文翻译工具（版本：1.0.1）";
             FormClosing += Mainform_FormClosing;
             panel_content.ResumeLayout(false);
             panel_content.PerformLayout();

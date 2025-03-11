@@ -114,9 +114,15 @@ namespace Common
             cell.Style.Fill.SetBackground(ColorTranslator.FromHtml("#FFFF00"));
         }
 
-        public static void SetCell(this ExcelRange cell, string value)
+        public static void MarkGreen(this ExcelRange cell)
         {
-            if (!string.IsNullOrEmpty(value))
+            cell.Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
+            cell.Style.Fill.SetBackground(ColorTranslator.FromHtml("#00FF00"));
+        }
+
+        public static void SetCell(this ExcelRange cell, string value, bool allowEmpty = false)
+        {
+            if (!string.IsNullOrEmpty(value) || allowEmpty)
             {
                 if (int.TryParse(value, out int numberValue))
                 {
