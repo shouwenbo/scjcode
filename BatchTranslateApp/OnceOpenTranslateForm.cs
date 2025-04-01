@@ -161,7 +161,7 @@ namespace BatchTranslateApp
                     sheet.Cells[rowIndex, 16].SetCell(string.IsNullOrEmpty(member.ReStudy.Text) ? "1" : "2");
                     sheet.Cells[rowIndex, 17].SetCell(member.CDType);
                     sheet.Cells[rowIndex, 18].SetCell(member.Times);
-                    sheet.Cells[rowIndex, 19].SetCell("0");
+                    sheet.Cells[rowIndex, 19].SetCell(""); // S列
                     sheet.Cells[rowIndex, 21].SetCell(""); // cbd数据缺失，暂时默认为
                     sheet.Cells[rowIndex, 22].SetCell(""); // cbd数据缺失，暂时默认为
                     sheet.Cells[rowIndex, 23].SetCell(""); // cbd数据缺失，暂时默认为

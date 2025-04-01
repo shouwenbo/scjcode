@@ -86,7 +86,10 @@ namespace BatchTranslateApp
                     sheet.Cells[rowIndex, 16].SetCell(member.IsFirstTime);  // 设置第16列（P列）
                     sheet.Cells[rowIndex, 17].SetCell(member.CDType);  // 设置第17列（Q列）
                     sheet.Cells[rowIndex, 18].SetCell(member.RoomTimes);  // 设置第18列（R列）
-                    sheet.Cells[rowIndex, 19].SetCell(member.RoomOnce);  // 设置第19列（S列）
+
+                    // sheet.Cells[rowIndex, 19].SetCell(member.RoomOnce);  // 设置第19列（S列）
+                    sheet.Cells[rowIndex, 19].SetCell("");
+
                     sheet.Cells[rowIndex, 20].SetCell(member.RoomEnd);  // 设置第20列（T列）
                     sheet.Cells[rowIndex, 21].SetCell(member.PreacherName);  // 设置第21列（U列）
                     sheet.Cells[rowIndex, 22].SetCell(member.PreacherNameOnce);  // 设置第22列（V列）
