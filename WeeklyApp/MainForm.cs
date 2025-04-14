@@ -205,7 +205,7 @@ namespace WeeklyApp
             string clipboardText = Clipboard.GetText();
             if (!string.IsNullOrEmpty(clipboardText))
             {
-                new FallManager_410920().ParseData(clipboardText);
+                new FallManager_420407().ParseData(clipboardText);
             }
             else
             {
@@ -225,7 +225,7 @@ namespace WeeklyApp
             string clipboardText = Clipboard.GetText();
             if (!string.IsNullOrEmpty(clipboardText))
             {
-                new FallManager_410920().ParseData(clipboardText);
+                new FallManager_420407().ParseData(clipboardText);
             }
             else
             {

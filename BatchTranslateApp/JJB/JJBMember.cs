@@ -247,6 +247,18 @@ namespace BatchTranslateApp
         /// </summary>
         public List<EducationInfo> EducationList { get; set; }
 
+        [PropertyName("职业分类")]
+        public string JobType { get; set; }
+
+        [PropertyName("其他职业")]
+        public string JobOther { get; set; }
+
+        [PropertyName("工作单位名称")]
+        public string JobCompany { get; set; }
+
+        [PropertyName("职位")]
+        public string JobName { get; set; }
+
         /// <summary>
         /// 兄弟姐妹关系
         /// </summary>

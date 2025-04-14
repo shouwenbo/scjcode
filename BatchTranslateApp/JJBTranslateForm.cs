@@ -109,6 +109,10 @@ namespace BatchTranslateApp
                         sheet.GetRow(35).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Status);
                         sheet.GetRow(36).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Period);
                     }
+                    sheet.GetRow(37).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobType);
+                    sheet.GetRow(38).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobOther);
+                    sheet.GetRow(39).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobCompany);
+                    sheet.GetRow(40).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobName);
                     sheet.GetRow(46).GetCell(i + 2).SetCellValueIfNotEmpty(member.SiblingRelationship);
                     if (member.FamilyMemberList.Count > 0)
                     {
@@ -235,6 +239,22 @@ namespace BatchTranslateApp
                             if (!string.IsNullOrEmpty(member.ChurchName))
                             {
                                 member.ChurchName = TranslateHelper.SentenceToKorean(member.ChurchName);
+                            }
+                            if (!string.IsNullOrEmpty(member.JobType))
+                            {
+                                member.JobType = TranslateHelper.SentenceToKorean(member.JobType);
+                            }
+                            if (!string.IsNullOrEmpty(member.JobOther))
+                            {
+                                member.JobOther = TranslateHelper.SentenceToKorean(member.JobOther);
+                            }
+                            if (!string.IsNullOrEmpty(member.JobCompany))
+                            {
+                                member.JobCompany = TranslateHelper.SentenceToKorean(member.JobCompany);
+                            }
+                            if (!string.IsNullOrEmpty(member.JobName))
+                            {
+                                member.JobName = TranslateHelper.SentenceToKorean(member.JobName);
                             }
                             if (!string.IsNullOrEmpty(member.YearsOfFaith))
                             {

@@ -186,6 +186,10 @@ namespace JJBWinformApp
                             YearsOfFaith = GetColumnString(sheet, column, "信仰时间"),
                             MaternalFaith = GetColumnString(sheet, column, "母胎信仰"),
                             FinalEducation = GetColumnString(sheet, column, "最终学历"),
+                            JobType = GetColumnString(sheet, column, "职业分类"),
+                            JobOther = GetColumnString(sheet, column, "其他职业"),
+                            JobCompany = GetColumnString(sheet, column, "工作单位名称"),
+                            JobName = GetColumnString(sheet, column, "职位"),
                             SiblingRelationship = GetColumnString(sheet, column, "兄弟姐妹关系"),
                             EducationList = new List<EducationInfo>(),
                             FamilyMemberList = new List<FamilyMemberInfo>()

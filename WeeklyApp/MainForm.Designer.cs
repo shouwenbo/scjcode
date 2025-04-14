@@ -59,7 +59,7 @@
             lbl_version.Name = "lbl_version";
             lbl_version.Size = new Size(117, 17);
             lbl_version.TabIndex = 1;
-            lbl_version.Text = "版本号：411208_01";
+            lbl_version.Text = "版本号：420407_01";
             // 
             // lbl_select_zbjl_file_1
             // 

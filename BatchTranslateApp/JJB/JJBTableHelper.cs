@@ -48,7 +48,11 @@ namespace BatchTranslateApp
                     // new RowIndexItem(){ Index = 25, Name = "学历信息1专业" },
                     // new RowIndexItem(){ Index = 26, Name = "学历信息1状态" },
                     // new RowIndexItem(){ Index = 27, Name = "学历信息1期间" },
-
+                    
+                    new RowIndexItem(){ Index = 28, Name = "职业分类" },
+                    new RowIndexItem(){ Index = 29, Name = "其他职业" },
+                    new RowIndexItem(){ Index = 30, Name = "工作单位名称" },
+                    new RowIndexItem(){ Index = 31, Name = "职位" },
                     new RowIndexItem(){ Index = 37, Name = "兄弟姐妹关系" },
                     new RowIndexItem(){ Index = 39, Name = "家族事项1姓名" },
                     new RowIndexItem(){ Index = 40, Name = "家族事项1性别" },
@@ -334,6 +338,10 @@ namespace BatchTranslateApp
                         MaternalFaith = GetColumnString(sheet, column, "母胎信仰"),
                         Email = GetColumnString(sheet, column, "邮箱"),
                         FinalEducation = GetColumnString(sheet, column, "最终学历"),
+                        JobType = GetColumnString(sheet, column, "职业分类"),
+                        JobOther = GetColumnString(sheet, column, "其他职业"),
+                        JobCompany = GetColumnString(sheet, column, "工作单位名称"),
+                        JobName = GetColumnString(sheet, column, "职位"),
                         SiblingRelationship = GetColumnString(sheet, column, "兄弟姐妹关系"),
                         EducationList = new List<EducationInfo>(),
                         FamilyMemberList = new List<FamilyMemberInfo>()
