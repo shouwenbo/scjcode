@@ -62,95 +62,88 @@ namespace BatchTranslateApp
                     sheet.GetRow(5).GetCell(i + 2).SetCellValueIfNotEmpty(member.IDCardBirthday);
                     sheet.GetRow(6).GetCell(i + 2).SetCellValueIfNotEmpty(member.Gender);
                     sheet.GetRow(7).GetCell(i + 2).SetCellValueIfNotEmpty(member.CurrentAddressChinese);
-                    // sheet.GetRow(8).GetCell(i + 2).SetCellValue(member.IDCardAddressChinese);
-                    sheet.GetRow(8).GetCell(i + 2).SetCellValueIfNotEmpty(member.Phone);
-                    sheet.GetRow(9).GetCell(i + 2).SetCellValueIfNotEmpty(member.Height);
-                    sheet.GetRow(10).GetCell(i + 2).SetCellValueIfNotEmpty(member.BloodType);
-                    sheet.GetRow(11).GetCell(i + 2).SetCellValueIfNotEmpty(member.IsMarried);
+                    sheet.GetRow(8).GetCell(i + 2).SetCellValue(member.IDCardAddressChinese);
+                    sheet.GetRow(9).GetCell(i + 2).SetCellValueIfNotEmpty(member.Phone);
+                    sheet.GetRow(10).GetCell(i + 2).SetCellValueIfNotEmpty(member.Height);
+                    sheet.GetRow(11).GetCell(i + 2).SetCellValueIfNotEmpty(member.BloodType);
+                    sheet.GetRow(12).GetCell(i + 2).SetCellValueIfNotEmpty(member.IsMarried);
 
-                    sheet.GetRow(12).GetCell(i + 2).SetCellValueIfNotEmpty(member.CDType);
+                    sheet.GetRow(13).GetCell(i + 2).SetCellValueIfNotEmpty(member.CDType);
 
                     IDrawing drawing = sheet.CreateDrawingPatriarch();
                     IClientAnchor anchor = drawing.CreateAnchor(0, 0, 0, 0, i + 2, 11, i + 2 + 1, 11 + 1);
                     IComment comment = drawing.CreateCellComment(anchor);
                     comment.String = new XSSFRichTextString(member.CDTypeCommentString);
-                    sheet.GetRow(12).GetCell(i + 2).CellComment = comment;
-                    // sheet.GetRow(12).GetCell(i + 2).CellComment = member.CDTypeComment;
+                    sheet.GetRow(13).GetCell(i + 2).CellComment = comment;
+                    // sheet.GetRow(13).GetCell(i + 2).CellComment = member.CDTypeComment;
 
-                    sheet.GetRow(13).GetCell(i + 2).SetCellValueIfNotEmpty(member.BirthReligion);
-                    sheet.GetRow(14).GetCell(i + 2).SetCellValueIfNotEmpty(member.OtherReligion);
-                    sheet.GetRow(15).GetCell(i + 2).SetCellValueIfNotEmpty(member.ChurchName);
-                    sheet.GetRow(17).GetCell(i + 2).SetCellValueIfNotEmpty(member.YearsOfFaith);
-                    sheet.GetRow(18).GetCell(i + 2).SetCellValueIfNotEmpty(member.MaternalFaith);
-                    sheet.GetRow(19).GetCell(i + 2).SetCellValueIfNotEmpty(member.Email);
-                    sheet.GetRow(21).GetCell(i + 2).SetCellValueIfNotEmpty(member.FinalEducation);
+                    sheet.GetRow(14).GetCell(i + 2).SetCellValueIfNotEmpty(member.BirthReligion);
+                    sheet.GetRow(15).GetCell(i + 2).SetCellValueIfNotEmpty(member.OtherReligion);
+                    sheet.GetRow(16).GetCell(i + 2).SetCellValueIfNotEmpty(member.ChurchName);
+                    sheet.GetRow(18).GetCell(i + 2).SetCellValueIfNotEmpty(member.YearsOfFaith);
+                    sheet.GetRow(19).GetCell(i + 2).SetCellValueIfNotEmpty(member.MaternalFaith);
+                    sheet.GetRow(20).GetCell(i + 2).SetCellValueIfNotEmpty(member.Email);
+                    sheet.GetRow(22).GetCell(i + 2).SetCellValueIfNotEmpty(member.FinalEducation);
                     if (member.EducationList.Count > 0)
                     {
-                        sheet.GetRow(22).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].Category);
-                        sheet.GetRow(23).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].SchoolName);
-                        sheet.GetRow(24).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].Major);
-                        sheet.GetRow(25).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].Status);
-                        sheet.GetRow(26).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].Period);
+                        sheet.GetRow(23).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].Category);
+                        sheet.GetRow(24).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].SchoolName);
+                        sheet.GetRow(25).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].Major);
+                        sheet.GetRow(26).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].Status);
+                        sheet.GetRow(27).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[0].Period);
                     }
                     if (member.EducationList.Count > 1)
                     {
-                        sheet.GetRow(27).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].Category);
-                        sheet.GetRow(28).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].SchoolName);
-                        sheet.GetRow(29).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].Major);
-                        sheet.GetRow(30).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].Status);
-                        sheet.GetRow(31).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].Period);
+                        sheet.GetRow(28).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].Category);
+                        sheet.GetRow(29).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].SchoolName);
+                        sheet.GetRow(30).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].Major);
+                        sheet.GetRow(31).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].Status);
+                        sheet.GetRow(32).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[1].Period);
                         Console.WriteLine();
                     }
                     if (member.EducationList.Count > 2)
                     {
-                        sheet.GetRow(32).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Category);
-                        sheet.GetRow(33).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].SchoolName);
-                        sheet.GetRow(34).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Major);
-                        sheet.GetRow(35).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Status);
-                        sheet.GetRow(36).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Period);
+                        sheet.GetRow(33).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Category);
+                        sheet.GetRow(34).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].SchoolName);
+                        sheet.GetRow(35).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Major);
+                        sheet.GetRow(36).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Status);
+                        sheet.GetRow(37).GetCell(i + 2).SetCellValueIfNotEmpty(member.EducationList[2].Period);
                     }
-                    sheet.GetRow(37).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobType);
-                    sheet.GetRow(38).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobOther);
-                    sheet.GetRow(39).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobCompany);
-                    sheet.GetRow(40).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobName);
-                    sheet.GetRow(46).GetCell(i + 2).SetCellValueIfNotEmpty(member.SiblingRelationship);
+                    sheet.GetRow(38).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobType);
+                    sheet.GetRow(39).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobOther);
+                    sheet.GetRow(40).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobCompany);
+                    sheet.GetRow(41).GetCell(i + 2).SetCellValueIfNotEmpty(member.JobName);
+                    sheet.GetRow(47).GetCell(i + 2).SetCellValueIfNotEmpty(member.SiblingRelationship);
                     if (member.FamilyMemberList.Count > 0)
                     {
-                        sheet.GetRow(48).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].Name);
-                        sheet.GetRow(49).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].Gender);
-                        sheet.GetRow(50).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].Birthday);
-                        sheet.GetRow(51).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].Relationship);
-                        sheet.GetRow(52).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].BirthChurch);
-                        sheet.GetRow(53).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].SCJNumber);
+                        sheet.GetRow(49).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].Name);
+                        sheet.GetRow(50).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].Gender);
+                        sheet.GetRow(51).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].Birthday);
+                        sheet.GetRow(52).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].Relationship);
+                        sheet.GetRow(53).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].BirthChurch);
+                        sheet.GetRow(54).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[0].SCJNumber);
                     }
                     if (member.FamilyMemberList.Count > 1)
                     {
-                        sheet.GetRow(54).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].Name);
-                        sheet.GetRow(55).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].Gender);
-                        sheet.GetRow(56).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].Birthday);
-                        sheet.GetRow(57).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].Relationship);
-                        sheet.GetRow(58).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].BirthChurch);
-                        sheet.GetRow(59).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].SCJNumber);
+                        sheet.GetRow(55).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].Name);
+                        sheet.GetRow(56).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].Gender);
+                        sheet.GetRow(57).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].Birthday);
+                        sheet.GetRow(58).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].Relationship);
+                        sheet.GetRow(59).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].BirthChurch);
+                        sheet.GetRow(60).GetCell(i + 2).SetCellValueIfNotEmpty(member.FamilyMemberList[1].SCJNumber);
                     }
                 }
 
-                int maxEducationCount = list.Max(member => member.EducationList?.Count ?? 0);
-                if (maxEducationCount <= 1)
-                {
-                    sheet.DeleteRowsAndShiftUp(new int[] { 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 });
-                }
-                if (maxEducationCount == 2)
-                {
-                    sheet.DeleteRowsAndShiftUp(new int[] { 27, 28, 29, 30, 31 });
-                }
-
-                //sheet.GetRow(4).GetCell(7).SetCellValue("一二三四五");
-                //sheet.GetRow(5).GetCell(7).SetCellValue("烦烦烦方法");
-                //sheet.GetRow(6).GetCell(7).SetCellValue("日日日日日");
-                //sheet.GetRow(7).GetCell(7).SetCellValue("他吞吞吐吐");
-                //sheet.GetRow(8).GetCell(7).SetCellValue("哈哈哈哈哈");
-                //sheet.GetRow(9).GetCell(7).SetCellValue("范德萨富士");
-                //sheet.GetRow(10).GetCell(7).SetCellValue("犯得上反对");
+                // 暂时不删除列
+                //int maxEducationCount = list.Max(member => member.EducationList?.Count ?? 0);
+                //if (maxEducationCount <= 1)
+                //{
+                //    sheet.DeleteRowsAndShiftUp(new int[] { 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 });
+                //}
+                //if (maxEducationCount == 2)
+                //{
+                //    sheet.DeleteRowsAndShiftUp(new int[] { 27, 28, 29, 30, 31 });
+                //}
 
                 using (SaveFileDialog saveFileDialog = new SaveFileDialog())
                 {
@@ -187,10 +180,10 @@ namespace BatchTranslateApp
                         foreach (var member in list)
                         {
                             #region 基本信息翻译
-                            if (!string.IsNullOrEmpty(member.CurrentAddressChinese))
-                            {
-                                member.CurrentAddressChinese = TranslateHelper.SentenceToKorean(member.CurrentAddressChinese);
-                            }
+                            // if (!string.IsNullOrEmpty(member.CurrentAddressChinese))
+                            // {
+                            //     member.CurrentAddressChinese = TranslateHelper.SentenceToKorean(member.CurrentAddressChinese);
+                            // }
                             if (!string.IsNullOrEmpty(member.Country))
                             {
                                 member.Country = TranslateHelper.SentenceToKorean(member.Country);

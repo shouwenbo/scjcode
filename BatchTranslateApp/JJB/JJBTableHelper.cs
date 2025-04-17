@@ -28,44 +28,44 @@ namespace BatchTranslateApp
                     new RowIndexItem(){ Index = 6, Name = "法定出生生日" },
                     new RowIndexItem(){ Index = 7, Name = "性别" },
                     new RowIndexItem(){ Index = 8, Name = "现住址" },
-                    // new RowIndexItem(){ Index = 9, Name = "身份证地址" },
-                    new RowIndexItem(){ Index = 9, Name = "电话" },
-                    new RowIndexItem(){ Index = 10, Name = "身高" },
-                    new RowIndexItem(){ Index = 11, Name = "血型" },
-                    new RowIndexItem(){ Index = 12, Name = "婚否" },
-                    new RowIndexItem(){ Index = 13, Name = "CD类型" },
-                    new RowIndexItem(){ Index = 14, Name = "出身教团" },
-                    new RowIndexItem(){ Index = 15, Name = "其他宗教" },
-                    new RowIndexItem(){ Index = 16, Name = "教会名" },
-                    new RowIndexItem(){ Index = 17, Name = "职分" },
-                    new RowIndexItem(){ Index = 18, Name = "信仰时间" },
-                    new RowIndexItem(){ Index = 19, Name = "母胎信仰" },
-                    new RowIndexItem(){ Index = 20, Name = "邮箱" },
-                    new RowIndexItem(){ Index = 22, Name = "最终学历" },
+                    new RowIndexItem(){ Index = 9, Name = "身份证地址" },
+                    new RowIndexItem(){ Index = 10, Name = "电话" },
+                    new RowIndexItem(){ Index = 11, Name = "身高" },
+                    new RowIndexItem(){ Index = 12, Name = "血型" },
+                    new RowIndexItem(){ Index = 13, Name = "婚否" },
+                    new RowIndexItem(){ Index = 14, Name = "CD类型" },
+                    new RowIndexItem(){ Index = 15, Name = "出身教团" },
+                    new RowIndexItem(){ Index = 16, Name = "其他宗教" },
+                    new RowIndexItem(){ Index = 17, Name = "教会名" },
+                    new RowIndexItem(){ Index = 18, Name = "职分" },
+                    new RowIndexItem(){ Index = 19, Name = "信仰时间" },
+                    new RowIndexItem(){ Index = 20, Name = "母胎信仰" },
+                    new RowIndexItem(){ Index = 21, Name = "邮箱" },
+                    new RowIndexItem(){ Index = 23, Name = "最终学历" },
 
-                    // new RowIndexItem(){ Index = 23, Name = "学历信息1分类" },
-                    // new RowIndexItem(){ Index = 24, Name = "学历信息1学校名" },
-                    // new RowIndexItem(){ Index = 25, Name = "学历信息1专业" },
-                    // new RowIndexItem(){ Index = 26, Name = "学历信息1状态" },
-                    // new RowIndexItem(){ Index = 27, Name = "学历信息1期间" },
+                    // new RowIndexItem(){ Index = 24, Name = "学历信息1分类" },
+                    // new RowIndexItem(){ Index = 25, Name = "学历信息1学校名" },
+                    // new RowIndexItem(){ Index = 26, Name = "学历信息1专业" },
+                    // new RowIndexItem(){ Index = 28, Name = "学历信息1状态" },
+                    // new RowIndexItem(){ Index = 29, Name = "学历信息1期间" },
                     
-                    new RowIndexItem(){ Index = 28, Name = "职业分类" },
-                    new RowIndexItem(){ Index = 29, Name = "其他职业" },
-                    new RowIndexItem(){ Index = 30, Name = "工作单位名称" },
-                    new RowIndexItem(){ Index = 31, Name = "职位" },
-                    new RowIndexItem(){ Index = 37, Name = "兄弟姐妹关系" },
-                    new RowIndexItem(){ Index = 39, Name = "家族事项1姓名" },
-                    new RowIndexItem(){ Index = 40, Name = "家族事项1性别" },
-                    new RowIndexItem(){ Index = 41, Name = "家族事项1生日" },
-                    new RowIndexItem(){ Index = 42, Name = "家族事项1关系" },
-                    new RowIndexItem(){ Index = 43, Name = "家族事项1出席教会" },
-                    new RowIndexItem(){ Index = 44, Name = "家族事项1SCJ工号" },
-                    new RowIndexItem(){ Index = 45, Name = "家族事项2姓名" },
-                    new RowIndexItem(){ Index = 46, Name = "家族事项2性别" },
-                    new RowIndexItem(){ Index = 47, Name = "家族事项2生日" },
-                    new RowIndexItem(){ Index = 48, Name = "家族事项2关系" },
-                    new RowIndexItem(){ Index = 49, Name = "家族事项2出席教会" },
-                    new RowIndexItem(){ Index = 50, Name = "家族事项2SCJ工号" },
+                    new RowIndexItem(){ Index = 29, Name = "职业分类" },
+                    new RowIndexItem(){ Index = 30, Name = "其他职业" },
+                    new RowIndexItem(){ Index = 31, Name = "工作单位名称" },
+                    new RowIndexItem(){ Index = 32, Name = "职位" },
+                    new RowIndexItem(){ Index = 38, Name = "兄弟姐妹关系" },
+                    new RowIndexItem(){ Index = 40, Name = "家族事项1姓名" },
+                    new RowIndexItem(){ Index = 41, Name = "家族事项1性别" },
+                    new RowIndexItem(){ Index = 42, Name = "家族事项1生日" },
+                    new RowIndexItem(){ Index = 43, Name = "家族事项1关系" },
+                    new RowIndexItem(){ Index = 44, Name = "家族事项1出席教会" },
+                    new RowIndexItem(){ Index = 45, Name = "家族事项1SCJ工号" },
+                    new RowIndexItem(){ Index = 46, Name = "家族事项2姓名" },
+                    new RowIndexItem(){ Index = 47, Name = "家族事项2性别" },
+                    new RowIndexItem(){ Index = 48, Name = "家族事项2生日" },
+                    new RowIndexItem(){ Index = 49, Name = "家族事项2关系" },
+                    new RowIndexItem(){ Index = 50, Name = "家族事项2出席教会" },
+                    new RowIndexItem(){ Index = 51, Name = "家族事项2SCJ工号" },
                 },
                 StartColumn = 4
             };
@@ -252,22 +252,22 @@ namespace BatchTranslateApp
                     }
                 }
 
-                if (lastScjNumberRowIndex == 49) // 1个学历
+                if (lastScjNumberRowIndex == 50) // 1个学历
                 {
                     dynamicRowCount = 0; // 动态增加0行
                     educationNumber = 1;
                 }
-                else if (lastScjNumberRowIndex == 54) // 2个学历
+                else if (lastScjNumberRowIndex == 55) // 2个学历
                 {
                     dynamicRowCount = 5; // 动态增加5行
                     educationNumber = 2;
                 }
-                else if (lastScjNumberRowIndex == 59) // 3个学历
+                else if (lastScjNumberRowIndex == 60) // 3个学历
                 {
                     dynamicRowCount = 10; // 动态增加10行
                     educationNumber = 3;
                 }
-                else if (lastScjNumberRowIndex == 64) // 4个学历
+                else if (lastScjNumberRowIndex == 65) // 4个学历
                 {
                     dynamicRowCount = 15; // 动态增加15行
                     educationNumber = 4;
@@ -280,11 +280,11 @@ namespace BatchTranslateApp
 
                 for (int i = 0; i < educationNumber; i++)
                 {
-                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 23 + (i * 5), Name = $"学历信息{i + 1}分类" });
-                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 24 + (i * 5), Name = $"学历信息{i + 1}学校名" });
-                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 25 + (i * 5), Name = $"学历信息{i + 1}专业" });
-                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 26 + (i * 5), Name = $"学历信息{i + 1}状态" });
-                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 27 + (i * 5), Name = $"学历信息{i + 1}期间" });
+                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 24 + (i * 5), Name = $"学历信息{i + 1}分类" });
+                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 25 + (i * 5), Name = $"学历信息{i + 1}学校名" });
+                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 26 + (i * 5), Name = $"学历信息{i + 1}专业" });
+                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 27 + (i * 5), Name = $"学历信息{i + 1}状态" });
+                    this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 28 + (i * 5), Name = $"学历信息{i + 1}期间" });
                 }
 
                 this.rowIndexOptions.List.First(p => p.Name == "兄弟姐妹关系").Index += dynamicRowCount;
@@ -321,7 +321,7 @@ namespace BatchTranslateApp
                         // IDCardAddressChinese = GetColumnString(sheet, column, "身份证地址中文"),
                         // IDCardAddressKorean = GetColumnString(sheet, column, "身份证地址韩文"),
                         CurrentAddressChinese = GetColumnString(sheet, column, "现住址"),
-                        //IDCardAddressChinese = GetColumnString(sheet, column, "身份证地址"),
+                        IDCardAddressChinese = GetColumnString(sheet, column, "身份证地址"),
                         // CurrentAddressKorean = GetColumnString(sheet, column, "现住址翻译"),
                         Phone = GetColumnString(sheet, column, "电话"),
                         Height = GetColumnString(sheet, column, "身高"),
