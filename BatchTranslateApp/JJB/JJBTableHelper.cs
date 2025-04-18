@@ -286,7 +286,11 @@ namespace BatchTranslateApp
                     this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 27 + (i * 5), Name = $"学历信息{i + 1}状态" });
                     this.rowIndexOptions.List.Add(new RowIndexItem() { Index = 28 + (i * 5), Name = $"学历信息{i + 1}期间" });
                 }
-
+                    
+                this.rowIndexOptions.List.First(p => p.Name == "职业分类").Index += dynamicRowCount;
+                this.rowIndexOptions.List.First(p => p.Name == "其他职业").Index += dynamicRowCount;
+                this.rowIndexOptions.List.First(p => p.Name == "工作单位名称").Index += dynamicRowCount;
+                this.rowIndexOptions.List.First(p => p.Name == "职位").Index += dynamicRowCount;
                 this.rowIndexOptions.List.First(p => p.Name == "兄弟姐妹关系").Index += dynamicRowCount;
                 this.rowIndexOptions.List.First(p => p.Name == "家族事项1姓名").Index += dynamicRowCount;
                 this.rowIndexOptions.List.First(p => p.Name == "家族事项1性别").Index += dynamicRowCount;
