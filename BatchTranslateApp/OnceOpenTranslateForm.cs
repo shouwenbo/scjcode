@@ -91,7 +91,7 @@ namespace BatchTranslateApp
                     sheet.GetRow(rowIndex).GetCell(41).SetCellValueIfNotEmpty("1");
                     sheet.GetRow(rowIndex).GetCell(46).SetCellType(CellType.Formula);
                     sheet.GetRow(rowIndex).GetCell(46).CellFormula = $"AP{(rowIndex + 1)}+AQ{(rowIndex + 1)}-AR{(rowIndex + 1)}+AS{(rowIndex + 1)}-AT{(rowIndex + 1)}";
-                    
+
                 }
 
                 sheet.DeleteRowRangeAndShiftUp(list.Count + 6, 2309); // 第二个参数：行数-1
@@ -534,6 +534,11 @@ namespace BatchTranslateApp
 
             // 如果格式不正确，返回 null 或某个默认值（例如最早的日期）
             return null;
+        }
+
+        private void OnceOpenTranslateForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

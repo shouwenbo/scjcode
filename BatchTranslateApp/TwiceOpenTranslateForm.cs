@@ -488,8 +488,8 @@ namespace BatchTranslateApp
                                                 if (dropMember.DropType.Text != "초등")
                                                 {
                                                     member.DropType.SetCell(dropMember.DropType);
+                                                    member.DropStep.SetCell(dropMember.DropStep);
                                                 }
-                                                member.DropStep.SetCell(dropMember.DropStep);
                                                 member.DropReason.SetCell(dropMember.DropReason);
                                                 member.DropManage.SetCell(dropMember.DropManage);
                                                 member.DropReasonDesc.SetCell(dropMember.DropReasonDesc);

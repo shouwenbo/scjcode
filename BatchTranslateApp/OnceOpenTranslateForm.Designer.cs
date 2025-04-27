@@ -150,6 +150,7 @@
             MaximizeBox = false;
             Name = "OnceOpenTranslateForm";
             Text = "韩文翻译工具";
+            Load += OnceOpenTranslateForm_Load;
             gbx_file.ResumeLayout(false);
             gbx_file.PerformLayout();
             ResumeLayout(false);
