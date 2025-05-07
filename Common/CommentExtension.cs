@@ -28,5 +28,10 @@ namespace Common
             //return match.Success;
             return false;
         }
+
+        public static string ToLogString(this Exception ex)
+        {
+            return $"{ex.Message} \r\n {ex.InnerException} \r\n {ex.Source} \r\n {ex.StackTrace}";
+        }
     }
 }

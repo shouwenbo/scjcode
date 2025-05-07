@@ -1,4 +1,4 @@
-﻿namespace BatchTranslateApp
+﻿namespace Common
 {
     public class TranslateItem
     {

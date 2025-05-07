@@ -1,17 +1,9 @@
-﻿using Common;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RestSharp;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Reflection.Metadata;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace BatchTranslateApp
+namespace Common
 {
     public static class TranslateHelper
     {
@@ -29,7 +21,8 @@ namespace BatchTranslateApp
 
                 using (var client = new HttpClient(handler))
                 {
-                    var url = $"http://hanwenxingming.com/api/translate/chinese-name?name={name}";
+                    //var url = $"http://hanwenxingming.com/api/translate/chinese-name?name={name}";
+                    var url = $"https://hanwenxingming.com/api/translate/chinese-name?name={name}";
 
                     var values = new Dictionary<string, string>
                     {

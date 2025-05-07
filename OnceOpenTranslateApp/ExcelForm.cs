@@ -1,4 +1,4 @@
-﻿namespace BatchTranslateApp
+﻿namespace OnceOpenTranslateApp
 {
     public class ExcelForm: Form
     {

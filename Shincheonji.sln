@@ -22,7 +22,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchTranslateApp", "BatchT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{B1A88BCE-695E-414A-9078-351C50BA098F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropReasonCreator", "DropReasonCreator\DropReasonCreator.csproj", "{AC268F0A-AA75-46DF-9905-2451506A857B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropReasonCreator", "DropReasonCreator\DropReasonCreator.csproj", "{AC268F0A-AA75-46DF-9905-2451506A857B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NormalTranslateApp", "NormalTranslateApp\NormalTranslateApp.csproj", "{9482C473-05FC-4056-B285-CBFFE5B7D4A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwiceOpenTranslateApp", "TwiceOpenTranslateApp\TwiceOpenTranslateApp.csproj", "{6C7D6247-4E33-4A26-9E13-2BCB7651C026}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnceOpenTranslateApp", "OnceOpenTranslateApp\OnceOpenTranslateApp.csproj", "{D54F4AC6-16CB-4401-AE1F-D92AD9876401}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JJBTranslateApp", "JJBTranslateApp\JJBTranslateApp.csproj", "{404C6ADC-C950-4B52-BC46-EDC85630A59F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{8B283CF9-3364-4E5F-A336-81E34CBACB09}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +75,22 @@ Global
 		{AC268F0A-AA75-46DF-9905-2451506A857B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC268F0A-AA75-46DF-9905-2451506A857B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC268F0A-AA75-46DF-9905-2451506A857B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9482C473-05FC-4056-B285-CBFFE5B7D4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9482C473-05FC-4056-B285-CBFFE5B7D4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9482C473-05FC-4056-B285-CBFFE5B7D4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9482C473-05FC-4056-B285-CBFFE5B7D4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C7D6247-4E33-4A26-9E13-2BCB7651C026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C7D6247-4E33-4A26-9E13-2BCB7651C026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C7D6247-4E33-4A26-9E13-2BCB7651C026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C7D6247-4E33-4A26-9E13-2BCB7651C026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54F4AC6-16CB-4401-AE1F-D92AD9876401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54F4AC6-16CB-4401-AE1F-D92AD9876401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54F4AC6-16CB-4401-AE1F-D92AD9876401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54F4AC6-16CB-4401-AE1F-D92AD9876401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404C6ADC-C950-4B52-BC46-EDC85630A59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404C6ADC-C950-4B52-BC46-EDC85630A59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404C6ADC-C950-4B52-BC46-EDC85630A59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404C6ADC-C950-4B52-BC46-EDC85630A59F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

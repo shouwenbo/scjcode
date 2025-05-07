@@ -1,4 +1,4 @@
-﻿namespace BatchTranslateApp
+﻿namespace JJBTranslateApp
 {
     public class ExcelForm: Form
     {
