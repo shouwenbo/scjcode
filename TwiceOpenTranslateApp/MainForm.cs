@@ -16,6 +16,7 @@ using OfficeOpenXml;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
+using Newtonsoft.Json;
 
 namespace TwiceOpenTranslateApp
 {
@@ -490,6 +491,8 @@ namespace TwiceOpenTranslateApp
                                                     member.DropType.SetCell(dropMember.DropType);
                                                     member.DropStep.SetCell(dropMember.DropStep);
                                                 }
+                                                member.DropTypeValue = dropMember.DropType.Text;
+                                                member.DropStepValue = dropMember.DropStep.Text;
                                                 member.DropReason.SetCell(dropMember.DropReason);
                                                 member.DropManage.SetCell(dropMember.DropManage);
                                                 member.DropReasonDesc.SetCell(dropMember.DropReasonDesc);
@@ -670,27 +673,31 @@ namespace TwiceOpenTranslateApp
 
                                         const int defaultSortValue = int.MaxValue;
 
+                                        var ttarray1 = onceStudentList.Select(p => new { Period = p.Period.Text, ChineseName = p.ChineseName.Text, DropStep = p.DropStep.Text }).ToList();
+
+                                        // File.WriteAllText("test - ttarray1.txt", JsonConvert.SerializeObject(ttarray1));
+
                                         var resultList = onceStudentList
                                         // 按照期数进行排序
                                         .OrderBy(member => member.Period.Text)
                                         // 按照是否掉落进行排序
-                                        .ThenBy(member => !string.IsNullOrEmpty(member.DropStep.Text) ? 1 : 0)
+                                        .ThenBy(member => !string.IsNullOrEmpty(member.DropStepValue) ? 1 : 0)
                                         // 对掉落的学生进行课程排序
                                         .ThenByDescending(member => 
                                         {
-                                            if (!string.IsNullOrEmpty(member.DropStep.Text))
+                                            if (!string.IsNullOrEmpty(member.DropStepValue))
                                             {
-                                                var courseNumber = Regex.Match(member.DropStep.Text, @"\d+").Value;
+                                                var courseNumber = Regex.Match(member.DropStepValue, @"\d+").Value;
                                                 return int.TryParse(courseNumber, out int courseNumberMatchResult) ? courseNumberMatchResult : 0;
                                             }
                                             return 0;
                                         })
                                         // 对未掉落的学生进行老壮妇青排序
-                                        .ThenBy(student => string.IsNullOrEmpty(student.DropStep.Text)
+                                        .ThenBy(student => string.IsNullOrEmpty(student.DropStepValue)
                                                            ? departmentSortDic.GetValueOrDefault(student.Department.Text, defaultSortValue)
                                                            : defaultSortValue)
                                         // 对未掉落的学生进行老壮妇青排序后再进行生日排序
-                                        .ThenBy(student => string.IsNullOrEmpty(student.DropStep.Text)
+                                        .ThenBy(student => string.IsNullOrEmpty(student.DropStepValue)
                                                            ? student.IDCardBirth.Text
                                                            : "")
                                         .ToList();
@@ -814,7 +821,9 @@ namespace TwiceOpenTranslateApp
         public ExcelRange EndingNumber { get; set; } // AV
         public ExcelRange MediumDropNumber { get; set; } // AW
         public ExcelRange DropType { get; set; } // AX
+        public string DropTypeValue { get; set; } // AX
         public ExcelRange DropStep { get; set; } // AY
+        public string DropStepValue { get; set; } // AY
         public ExcelRange DropReason { get; set; } // AZ
         public ExcelRange DropManage { get; set; } // BA
         public ExcelRange DropOutMoveDetail { get; set; } // BB
