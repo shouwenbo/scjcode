@@ -1,5 +1,9 @@
 ﻿# CHANGELOG
 
+## [FinalCourseTranslateApp-1.0.1] - 2025-05-18
+### 修改
+- DL不记录成绩
+
 ## [FinalCourseTranslateApp-1.0.0] - 2025-05-18
 ### 新增
 - 新增项目

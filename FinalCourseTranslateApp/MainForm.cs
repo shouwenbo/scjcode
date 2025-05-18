@@ -627,13 +627,16 @@ namespace FinalCourseTranslateApp
 
                                         foreach (var member in twiceStudentList)
                                         {
-                                            var scoreMember = scoreStudentList
-                                            .FirstOrDefault(p => p.Period.Text == member.Period.Text && 
-                                                                 p.ChineseName.Text == member.ChineseName.Text);
-                                            if (scoreMember != null)
+                                            if (string.IsNullOrEmpty(member.DropManage.Text))
                                             {
-                                                member.AverageGrade.SetCell(scoreMember.AverageGrade);
-                                                member.DropReasonDesc.SetCell(scoreMember.DropReasonDesc);
+                                                var scoreMember = scoreStudentList
+                                                .FirstOrDefault(p => p.Period.Text == member.Period.Text &&
+                                                                     p.ChineseName.Text == member.ChineseName.Text);
+                                                if (scoreMember != null)
+                                                {
+                                                    member.AverageGrade.SetCell(scoreMember.AverageGrade);
+                                                    member.DropReasonDesc.SetCell(scoreMember.DropReasonDesc);
+                                                }
                                             }
                                         }
 
