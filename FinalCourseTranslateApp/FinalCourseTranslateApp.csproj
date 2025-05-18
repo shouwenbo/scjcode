@@ -23,9 +23,15 @@
     <Compile Update="ExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="template\二开韩文模板.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="template\开终讲韩文版0516.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -18,39 +18,39 @@ using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
 
-namespace TwiceOpenTranslateApp
+namespace FinalCourseTranslateApp
 {
     public partial class MainForm : ExcelForm
     {
         private int allCount = 0;
         private int currentCount = 0;
 
-        private string once_file = string.Empty;
+        private string twice_file = string.Empty;
         private string drop_file = string.Empty;
-        private string change_file = string.Empty;
+        private string score_file = string.Empty;
 
         public MainForm()
         {
             InitializeComponent();
-            InitExcelSelector(this.gbx_once_file, this.btn_select_once_file, file => { this.once_file = file; this.lbl_once_file_name.Text = $"已选择：{file}"; });
+            InitExcelSelector(this.gbx_twice_file, this.btn_select_twice_file, file => { this.twice_file = file; this.lbl_twice_file_name.Text = $"已选择：{file}"; });
             InitExcelSelector(this.gbx_drop_file, this.btn_select_drop_file, file => { this.drop_file = file; this.lbl_drop_file_name.Text = $"已选择：{file}"; });
-            InitExcelSelector(this.gbx_change_file, this.btn_select_change_file, file => { this.change_file = file; this.lbl_change_file_name.Text = $"已选择：{file}"; });
+            InitExcelSelector(this.gbx_score_file, this.btn_select_score_file, file => { this.score_file = file; this.lbl_score_file_name.Text = $"已选择：{file}"; });
 
             // 测试
-            this.once_file = @"W:\work\kzj\二开韩文版测试\159，-1，-2一开 杨 测试版.xlsx";
-            this.drop_file = @"W:\work\kzj\二开韩文版测试\韩掉 测试版.xlsx";
-            this.change_file = @"W:\work\kzj\二开韩文版测试\二开信息变更&地址汇总 测试版.xlsx";
-            this.lbl_once_file_name.Text = $"已选择：{once_file}";
-            this.lbl_drop_file_name.Text = $"已选择：{drop_file}";
-            this.lbl_change_file_name.Text = $"已选择：{change_file}";
-            this.txt_once_password.Text = "wh12000";
-            this.txt_drop_password.Text = "wh0217";
-            this.txt_change_password.Text = "wh0217";
+            // this.twice_file = @"W:\work\kzj\终讲韩文版测试\原版\157-3,4,5最新中文版 - 杨.xlsx";
+            // this.drop_file = @"W:\work\kzj\终讲韩文版测试\原版\157-3,4,5叶果+韩掉.xlsx";
+            // this.score_file = @"W:\work\kzj\终讲韩文版测试\原版\157成绩.xlsx";
+            // this.lbl_twice_file_name.Text = $"已选择：{twice_file}";
+            // this.lbl_drop_file_name.Text = $"已选择：{drop_file}";
+            // this.lbl_score_file_name.Text = $"已选择：{score_file}";
+            // this.txt_twice_password.Text = "wh12000";
+            // this.txt_drop_password.Text = "wh0502";
+            // this.txt_score_password.Text = "wh0502";
 
             CheckForIllegalCrossThreadCalls = false; // 关闭跨线程调用检查
         }
 
-        public void Output(List<OnceStudent> list)
+        public void Output(List<TwiceStudent> list)
         {
             using (var package = new ExcelPackage(new FileInfo(@"template/开终讲韩文版0516.xlsx")))
             //using (var package = new ExcelPackage(new FileInfo(@"template/开终讲韩文版0516.xlsx"), "wh12000"))
@@ -64,6 +64,11 @@ namespace TwiceOpenTranslateApp
                 {
                     var member = list[i];
                     var rowIndex = i + 7;
+                    if (i > 130 && i < 140)
+                    {
+                        var a = member.ChineseName.Text;
+                        Console.WriteLine();
+                    }
                     if (!periods.Contains(member.Period.Text))
                     {
                         periods.Add(member.Period.Text);
@@ -154,7 +159,7 @@ namespace TwiceOpenTranslateApp
                 {
                     saveFileDialog.Filter = "Excel 工作簿 (*.xlsx)|*.xlsx";
                     saveFileDialog.Title = "保存 Excel 文件";
-                    saveFileDialog.FileName = $"二开（{string.Join(" ", periods)}） 韩.xlsx";
+                    saveFileDialog.FileName = $"终讲（{string.Join(" ", periods)}） 韩.xlsx";
 
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
@@ -259,26 +264,26 @@ namespace TwiceOpenTranslateApp
         public void Run()
         {
             #region 表格上传验证
-            if (string.IsNullOrEmpty(once_file))
+            if (string.IsNullOrEmpty(twice_file))
             {
-                this.txt_check_result.Text = "请选择一开表格";
+                this.txt_check_result.Text = "请选择二开表格";
                 return;
             }
             if (string.IsNullOrEmpty(drop_file))
             {
-                this.txt_check_result.Text = "请选择韩掉表格";
+                this.txt_check_result.Text = "请选择叶果+韩掉表格";
                 return;
             }
-            if (string.IsNullOrEmpty(change_file))
+            if (string.IsNullOrEmpty(score_file))
             {
-                this.txt_check_result.Text = "请选择韩掉表格";
+                this.txt_check_result.Text = "请选择成绩表格";
                 return;
             }
             #endregion
 
-            this.gbx_once_file.Visible = false;
+            this.gbx_twice_file.Visible = false;
             this.gbx_drop_file.Visible = false;
-            this.gbx_change_file.Visible = false;
+            this.gbx_score_file.Visible = false;
             this.btn_run.Visible = false;
             currentCount = 0;
             Task.Run(() =>
@@ -291,10 +296,10 @@ namespace TwiceOpenTranslateApp
 
                         #region 表格文件验证
 
-                        FileInfo onceFileInfo = new FileInfo(once_file);
-                        if (!onceFileInfo.Exists)
+                        FileInfo twiceFileInfo = new FileInfo(twice_file);
+                        if (!twiceFileInfo.Exists)
                         {
-                            throw new Exception("一开表格文件不存在");
+                            throw new Exception("二开表格文件不存在");
                         }
 
                         FileInfo dropFileInfo = new FileInfo(drop_file);
@@ -303,41 +308,68 @@ namespace TwiceOpenTranslateApp
                             throw new Exception("韩掉表格文件不存在");
                         }
 
-                        FileInfo changeFileInfo = new FileInfo(change_file);
-                        if (!changeFileInfo.Exists)
+                        FileInfo scoreFileInfo = new FileInfo(score_file);
+                        if (!scoreFileInfo.Exists)
                         {
                             throw new Exception("变更表格文件不存在");
                         }
 
                         #endregion
 
-                        var onceStudentList = new List<OnceStudent>();
+                        var twiceStudentList = new List<TwiceStudent>();
+                        var leafStudyFruitStudentList = new List<LeafStudyFruitStudent>();
                         var dropStudentList = new List<DropStudent>();
-                        var changeStudentList = new List<ChangeStudent>();
+                        var scoreStudentList = new List<ScoreStudent>();
 
-                        using (var oncePackage = new ExcelPackage(onceFileInfo, this.txt_once_password.Text))
+                        using (var twicePackage = new ExcelPackage(twiceFileInfo, this.txt_twice_password.Text))
                         {
                             using (var dropPackage = new ExcelPackage(dropFileInfo, this.txt_drop_password.Text))
                             {
-                                using (var changePackage = new ExcelPackage(changeFileInfo, this.txt_change_password.Text))
+                                using (var scorePackage = new ExcelPackage(scoreFileInfo, this.txt_score_password.Text))
                                 {
-                                    #region 读取韩掉表
+                                    #region 读取叶果+韩掉表
 
-                                    var dropSheet = dropPackage.Workbook.Worksheets[0];
+                                    var leafStudyFruitSheet = dropPackage.Workbook.Worksheets[0];
+                                    for (int rowIndex = 1; rowIndex <= leafStudyFruitSheet.Dimension.End.Row; rowIndex++)
+                                    {
+                                        var leafStudyFruitStudent = new LeafStudyFruitStudent()
+                                        {
+                                            Period = leafStudyFruitSheet.Cells[rowIndex, 1],
+                                            Index = leafStudyFruitSheet.Cells[rowIndex, 2],
+                                            KoreanName = leafStudyFruitSheet.Cells[rowIndex, 3],
+                                            ChineseName = leafStudyFruitSheet.Cells[rowIndex, 4],
+                                            IDCardBirth = leafStudyFruitSheet.Cells[rowIndex, 5],
+                                            LeafBranch = leafStudyFruitSheet.Cells[rowIndex, 6],
+                                            LeafChurch = leafStudyFruitSheet.Cells[rowIndex, 7],
+                                            LeafDepartment = leafStudyFruitSheet.Cells[rowIndex, 8],
+                                            LeafName = leafStudyFruitSheet.Cells[rowIndex, 9],
+                                            LeafNumber = leafStudyFruitSheet.Cells[rowIndex, 10],
+                                            StudyFruitDetail = leafStudyFruitSheet.Cells[rowIndex, 11],
+                                            StudyFruitNumber = leafStudyFruitSheet.Cells[rowIndex, 12],
+                                            StudyRoomDetail = leafStudyFruitSheet.Cells[rowIndex, 13],
+                                            StudyRoomNumber = leafStudyFruitSheet.Cells[rowIndex, 14],
+                                        };
+
+                                        if (Regex.IsMatch(leafStudyFruitStudent.Period.Text.Trim(), @"^\d{3}(-\d{1})?$"))
+                                        {
+                                            leafStudyFruitStudentList.Add(leafStudyFruitStudent);
+                                        }
+                                    }
+
+                                    var dropSheet = dropPackage.Workbook.Worksheets[1];
                                     for (int rowIndex = 1; rowIndex <= dropSheet.Dimension.End.Row; rowIndex++)
                                     {
                                         var dropStudent = new DropStudent()
                                         {
-                                            School = dropSheet.Cells[rowIndex, 1],
-                                            Period = dropSheet.Cells[rowIndex, 2],
-                                            KoreanName = dropSheet.Cells[rowIndex, 3],
-                                            ChineseName = dropSheet.Cells[rowIndex, 4],
-                                            DropType = dropSheet.Cells[rowIndex, 5],
-                                            DropStep = dropSheet.Cells[rowIndex, 6],
-                                            DropReason = dropSheet.Cells[rowIndex, 7],
-                                            DropManage = dropSheet.Cells[rowIndex, 8],
-                                            DropOutMoveDetail = dropSheet.Cells[rowIndex, 9],
-                                            DropReasonDesc = dropSheet.Cells[rowIndex, 10]
+                                            Period = dropSheet.Cells[rowIndex, 1],
+                                            KoreanName = dropSheet.Cells[rowIndex, 2],
+                                            ChineseName = dropSheet.Cells[rowIndex, 3],
+                                            DropType = dropSheet.Cells[rowIndex, 4],
+                                            DropStep = dropSheet.Cells[rowIndex, 5],
+                                            DropReason = dropSheet.Cells[rowIndex, 6],
+                                            DropManage = dropSheet.Cells[rowIndex, 7],
+                                            DropOutMoveDetail = dropSheet.Cells[rowIndex, 8],
+                                            DropReasonDesc = dropSheet.Cells[rowIndex, 9]
                                         };
 
                                         if (Regex.IsMatch(dropStudent.Period.Text.Trim(), @"^\d{3}(-\d{1})?$"))
@@ -348,45 +380,34 @@ namespace TwiceOpenTranslateApp
 
                                     #endregion
 
-                                    #region 读取变更表
+                                    #region 读取成绩表
 
-                                    var changeSheet = changePackage.Workbook.Worksheets[0];
-                                    for (int rowIndex = 1; rowIndex <= changeSheet.Dimension.End.Row; rowIndex++)
+                                    var scoreSheet = scorePackage.Workbook.Worksheets[0];
+                                    for (int rowIndex = 1; rowIndex <= scoreSheet.Dimension.End.Row; rowIndex++)
                                     {
-                                        var changeStudent = new ChangeStudent()
+                                        var changeStudent = new ScoreStudent()
                                         {
-                                            Period = changeSheet.Cells[rowIndex, 1],
-                                            ChineseName = changeSheet.Cells[rowIndex, 2],
-                                            NewChineseName = changeSheet.Cells[rowIndex, 3],
-                                            KoreanName = changeSheet.Cells[rowIndex, 4],
-                                            NewKoreanName = changeSheet.Cells[rowIndex, 5],
-                                            IDCardBirth = changeSheet.Cells[rowIndex, 6],
-                                            NewIDCardBirth = changeSheet.Cells[rowIndex, 7],
-                                            Phone = changeSheet.Cells[rowIndex, 8],
-                                            NewPhone = changeSheet.Cells[rowIndex, 9],
-                                            Country = changeSheet.Cells[rowIndex, 10],
-                                            CurrentAddressCountry = changeSheet.Cells[rowIndex, 11],
-                                            CurrentAddressCity = changeSheet.Cells[rowIndex, 12],
-                                            CurrentAddressCityKorean = changeSheet.Cells[rowIndex, 13],
-                                            CurrentAddress = changeSheet.Cells[rowIndex, 14],
-                                            IDCardAddress = changeSheet.Cells[rowIndex, 15],
+                                            Period = scoreSheet.Cells[rowIndex, 1],
+                                            ChineseName = scoreSheet.Cells[rowIndex, 2],
+                                            AverageGrade = scoreSheet.Cells[rowIndex, 6],
+                                            DropReasonDesc = scoreSheet.Cells[rowIndex, 7],
                                         };
 
                                         if (Regex.IsMatch(changeStudent.Period.Text.Trim(), @"^\d{3}(-\d{1})?$"))
                                         {
-                                            changeStudentList.Add(changeStudent);
+                                            scoreStudentList.Add(changeStudent);
                                         }
                                     }
 
                                     #endregion
 
-                                    #region 读取一开表格
+                                    #region 读取二开表格
 
-                                    var onceSheet = oncePackage.Workbook.Worksheets[2];
+                                    var onceSheet = twicePackage.Workbook.Worksheets[2];
                                     // 遍历工作表的每一行（从第2行开始，跳过标题行）
                                     for (int rowIndex = 7; rowIndex <= onceSheet.Dimension.End.Row; rowIndex++)  // EPPlus的行从1开始，索引为1表示第二行
                                     {
-                                        var onceStudent = new OnceStudent()
+                                        var onceStudent = new TwiceStudent()
                                         {
                                             Period = onceSheet.Cells[rowIndex, 1],  // 读取第1列（A列）
                                             Department = onceSheet.Cells[rowIndex, 2],  // 读取第2列（B列）
@@ -454,43 +475,55 @@ namespace TwiceOpenTranslateApp
                                         // 如果Period不为空则加入到列表
                                         if (Regex.IsMatch(onceStudent.Period.Text.Trim(), @"^\d{3}(-\d{1})?$"))
                                         {
-                                            onceStudentList.Add(onceStudent);
+                                            twiceStudentList.Add(onceStudent);
                                         }
                                     }
 
                                     #endregion
 
-                                    if (onceStudentList.Count > 0)
+                                    if (twiceStudentList.Count > 0)
                                     {
                                         #region 翻译
 
-                                        allCount = onceStudentList.Count;
+                                        allCount = twiceStudentList.Count;
                                         var taskBuilder = new StringBuilder();
-                                        foreach (var member in onceStudentList)
+                                        foreach (var member in twiceStudentList)
                                         {
                                             currentCount++;
                                             this.lbl_task.Text = $"{currentCount}/{allCount}";
                                         }
-                                        this.gbx_once_file.Visible = true;
+                                        this.gbx_twice_file.Visible = true;
                                         this.gbx_drop_file.Visible = true;
-                                        this.gbx_change_file.Visible = true;
+                                        this.gbx_score_file.Visible = true;
                                         this.btn_run.Visible = true;
                                         this.txt_check_result.Text = "翻译完成";
 
                                         #endregion
 
+                                        #region 先对原有的 CJ DL 放置假的值，用于后续排序（因为 CJ DL 的Type和Step要求为空）
+
+                                        var cjdlflag = 1000;
+                                        for (var i = 0; i < twiceStudentList.Count; i++)
+                                        {
+                                            if (!string.IsNullOrEmpty(twiceStudentList[i].DropManage.Text))
+                                            {
+                                                var stepValue = (--cjdlflag).ToString() + "과";
+                                                twiceStudentList[i].DropTypeValue = "초등";
+                                                twiceStudentList[i].DropStepValue = stepValue;
+                                            }
+                                        }
+
+                                        #endregion
+
                                         #region 掉落信息设置
 
-                                        foreach (var member in onceStudentList)
+                                        foreach (var member in twiceStudentList)
                                         {
                                             var dropMember = dropStudentList.FirstOrDefault(p => p.Period.Text == member.Period.Text && p.ChineseName.Text == member.ChineseName.Text);
                                             if (dropMember != null)
                                             {
-                                                if (dropMember.DropType.Text != "초등")
-                                                {
-                                                    member.DropType.SetCell(dropMember.DropType);
-                                                    member.DropStep.SetCell(dropMember.DropStep);
-                                                }
+                                                member.DropType.SetCell(dropMember.DropType);
+                                                member.DropStep.SetCell(dropMember.DropStep);
                                                 member.DropTypeValue = dropMember.DropType.Text;
                                                 member.DropStepValue = dropMember.DropStep.Text;
                                                 member.DropReason.SetCell(dropMember.DropReason);
@@ -498,27 +531,13 @@ namespace TwiceOpenTranslateApp
                                                 member.DropReasonDesc.SetCell(dropMember.DropReasonDesc);
                                                 member.IsEnding.SetCell("", true);
                                             }
-
-                                            /*
-                                             
-                                             SignInNumber = onceSheet.Cells[rowIndex, 47],  // 读取第47列（AU列）
-                                            EndingNumber = onceSheet.Cells[rowIndex, 48],  // 读取第48列（AV列）
-                                            MediumDropNumber = onceSheet.Cells[rowIndex, 49],  // 读取第49列（AW列）
-                                            DropType = onceSheet.Cells[rowIndex, 50],  // 读取第50列（AX列）
-                                            DropStep = onceSheet.Cells[rowIndex, 51],  // 读取第51列（AY列）
-                                            DropReason = onceSheet.Cells[rowIndex, 52],  // 读取第52列（AZ列）
-                                            DropManage = onceSheet.Cells[rowIndex, 53],  // 读取第53列（BA列）
-                                            DropOutMoveDetail = onceSheet.Cells[rowIndex, 54],  // 读取第54列（BB列）
-                                            DropReasonDesc = onceSheet.Cells[rowIndex, 55],  // 读取第55列（BC列）
-                                             
-                                             */
                                         }
 
                                         #endregion
 
                                         #region 重新计算部署
 
-                                        foreach (var member in onceStudentList)
+                                        foreach (var member in twiceStudentList)
                                         {
                                             if (string.IsNullOrEmpty(member.DropStep.Text))
                                             {
@@ -569,9 +588,9 @@ namespace TwiceOpenTranslateApp
                                         #region 掉落的学生整行改变字体颜色
 
                                         var targetColor = Color.FromArgb(0, 112, 192); // 初级Drop颜色
-                                        foreach (var member in onceStudentList)
+                                        foreach (var member in twiceStudentList)
                                         {
-                                            if (dropStudentList.Exists(p => (p.Period.Text == member.Period.Text && p.ChineseName.Text == member.ChineseName.Text)))
+                                            if (!string.IsNullOrEmpty(member.DropManage.Text))
                                             {
                                                 var properties = member.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
                                                 foreach (var property in properties)
@@ -579,7 +598,22 @@ namespace TwiceOpenTranslateApp
                                                     if (property.PropertyType == typeof(ExcelRange))
                                                     {
                                                         var excelRange = property.GetValue(member) as ExcelRange;
-                                                        excelRange?.Style.Font.Color.SetColor(targetColor);
+                                                        if (member.DropTypeValue == "초등")
+                                                        {
+                                                            excelRange?.Style.Font.Color.SetColor(Color.FromArgb(0, 112, 192));
+                                                        }
+                                                        if (member.DropTypeValue == "중등")
+                                                        {
+                                                            excelRange?.Style.Font.Color.SetColor(Color.FromArgb(112, 48, 160));
+                                                        }
+                                                        if (member.DropTypeValue == "고등")
+                                                        {
+                                                            excelRange?.Style.Font.Color.SetColor(Color.FromArgb(198, 89, 17));
+                                                        }
+                                                        if (member.DropTypeValue == "새신자교육")
+                                                        {
+                                                            excelRange?.Style.Font.Color.SetColor(Color.FromArgb(0, 176, 80));
+                                                        }
                                                     }
                                                 }
                                             }
@@ -589,77 +623,44 @@ namespace TwiceOpenTranslateApp
 
                                         // File.WriteAllText(@"W:\work\kzj\二开韩文版测试\log_grbg.txt", string.Join("\r\n", resultList.Select(p => $"{p.Period} {p.ChineseName.Text}").ToList()));
 
-                                        #region 数据变更
+                                        #region 设置成绩
 
-                                        foreach (var member in onceStudentList)
+                                        foreach (var member in twiceStudentList)
                                         {
-                                            var changeMember = changeStudentList
+                                            var scoreMember = scoreStudentList
                                             .FirstOrDefault(p => p.Period.Text == member.Period.Text && 
-                                                                 p.ChineseName.Text == member.ChineseName.Text && 
-                                                                 p.IDCardBirth.Text == member.IDCardBirth.Text);
-                                            if (changeMember != null)
+                                                                 p.ChineseName.Text == member.ChineseName.Text);
+                                            if (scoreMember != null)
                                             {
-                                                if (member.ChineseName.Text != changeMember.NewChineseName.Text)
-                                                {
-                                                    changeMember.NewChineseName.MarkYellow();
-                                                }
-                                                member.ChineseName.SetCell(changeMember.NewChineseName);
-
-                                                if (member.KoreanName.Text != changeMember.NewKoreanName.Text)
-                                                {
-                                                    changeMember.NewKoreanName.MarkYellow();
-                                                }
-                                                member.KoreanName.SetCell(changeMember.NewKoreanName);
-
-                                                if (member.IDCardBirth.Text != changeMember.NewIDCardBirth.Text)
-                                                {
-                                                    changeMember.NewIDCardBirth.MarkYellow();
-                                                }
-                                                if (int.TryParse(member.IDCardBirth.Text.Substring(0, 4), out int oriBirthYear))
-                                                {
-                                                    member.OriAge = DateTime.Now.Year - oriBirthYear; // 记录变更前的年龄
-                                                }
-                                                member.IDCardBirth.SetCell(changeMember.NewIDCardBirth);
-
-                                                if (member.Phone.Text != changeMember.NewPhone.Text)
-                                                {
-                                                    changeMember.NewPhone.MarkYellow();
-                                                }
-                                                member.Phone.SetCell(changeMember.NewPhone);
-
-                                                if (member.Country.Text != changeMember.Country.Text)
-                                                {
-                                                    changeMember.Country.MarkYellow();
-                                                }
-                                                member.Country.SetCell(changeMember.Country);
-
-                                                if (member.CurrentAddressCountry.Text != changeMember.CurrentAddressCountry.Text)
-                                                {
-                                                    changeMember.CurrentAddressCountry.MarkYellow();
-                                                }
-                                                member.CurrentAddressCountry.SetCell(changeMember.CurrentAddressCountry);
-
-                                                if (member.CurrentAddressCity.Text != changeMember.CurrentAddressCityKorean.Text)
-                                                {
-                                                    changeMember.CurrentAddressCityKorean.MarkYellow();
-                                                }
-                                                member.CurrentAddressCity.SetCell(changeMember.CurrentAddressCityKorean);
-
-                                                if (member.CurrentAddress.Text != changeMember.CurrentAddress.Text)
-                                                {
-                                                    changeMember.CurrentAddress.MarkYellow();
-                                                }
-                                                member.CurrentAddress.SetCell(changeMember.CurrentAddress);
-
-                                                if (member.IDCardAddress.Text != changeMember.IDCardAddress.Text)
-                                                {
-                                                    changeMember.IDCardAddress.MarkYellow();
-                                                }
-                                                member.IDCardAddress.SetCell(changeMember.IDCardAddress);
+                                                member.AverageGrade.SetCell(scoreMember.AverageGrade);
+                                                member.DropReasonDesc.SetCell(scoreMember.DropReasonDesc);
                                             }
                                         }
 
-                                        #endregion                 
+                                        #endregion
+
+                                        #region 设置叶果
+
+                                        foreach (var member in twiceStudentList)
+                                        {
+                                            var leafStudyFruitMember = leafStudyFruitStudentList
+                                            .FirstOrDefault(p => p.Period.Text == member.Period.Text &&
+                                                                 p.ChineseName.Text == member.ChineseName.Text);
+                                            if (leafStudyFruitMember != null)
+                                            {
+                                                member.LeafBranch.SetCell(leafStudyFruitMember.LeafBranch);
+                                                member.LeafChurch.SetCell(leafStudyFruitMember.LeafChurch);
+                                                member.LeafDepartment.SetCell(leafStudyFruitMember.LeafDepartment);
+                                                member.LeafName.SetCell(leafStudyFruitMember.LeafName);
+                                                member.LeafNumber.SetCell(leafStudyFruitMember.LeafNumber);
+                                                member.StudyFruitDetail.SetCell(leafStudyFruitMember.StudyFruitDetail);
+                                                member.StudyFruitNumber.SetCell(leafStudyFruitMember.StudyFruitNumber);
+                                                member.StudyRoomDetail.SetCell(leafStudyFruitMember.StudyRoomDetail);
+                                                member.StudyRoomNumber.SetCell(leafStudyFruitMember.StudyRoomNumber);
+                                            }
+                                        }
+
+                                        #endregion
 
                                         #region 排序整理
 
@@ -671,17 +672,30 @@ namespace TwiceOpenTranslateApp
                                             { "청년", 4 }
                                         };
 
+                                        var dropTypeSortDic = new Dictionary<string, int>
+                                        {
+                                            ["새신자교육"] = 0,
+                                            ["고등"] = 1,
+                                            ["중등"] = 2,
+                                            ["초등"] = 3
+                                        };
+
                                         const int defaultSortValue = int.MaxValue;
 
-                                        var ttarray1 = onceStudentList.Select(p => new { Period = p.Period.Text, ChineseName = p.ChineseName.Text, DropStep = p.DropStep.Text }).ToList();
+                                        var ttarray1 = twiceStudentList.Select(p => new { Period = p.Period.Text, ChineseName = p.ChineseName.Text, DropStep = p.DropStep.Text }).ToList();
 
                                         // File.WriteAllText("test - ttarray1.txt", JsonConvert.SerializeObject(ttarray1));
 
-                                        var resultList = onceStudentList
+                                        var resultList = twiceStudentList
                                         // 按照期数进行排序
                                         .OrderBy(member => member.Period.Text)
                                         // 按照是否掉落进行排序
                                         .ThenBy(member => !string.IsNullOrEmpty(member.DropStepValue) ? 1 : 0)
+                                        // 对掉落的学生进行阶段排序
+                                        .ThenBy(member =>
+                                            !string.IsNullOrEmpty(member.DropStepValue)
+                                                ? dropTypeSortDic.GetValueOrDefault(member.DropTypeValue, int.MaxValue)
+                                                : int.MaxValue)
                                         // 对掉落的学生进行课程排序
                                         .ThenByDescending(member => 
                                         {
@@ -737,9 +751,9 @@ namespace TwiceOpenTranslateApp
                     }
                     catch (Exception ex)
                     {
-                        this.gbx_once_file.Visible = true;
+                        this.gbx_twice_file.Visible = true;
                         this.gbx_drop_file.Visible = true;
-                        this.gbx_change_file.Visible = true;
+                        this.gbx_score_file.Visible = true;
                         this.btn_run.Visible = true;
                         this.txt_check_result.Text = ex.ToLogString();
                     }
@@ -769,7 +783,7 @@ namespace TwiceOpenTranslateApp
         }
     }
 
-    public class OnceStudent
+    public class TwiceStudent
     {
         public ExcelRange Period { get; set; } // A
         public ExcelRange Department { get; set; } // B
@@ -837,43 +851,94 @@ namespace TwiceOpenTranslateApp
 
         public int OriAge { get; set; } // 原始年龄
     }
-
-    public class PeriodOnceStudentList
+    public class LeafStudyFruitStudent
     {
-        public string Period { get; set; }
-        public List<OnceStudent> List { get; set; }
+        /// <summary>
+        /// A
+        /// </summary>
+        public ExcelRange Period { get; set; }
+        /// <summary>
+        /// B
+        /// </summary>
+        public ExcelRange Index { get; set; }
+        /// <summary>
+        /// C
+        /// </summary>
+        public ExcelRange KoreanName { get; set; }
+        /// <summary>
+        /// D
+        /// </summary>
+        public ExcelRange ChineseName { get; set; }
+        /// <summary>
+        /// E
+        /// </summary>
+        public ExcelRange IDCardBirth { get; set; }
+        /// <summary>
+        /// F -> Twice-AI
+        /// </summary>
+        public ExcelRange LeafBranch { get; set; }
+        /// <summary>
+        /// G -> Twice-AJ
+        /// </summary>
+        public ExcelRange LeafChurch { get; set; }
+        /// <summary>
+        /// H -> Twice-AK
+        /// </summary>
+        public ExcelRange LeafDepartment { get; set; }
+        /// <summary>
+        /// I -> Twice-AL
+        /// </summary>
+        public ExcelRange LeafName { get; set; }
+        /// <summary>
+        /// J -> Twice-AM
+        /// </summary>
+        public ExcelRange LeafNumber { get; set; }
+        /// <summary>
+        /// K -> TwiceBF
+        /// </summary>
+        public ExcelRange StudyFruitDetail { get; set; }
+        /// <summary>
+        /// L -> TwiceBG
+        /// </summary>
+        public ExcelRange StudyFruitNumber { get; set; }
+        /// <summary>
+        /// M -> TwiceBH
+        /// </summary>
+        public ExcelRange StudyRoomDetail { get; set; }
+        /// <summary>
+        /// N -> TwiceBI
+        /// </summary>
+        public ExcelRange StudyRoomNumber { get; set; }
     }
-
     public class DropStudent
     {
-        public ExcelRange School { get; set; } // A
-        public ExcelRange Period { get; set; } // B
-        public ExcelRange KoreanName { get; set; } // C
-        public ExcelRange ChineseName { get; set; } // D
-        public ExcelRange DropType { get; set; } // E
-        public ExcelRange DropStep { get; set; } // F
-        public ExcelRange DropReason { get; set; } // G
-        public ExcelRange DropManage { get; set; } // H
-        public ExcelRange DropOutMoveDetail { get; set; } // I
-        public ExcelRange DropReasonDesc { get; set; } // J
-    }
-
-    public class ChangeStudent
-    {
         public ExcelRange Period { get; set; } // A
-        public ExcelRange ChineseName { get; set; } // B
-        public ExcelRange NewChineseName { get; set; } // C
-        public ExcelRange KoreanName { get; set; } // D
-        public ExcelRange NewKoreanName { get; set; } // E
-        public ExcelRange IDCardBirth { get; set; } // F
-        public ExcelRange NewIDCardBirth { get; set; } // G
-        public ExcelRange Phone { get; set; } // H
-        public ExcelRange NewPhone { get; set; } // I
-        public ExcelRange Country { get; set; } // J
-        public ExcelRange CurrentAddressCountry { get; set; } // K
-        public ExcelRange CurrentAddressCity { get; set; } // L
-        public ExcelRange CurrentAddressCityKorean { get; set; } // M
-        public ExcelRange CurrentAddress { get; set; } // N
-        public ExcelRange IDCardAddress { get; set; } // O
+        public ExcelRange KoreanName { get; set; } // B
+        public ExcelRange ChineseName { get; set; } // C
+        public ExcelRange DropType { get; set; } // D
+        public ExcelRange DropStep { get; set; } // E
+        public ExcelRange DropReason { get; set; } // F
+        public ExcelRange DropManage { get; set; } // G
+        public ExcelRange DropOutMoveDetail { get; set; } // H
+        public ExcelRange DropReasonDesc { get; set; } // I
+    }
+    public class ScoreStudent
+    {
+        /// <summary>
+        /// A
+        /// </summary>
+        public ExcelRange Period { get; set; }
+        /// <summary>
+        /// B
+        /// </summary>
+        public ExcelRange ChineseName { get; set; }
+        /// <summary>
+        /// F -> TwiceBE
+        /// </summary>
+        public ExcelRange AverageGrade { get; set; }
+        /// <summary>
+        /// F -> TwiceBC
+        /// </summary>
+        public ExcelRange DropReasonDesc { get; set; }
     }
 }

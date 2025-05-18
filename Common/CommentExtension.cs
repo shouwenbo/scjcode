@@ -1,5 +1,6 @@
 ﻿using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
+using System.Drawing;
 
 namespace Common
 {
@@ -32,6 +33,11 @@ namespace Common
         public static string ToLogString(this Exception ex)
         {
             return $"{ex.Message} \r\n {ex.InnerException} \r\n {ex.Source} \r\n {ex.StackTrace}";
+        }
+
+        public static string ToLogString(this Color color)
+        {
+            return $"Name: {color.Name} ToArgb:{color.ToArgb()} G:{color.G} R:{color.R} A:{color.A} B:{color.B}";
         }
     }
 }

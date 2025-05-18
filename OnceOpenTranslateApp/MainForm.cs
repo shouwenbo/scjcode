@@ -41,7 +41,7 @@ namespace OnceOpenTranslateApp
 
         public void Output_NPOI(List<CdbStudent_NPOI> list)
         {
-            using (FileStream file = new FileStream(@"template/一开韩文模板.xlsx", FileMode.Open, FileAccess.Read))
+            using (FileStream file = new FileStream(@"template/开终讲韩文版0516.xlsx", FileMode.Open, FileAccess.Read))
             {
                 IWorkbook workbook = new XSSFWorkbook(file);
                 ISheet sheet = workbook.GetSheetAt(2);
@@ -126,7 +126,7 @@ namespace OnceOpenTranslateApp
 
         public void Output(List<CdbStudent> list)
         {
-            using (var package = new ExcelPackage(new FileInfo(@"template/一开韩文模板.xlsx")))
+            using (var package = new ExcelPackage(new FileInfo(@"template/开终讲韩文版0516.xlsx")))
             {
                 ExcelWorksheet sheet = package.Workbook.Worksheets[2];
                 var periods = new List<string>();

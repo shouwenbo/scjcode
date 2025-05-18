@@ -5,6 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection.Metadata;
+using System.Text;
 
 namespace Common
 {
@@ -80,9 +81,43 @@ namespace Common
                 if (newCell.Comment != null)
                 {
                     cell.AddComment(newCell.Comment.Text);
-                    cell.Comment.LineColor = newCell.Comment.LineColor;
+
+                    if (newCell.Comment.LineColor != default && newCell.Comment.LineColor.ToArgb() != 0)
+                    {
+                        cell.Comment.LineColor = newCell.Comment.LineColor;
+                    }
                     cell.Comment.LineStyle = newCell.Comment.LineStyle;
                     cell.Comment.LineWidth = newCell.Comment.LineWidth;
+
+                    #region 错误日志
+
+                    // var builder = new StringBuilder();
+                    // builder.AppendLine($"cell.Text: {cell.Text}");
+                    // builder.AppendLine($"cell.Comment.Text: {cell.Comment.Text}");
+                    // builder.AppendLine($"cell.Comment.LineColor: {cell.Comment.LineColor.ToLogString()}");
+                    // builder.AppendLine($"newCell.Text: {newCell.Text}");
+                    // builder.AppendLine($"newCell.Comment.Text: {newCell.Comment.Text}");
+                    // builder.AppendLine($"newCell.Comment.LineColor: {newCell.Comment.LineColor.ToLogString()}");
+                    // 
+                    // 
+                    // try
+                    // {
+                    //     cell.Comment.LineColor = newCell.Comment.LineColor;
+                    //     cell.Comment.LineStyle = newCell.Comment.LineStyle;
+                    //     cell.Comment.LineWidth = newCell.Comment.LineWidth;
+                    // }
+                    // catch (Exception ex)
+                    // {
+                    //     builder.AppendLine();
+                    //     builder.AppendLine(ex.ToLogString());
+                    //     string folderPath = "DebugLog";
+                    //     string filePath = Path.Combine(folderPath, $"EPPlusExtension.{cell.Start.Row}.{cell.Start.Column}.Error.txt");
+                    //     Directory.CreateDirectory(folderPath);
+                    //     File.WriteAllText(filePath, builder.ToString());
+                    //     throw;
+                    // }
+
+                    #endregion
                 }
             }
 

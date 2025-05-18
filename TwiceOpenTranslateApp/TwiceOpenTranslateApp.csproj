@@ -26,8 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="template\二开韩文模板.xlsx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Update="template\开终讲韩文版0516.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
