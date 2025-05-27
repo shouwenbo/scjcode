@@ -37,15 +37,15 @@ namespace TwiceOpenTranslateApp
             InitExcelSelector(this.gbx_change_file, this.btn_select_change_file, file => { this.change_file = file; this.lbl_change_file_name.Text = $"已选择：{file}"; });
 
             // 测试
-            this.once_file = @"W:\work\kzj\二开韩文版测试\159，-1，-2一开 杨 测试版.xlsx";
-            this.drop_file = @"W:\work\kzj\二开韩文版测试\韩掉 测试版.xlsx";
-            this.change_file = @"W:\work\kzj\二开韩文版测试\二开信息变更&地址汇总 测试版.xlsx";
-            this.lbl_once_file_name.Text = $"已选择：{once_file}";
-            this.lbl_drop_file_name.Text = $"已选择：{drop_file}";
-            this.lbl_change_file_name.Text = $"已选择：{change_file}";
-            this.txt_once_password.Text = "wh12000";
-            this.txt_drop_password.Text = "wh0217";
-            this.txt_change_password.Text = "wh0217";
+            // this.once_file = @"W:\work\kzj\二开韩文版测试\159，-1，-2一开 杨 测试版.xlsx";
+            // this.drop_file = @"W:\work\kzj\二开韩文版测试\韩掉 测试版.xlsx";
+            // this.change_file = @"W:\work\kzj\二开韩文版测试\二开信息变更&地址汇总 测试版.xlsx";
+            // this.lbl_once_file_name.Text = $"已选择：{once_file}";
+            // this.lbl_drop_file_name.Text = $"已选择：{drop_file}";
+            // this.lbl_change_file_name.Text = $"已选择：{change_file}";
+            // this.txt_once_password.Text = "wh12000";
+            // this.txt_drop_password.Text = "wh0217";
+            // this.txt_change_password.Text = "wh0217";
 
             CheckForIllegalCrossThreadCalls = false; // 关闭跨线程调用检查
         }
@@ -582,6 +582,22 @@ namespace TwiceOpenTranslateApp
                                                         excelRange?.Style.Font.Color.SetColor(targetColor);
                                                     }
                                                 }
+                                            }
+                                        }
+
+                                        #endregion
+
+                                        #region 设置IsEnding
+
+                                        foreach (var member in onceStudentList)
+                                        {
+                                            if (!string.IsNullOrEmpty(member.DropManage.Text))
+                                            {
+                                                member.IsEnding.SetCell("0"); // DL写0
+                                            }
+                                            else
+                                            {
+                                                member.IsEnding.SetCell("1"); // 进入CJ写1
                                             }
                                         }
 

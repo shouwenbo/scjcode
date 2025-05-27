@@ -159,7 +159,8 @@ namespace Common
         {
             if (!string.IsNullOrEmpty(value) || allowEmpty)
             {
-                if (int.TryParse(value, out int numberValue))
+                // "0"要按照字符进行处理
+                if (int.TryParse(value, out int numberValue) && value != "0")
                 {
                     cell.Value = numberValue;
                 }
@@ -168,6 +169,11 @@ namespace Common
                     cell.Value = value;
                 }
             }
+        }
+
+        public static void SetCell(this ExcelRange cell, int value)
+        {
+            cell.Value = value;
         }
 
         // 获取单元格的字符串值

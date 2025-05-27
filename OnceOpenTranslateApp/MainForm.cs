@@ -177,7 +177,7 @@ namespace OnceOpenTranslateApp
                     sheet.Cells[rowIndex, 33].SetCell(member.TeacherKoreanName);
                     sheet.Cells[rowIndex, 34].SetCell(member.TeacherNumber);
                     sheet.Cells[rowIndex, 40].SetCell("1");
-                    sheet.Cells[rowIndex, 42].SetCell("1");
+                    sheet.Cells[rowIndex, 42].SetCell(0); // AP
 
                     // sheet.Cells[rowIndex, 47].Formula = $"AP{(rowIndex + 1)}+AQ{(rowIndex + 1)}-AR{(rowIndex + 1)}+AS{(rowIndex + 1)}-AT{(rowIndex + 1)}";
 
@@ -218,7 +218,7 @@ namespace OnceOpenTranslateApp
                     // sheet.Cells[rowIndex, 47].Formula = $"AP{(rowIndex + 1)}+AQ{(rowIndex + 1)}-AR{(rowIndex + 1)}+AS{(rowIndex + 1)}-AT{(rowIndex + 1)}";
 
                 }
-                sheet.DeleteRow(list.Count + 7, 2304 - list.Count); // 第二个参数：行数-1 2308
+                sheet.DeleteRow(list.Count + 7, 3014 - list.Count); // 第二个参数：行数-1
 
                 //sheet.DeleteRowsAndShiftUp(new List<int>() { 6 }); 
                 //if (list.Count > 0)
