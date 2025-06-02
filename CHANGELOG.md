@@ -1,6 +1,6 @@
 ﻿# CHANGELOG
 
-## [JJBTranslateApp-1.0.1] - 2025-05-27
+## [JJBTranslateApp-1.0.2] - 2025-05-27
 ### 修改
 - 녀 → 여
 
