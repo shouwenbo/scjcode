@@ -1,5 +1,9 @@
 ﻿# CHANGELOG
 
+## [OnceOpenTranslateApp-1.0.3] - 2025-06-03
+### 修改
+- 增加了国籍、国家、城市三列
+
 ## [TwiceOpenTranslateApp-1.0.4] - 2025-06-03
 ### 修改
 - DL的话不更新信息

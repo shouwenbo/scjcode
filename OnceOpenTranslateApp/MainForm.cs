@@ -151,9 +151,9 @@ namespace OnceOpenTranslateApp
                         sheet.Cells[rowIndex, 7].SetCell("재수강");
                     }
                     sheet.Cells[rowIndex, 8].SetCell(member.ReStudy);
-                    sheet.Cells[rowIndex, 9].SetCell("중화인민공화국"); // cbd数据缺失
+                    sheet.Cells[rowIndex, 9].SetCell(member.IDCountry);
                     sheet.Cells[rowIndex, 10].SetCell(member.Phone);
-                    sheet.Cells[rowIndex, 11].SetCell("중화인민공화국"); // cbd数据缺失
+                    sheet.Cells[rowIndex, 11].SetCell(member.CurrentCountry);
                     sheet.Cells[rowIndex, 12].SetCell(member.KoreanCity);
                     sheet.Cells[rowIndex, 13].SetCell(member.CurrentAddress);
                     sheet.Cells[rowIndex, 14].SetCell(member.IDCardAddress);
@@ -336,20 +336,25 @@ namespace OnceOpenTranslateApp
                                     IDCardBirth = sheet.Cells[rowIndex, 8],  // 读取第8列（H列）
                                     CDType = sheet.Cells[rowIndex, 9],  // 读取第9列（I列）
                                     Phone = sheet.Cells[rowIndex, 10],  // 读取第10列（J列）
-                                    KoreanCity = sheet.Cells[rowIndex, 11],  // 读取第11列（K列）
-                                    CurrentAddress = sheet.Cells[rowIndex, 12],  // 读取第12列（L列）
-                                    IDCardAddress = sheet.Cells[rowIndex, 13],  // 读取第13列（M列）
-                                    Job = sheet.Cells[rowIndex, 14],  // 读取第14列（N列）
-                                    GuiderDepartment = sheet.Cells[rowIndex, 15],  // 读取第15列（O列）
-                                    GuiderChineseName = sheet.Cells[rowIndex, 16],  // 读取第16列（P列）
-                                    GuiderKoreanName = sheet.Cells[rowIndex, 17],  // 读取第17列（Q列）
-                                    GuiderNumber = sheet.Cells[rowIndex, 18],  // 读取第18列（R列）
-                                    GuiderSchoolPeriod = sheet.Cells[rowIndex, 19],  // 读取第19列（S列）
-                                    TeacherDepartment = sheet.Cells[rowIndex, 20],  // 读取第20列（T列）
-                                    TeacherChineseName = sheet.Cells[rowIndex, 21],  // 读取第21列（U列）
-                                    TeacherKoreanName = sheet.Cells[rowIndex, 22],  // 读取第22列（V列）
-                                    TeacherNumber = sheet.Cells[rowIndex, 23],  // 读取第23列（W列）
-                                    Times = sheet.Cells[rowIndex, 24],  // 读取第24列（X列）
+
+                                    IDCountry = sheet.Cells[rowIndex, 11],  // 读取第11（K列）
+                                    CurrentCountry = sheet.Cells[rowIndex, 12],  // 读取第12列（L列）
+                                    CurrentCity = sheet.Cells[rowIndex, 13],  // 读取第12列（M列）
+
+                                    KoreanCity = sheet.Cells[rowIndex, 14],  // 读取第11列（N列）
+                                    CurrentAddress = sheet.Cells[rowIndex, 15],  // 读取第12列（O列）
+                                    IDCardAddress = sheet.Cells[rowIndex, 16],  // 读取第13列（P列）
+                                    Job = sheet.Cells[rowIndex, 17],  // 读取第14列（Q列）
+                                    GuiderDepartment = sheet.Cells[rowIndex, 18],  // 读取第15列（R列）
+                                    GuiderChineseName = sheet.Cells[rowIndex, 19],  // 读取第16列（S列）
+                                    GuiderKoreanName = sheet.Cells[rowIndex, 20],  // 读取第17列（T列）
+                                    GuiderNumber = sheet.Cells[rowIndex, 21],  // 读取第18列（U列）
+                                    GuiderSchoolPeriod = sheet.Cells[rowIndex, 22],  // 读取第19列（V列）
+                                    TeacherDepartment = sheet.Cells[rowIndex, 23],  // 读取第20列（W列）
+                                    TeacherChineseName = sheet.Cells[rowIndex, 24],  // 读取第21列（X列）
+                                    TeacherKoreanName = sheet.Cells[rowIndex, 25],  // 读取第22列（Y列）
+                                    TeacherNumber = sheet.Cells[rowIndex, 26],  // 读取第23列（Z列）
+                                    Times = sheet.Cells[rowIndex, 27],  // 读取第24列（AA列）
                                 };
 
                                 // 如果存在职位信息，转换为韩文
@@ -575,16 +580,61 @@ namespace OnceOpenTranslateApp
 
     public class CdbStudent
     {
+        /// <summary>
+        /// 序号：A
+        /// </summary>
         public ExcelRange No { get; set; }
+        /// <summary>
+        /// 期数：B
+        /// </summary>
         public ExcelRange Period { get; set; }
+        /// <summary>
+        /// 中文名：C
+        /// </summary>
         public ExcelRange ChineseName { get; set; }
+        /// <summary>
+        /// 韩文名：D
+        /// </summary>
         public ExcelRange KoreanName { get; set; }
+        /// <summary>
+        /// BS：E
+        /// </summary>
         public ExcelRange Department { get; set; }
+        /// <summary>
+        /// 性别：F
+        /// </summary>
         public ExcelRange Gender { get; set; }
+        /// <summary>
+        /// 再受奖：G
+        /// </summary>
         public ExcelRange ReStudy { get; set; }
+        /// <summary>
+        /// 身份证八位数：H
+        /// </summary>
         public ExcelRange IDCardBirth { get; set; }
+        /// <summary>
+        /// 社外类型：I
+        /// </summary>
         public ExcelRange CDType { get; set; }
+        /// <summary>
+        /// 电话：J
+        /// </summary>
         public ExcelRange Phone { get; set; }
+        /// <summary>
+        /// 国籍：K
+        /// </summary>
+        public ExcelRange IDCountry { get; set; }
+        /// <summary>
+        /// 现居住国家名：L
+        /// </summary>
+        public ExcelRange CurrentCountry { get; set; }
+        /// <summary>
+        /// 现所在城市名：M
+        /// </summary>
+        public ExcelRange CurrentCity { get; set; }
+        /// <summary>
+        /// 城市韩文：N
+        /// </summary>
         public ExcelRange KoreanCity { get; set; }
         public ExcelRange CurrentAddress { get; set; }
         public ExcelRange IDCardAddress { get; set; }

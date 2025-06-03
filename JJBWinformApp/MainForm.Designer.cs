@@ -137,7 +137,7 @@
             // 
             // memberBindingSource
             // 
-            this.memberBindingSource.DataSource = typeof(Common.Member);
+            this.memberBindingSource.DataSource = typeof(Common.JJBMember);
             // 
             // label2
             // 

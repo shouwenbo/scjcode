@@ -149,7 +149,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "MainForm";
-            Text = "一开助手（版本：1.0.2）";
+            Text = "一开助手（版本：1.0.3）";
             Load += OnceOpenTranslateForm_Load;
             gbx_file.ResumeLayout(false);
             gbx_file.PerformLayout();
