@@ -315,7 +315,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "MainForm";
-            Text = "二开助手（版本 1.0.4）";
+            Text = "二开助手（版本 1.0.5）";
             gbx_once_file.ResumeLayout(false);
             gbx_once_file.PerformLayout();
             gbx_drop_file.ResumeLayout(false);

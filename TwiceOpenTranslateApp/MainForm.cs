@@ -516,56 +516,6 @@ namespace TwiceOpenTranslateApp
 
                                         #endregion
 
-                                        #region 重新计算部署
-
-                                        foreach (var member in onceStudentList)
-                                        {
-                                            if (string.IsNullOrEmpty(member.DropStep.Text))
-                                            {
-                                                if (int.TryParse(member.IDCardBirth.Text.Substring(0, 4), out int birthYear))
-                                                {
-                                                    var age = DateTime.Now.Year - birthYear;
-
-                                                    // 壮年/妇女 → 老年
-                                                    if ((member.Department.Text == "장년" || member.Department.Text == "부녀") && age >= 70)
-                                                    {
-                                                        member.Department.SetCell("자문");
-                                                        member.Department.MarkYellow();
-                                                    }
-
-                                                    // 壮年/妇女/老年 → 青年
-                                                    if (member.OriAge >= 40 && age < 40)
-                                                    {
-                                                        member.Department.MarkGreen();
-                                                        member.Department.AddComment("部署计算失败，因为不知道是否有子女，请手动调整");
-                                                    }
-
-                                                    // 老年 → 壮年/妇女
-                                                    if ((member.Department.Text == "자문") && (age >= 40 && age < 70))
-                                                    {
-                                                        member.Department.SetCell(member.Gender.Text == "남" ? "장년" : "부녀");
-                                                        member.Department.MarkYellow();
-                                                    }
-
-                                                    // 青年 → 壮年/妇女
-                                                    if ((member.Department.Text == "청년") && (age >= 40 && age < 70))
-                                                    {
-                                                        member.Department.SetCell(member.Gender.Text == "남" ? "장년" : "부녀");
-                                                        member.Department.MarkYellow();
-                                                    }
-
-                                                    // 青年 → 老年
-                                                    if ((member.Department.Text == "청년") && age >= 70)
-                                                    {
-                                                        member.Department.SetCell("자문");
-                                                        member.Department.MarkYellow();
-                                                    }
-                                                }
-                                            }
-                                        }
-
-                                        #endregion
-
                                         #region 掉落的学生整行改变字体颜色
 
                                         var targetColor = Color.FromArgb(0, 112, 192); // 初级Drop颜色
@@ -676,6 +626,56 @@ namespace TwiceOpenTranslateApp
                                         }
 
                                         #endregion                 
+
+                                        #region 重新计算部署
+
+                                        foreach (var member in onceStudentList)
+                                        {
+                                            if (string.IsNullOrEmpty(member.DropStep.Text))
+                                            {
+                                                if (int.TryParse(member.IDCardBirth.Text.Substring(0, 4), out int birthYear))
+                                                {
+                                                    var age = DateTime.Now.Year - birthYear;
+
+                                                    // 壮年/妇女 → 老年
+                                                    if ((member.Department.Text == "장년" || member.Department.Text == "부녀") && age >= 70)
+                                                    {
+                                                        member.Department.SetCell("자문");
+                                                        member.Department.MarkYellow();
+                                                    }
+
+                                                    // 壮年/妇女/老年 → 青年
+                                                    if (member.OriAge >= 40 && age < 40)
+                                                    {
+                                                        member.Department.MarkGreen();
+                                                        member.Department.AddComment("部署计算失败，因为不知道是否有子女，请手动调整");
+                                                    }
+
+                                                    // 老年 → 壮年/妇女
+                                                    if ((member.Department.Text == "자문") && (age >= 40 && age < 70))
+                                                    {
+                                                        member.Department.SetCell(member.Gender.Text == "남" ? "장년" : "부녀");
+                                                        member.Department.MarkYellow();
+                                                    }
+
+                                                    // 青年 → 壮年/妇女
+                                                    if ((member.Department.Text == "청년") && (age >= 40 && age < 70))
+                                                    {
+                                                        member.Department.SetCell(member.Gender.Text == "남" ? "장년" : "부녀");
+                                                        member.Department.MarkYellow();
+                                                    }
+
+                                                    // 青年 → 老年
+                                                    if ((member.Department.Text == "청년") && age >= 70)
+                                                    {
+                                                        member.Department.SetCell("자문");
+                                                        member.Department.MarkYellow();
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        #endregion
 
                                         #region 排序整理
 
