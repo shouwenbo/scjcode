@@ -613,7 +613,7 @@ namespace TwiceOpenTranslateApp
                                             .FirstOrDefault(p => p.Period.Text == member.Period.Text && 
                                                                  p.ChineseName.Text == member.ChineseName.Text && 
                                                                  p.IDCardBirth.Text == member.IDCardBirth.Text);
-                                            if (changeMember != null)
+                                            if (changeMember != null && string.IsNullOrEmpty(member.DropStepValue))
                                             {
                                                 if (member.ChineseName.Text != changeMember.NewChineseName.Text)
                                                 {

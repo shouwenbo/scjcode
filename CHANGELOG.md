@@ -1,5 +1,9 @@
 ﻿# CHANGELOG
 
+## [TwiceOpenTranslateApp-1.0.4] - 2025-06-03
+### 修改
+- DL的话不更新信息
+
 ## [JJBTranslateApp-1.0.2] - 2025-05-27
 ### 修改
 - 녀 → 여
