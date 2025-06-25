@@ -1,5 +1,9 @@
 ﻿# CHANGELOG
 
+## [JJBTranslateApp-1.0.3] - 2025-06-25
+### 修改
+- 修复CDType空值批注问题
+
 ## [TwiceOpenTranslateApp-1.0.5] - 2025-06-03
 ### 修改
 - 最后再重新计算BS

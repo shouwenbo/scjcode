@@ -70,12 +70,15 @@ namespace JJBTranslateApp
 
                     sheet.GetRow(12).GetCell(i + 2).SetCellValueIfNotEmpty(member.CDType);
 
-                    IDrawing drawing = sheet.CreateDrawingPatriarch();
-                    IClientAnchor anchor = drawing.CreateAnchor(0, 0, 0, 0, i + 2, 11, i + 2 + 1, 11 + 1);
-                    IComment comment = drawing.CreateCellComment(anchor);
-                    comment.String = new XSSFRichTextString(member.CDTypeCommentString);
-                    sheet.GetRow(12).GetCell(i + 2).CellComment = comment;
-                    // sheet.GetRow(12).GetCell(i + 2).CellComment = member.CDTypeComment;
+                    if (!string.IsNullOrEmpty(member.CDTypeCommentString))
+                    {
+                        IDrawing drawing = sheet.CreateDrawingPatriarch();
+                        IClientAnchor anchor = drawing.CreateAnchor(0, 0, 0, 0, i + 2, 11, i + 2 + 1, 11 + 1);
+                        IComment comment = drawing.CreateCellComment(anchor);
+                        comment.String = new XSSFRichTextString(member.CDTypeCommentString);
+                        sheet.GetRow(12).GetCell(i + 2).CellComment = comment;
+                        // sheet.GetRow(12).GetCell(i + 2).CellComment = member.CDTypeComment;
+                    }
 
                     sheet.GetRow(13).GetCell(i + 2).SetCellValueIfNotEmpty(member.BirthReligion);
                     sheet.GetRow(14).GetCell(i + 2).SetCellValueIfNotEmpty(member.OtherReligion);

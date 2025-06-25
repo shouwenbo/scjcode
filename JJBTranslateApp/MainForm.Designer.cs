@@ -129,7 +129,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "MainForm";
-            Text = "JJB翻译（版本：1.0.2）";
+            Text = "JJB翻译（版本：1.0.3）";
             gbx_file.ResumeLayout(false);
             gbx_file.PerformLayout();
             ResumeLayout(false);
