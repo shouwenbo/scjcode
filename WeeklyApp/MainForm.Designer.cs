@@ -29,298 +29,270 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            lbl_version = new Label();
-            lbl_select_zbjl_file_1 = new Label();
-            btn_zbjl_select_file = new Button();
-            lbl_zbjl_file_path = new Label();
-            lbl_select_zbjl_file_2 = new Label();
-            lbl_select_zbjl_file_3 = new Label();
-            lbl_select_dlbg_file_3 = new Label();
-            lbl_select_dlbg_file_2 = new Label();
-            lbl_dlbg_file_path = new Label();
-            btn_dlbg_select_file = new Button();
-            lbl_select_dlbg_file_1 = new Label();
-            btn_yjsc = new Button();
-            button1 = new Button();
-            lbl_select_hwzb_file_3 = new Label();
-            lbl_select_hwzb_file_2 = new Label();
-            lbl_hwzb_file_path = new Label();
-            btn_hwzb_select_file = new Button();
-            lbl_select_hwzb_file_1 = new Label();
-            label1 = new Label();
-            label2 = new Label();
+            txt_check_result = new TextBox();
+            lbl_task = new Label();
+            lbl_task_title = new Label();
+            lbl_remark = new Label();
+            gbx_info_file = new GroupBox();
+            lbl_info_file_name = new Label();
+            btn_select_info_file = new Button();
+            lbl_info_file_path = new Label();
+            lbl_info_password = new Label();
+            txt_info_password = new TextBox();
+            btn_select_drop_file = new Button();
+            lbl_drop_file_path = new Label();
+            gbx_drop_file = new GroupBox();
+            lbl_drop_file_name = new Label();
+            btn_run = new Button();
+            txt_drop_password = new TextBox();
+            lbl_drop_password = new Label();
+            lbl_minister = new Label();
+            txt_minister = new TextBox();
+            gbx_info_file.SuspendLayout();
+            gbx_drop_file.SuspendLayout();
             SuspendLayout();
             // 
-            // lbl_version
+            // txt_check_result
             // 
-            lbl_version.AutoSize = true;
-            lbl_version.Location = new Point(375, 73);
-            lbl_version.Margin = new Padding(2, 0, 2, 0);
-            lbl_version.Name = "lbl_version";
-            lbl_version.Size = new Size(117, 17);
-            lbl_version.TabIndex = 1;
-            lbl_version.Text = "版本号：420407_01";
+            txt_check_result.Location = new Point(409, 173);
+            txt_check_result.Multiline = true;
+            txt_check_result.Name = "txt_check_result";
+            txt_check_result.ReadOnly = true;
+            txt_check_result.ScrollBars = ScrollBars.Vertical;
+            txt_check_result.Size = new Size(296, 112);
+            txt_check_result.TabIndex = 6;
             // 
-            // lbl_select_zbjl_file_1
+            // lbl_task
             // 
-            lbl_select_zbjl_file_1.AutoSize = true;
-            lbl_select_zbjl_file_1.Location = new Point(15, 134);
-            lbl_select_zbjl_file_1.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_zbjl_file_1.Name = "lbl_select_zbjl_file_1";
-            lbl_select_zbjl_file_1.Size = new Size(44, 17);
-            lbl_select_zbjl_file_1.TabIndex = 3;
-            lbl_select_zbjl_file_1.Text = "请选择";
+            lbl_task.AutoSize = true;
+            lbl_task.Location = new Point(243, 213);
+            lbl_task.Margin = new Padding(4, 0, 4, 0);
+            lbl_task.Name = "lbl_task";
+            lbl_task.Size = new Size(56, 17);
+            lbl_task.TabIndex = 9;
+            lbl_task.Text = "暂未开始";
             // 
-            // btn_zbjl_select_file
+            // lbl_task_title
             // 
-            btn_zbjl_select_file.Location = new Point(146, 130);
-            btn_zbjl_select_file.Margin = new Padding(2);
-            btn_zbjl_select_file.Name = "btn_zbjl_select_file";
-            btn_zbjl_select_file.Size = new Size(71, 24);
-            btn_zbjl_select_file.TabIndex = 4;
-            btn_zbjl_select_file.Text = "选择文件";
-            btn_zbjl_select_file.UseVisualStyleBackColor = true;
-            btn_zbjl_select_file.Click += btn_zbjl_select_file_Click;
+            lbl_task_title.AutoSize = true;
+            lbl_task_title.Location = new Point(115, 213);
+            lbl_task_title.Margin = new Padding(4, 0, 4, 0);
+            lbl_task_title.Name = "lbl_task_title";
+            lbl_task_title.Size = new Size(68, 17);
+            lbl_task_title.TabIndex = 8;
+            lbl_task_title.Text = "处理进度：";
             // 
-            // lbl_zbjl_file_path
+            // lbl_remark
             // 
-            lbl_zbjl_file_path.AutoSize = true;
-            lbl_zbjl_file_path.ForeColor = Color.Red;
-            lbl_zbjl_file_path.Location = new Point(15, 161);
-            lbl_zbjl_file_path.Margin = new Padding(2, 0, 2, 0);
-            lbl_zbjl_file_path.Name = "lbl_zbjl_file_path";
-            lbl_zbjl_file_path.Size = new Size(406, 17);
-            lbl_zbjl_file_path.TabIndex = 5;
-            lbl_zbjl_file_path.Text = "首先打开在线报告<周报接龙> → 文件 → 下载格式 → .xlsx → 保存到本地";
+            lbl_remark.AutoSize = true;
+            lbl_remark.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_remark.Location = new Point(13, 268);
+            lbl_remark.Margin = new Padding(2, 0, 2, 0);
+            lbl_remark.Name = "lbl_remark";
+            lbl_remark.Size = new Size(193, 17);
+            lbl_remark.TabIndex = 10;
+            lbl_remark.Text = "翻译来源：hanwenxingming.com";
             // 
-            // lbl_select_zbjl_file_2
+            // gbx_info_file
             // 
-            lbl_select_zbjl_file_2.AutoSize = true;
-            lbl_select_zbjl_file_2.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_select_zbjl_file_2.Location = new Point(51, 134);
-            lbl_select_zbjl_file_2.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_zbjl_file_2.Name = "lbl_select_zbjl_file_2";
-            lbl_select_zbjl_file_2.Size = new Size(56, 17);
-            lbl_select_zbjl_file_2.TabIndex = 6;
-            lbl_select_zbjl_file_2.Text = "周报接龙";
+            gbx_info_file.Controls.Add(lbl_info_file_name);
+            gbx_info_file.Controls.Add(btn_select_info_file);
+            gbx_info_file.Controls.Add(lbl_info_file_path);
+            gbx_info_file.Location = new Point(388, 9);
+            gbx_info_file.Margin = new Padding(4);
+            gbx_info_file.Name = "gbx_info_file";
+            gbx_info_file.Padding = new Padding(4);
+            gbx_info_file.Size = new Size(314, 129);
+            gbx_info_file.TabIndex = 12;
+            gbx_info_file.TabStop = false;
+            gbx_info_file.Text = "请选择表格（信息）";
             // 
-            // lbl_select_zbjl_file_3
+            // lbl_info_file_name
             // 
-            lbl_select_zbjl_file_3.AutoSize = true;
-            lbl_select_zbjl_file_3.Location = new Point(102, 134);
-            lbl_select_zbjl_file_3.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_zbjl_file_3.Name = "lbl_select_zbjl_file_3";
-            lbl_select_zbjl_file_3.Size = new Size(44, 17);
-            lbl_select_zbjl_file_3.TabIndex = 7;
-            lbl_select_zbjl_file_3.Text = "表格：";
+            lbl_info_file_name.Font = new Font("Microsoft YaHei UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_info_file_name.ForeColor = Color.Green;
+            lbl_info_file_name.Location = new Point(3, 75);
+            lbl_info_file_name.Name = "lbl_info_file_name";
+            lbl_info_file_name.Size = new Size(304, 50);
+            lbl_info_file_name.TabIndex = 5;
+            lbl_info_file_name.Text = "未选择文件";
             // 
-            // lbl_select_dlbg_file_3
+            // btn_select_info_file
             // 
-            lbl_select_dlbg_file_3.AutoSize = true;
-            lbl_select_dlbg_file_3.Location = new Point(102, 185);
-            lbl_select_dlbg_file_3.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_dlbg_file_3.Name = "lbl_select_dlbg_file_3";
-            lbl_select_dlbg_file_3.Size = new Size(44, 17);
-            lbl_select_dlbg_file_3.TabIndex = 12;
-            lbl_select_dlbg_file_3.Text = "表格：";
+            btn_select_info_file.Location = new Point(99, 21);
+            btn_select_info_file.Name = "btn_select_info_file";
+            btn_select_info_file.Size = new Size(110, 34);
+            btn_select_info_file.TabIndex = 4;
+            btn_select_info_file.Text = "点此选择";
+            btn_select_info_file.UseVisualStyleBackColor = true;
             // 
-            // lbl_select_dlbg_file_2
+            // lbl_info_file_path
             // 
-            lbl_select_dlbg_file_2.AutoSize = true;
-            lbl_select_dlbg_file_2.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_select_dlbg_file_2.Location = new Point(51, 185);
-            lbl_select_dlbg_file_2.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_dlbg_file_2.Name = "lbl_select_dlbg_file_2";
-            lbl_select_dlbg_file_2.Size = new Size(56, 17);
-            lbl_select_dlbg_file_2.TabIndex = 11;
-            lbl_select_dlbg_file_2.Text = "掉落报告";
+            lbl_info_file_path.AutoSize = true;
+            lbl_info_file_path.ImeMode = ImeMode.NoControl;
+            lbl_info_file_path.Location = new Point(70, 58);
+            lbl_info_file_path.Margin = new Padding(4, 0, 4, 0);
+            lbl_info_file_path.MaximumSize = new Size(509, 0);
+            lbl_info_file_path.Name = "lbl_info_file_path";
+            lbl_info_file_path.Size = new Size(172, 17);
+            lbl_info_file_path.TabIndex = 3;
+            lbl_info_file_path.Text = "或将 表格（信息） 拖拽到此处";
             // 
-            // lbl_dlbg_file_path
+            // lbl_info_password
             // 
-            lbl_dlbg_file_path.AutoSize = true;
-            lbl_dlbg_file_path.ForeColor = Color.Red;
-            lbl_dlbg_file_path.Location = new Point(15, 211);
-            lbl_dlbg_file_path.Margin = new Padding(2, 0, 2, 0);
-            lbl_dlbg_file_path.Name = "lbl_dlbg_file_path";
-            lbl_dlbg_file_path.Size = new Size(406, 17);
-            lbl_dlbg_file_path.TabIndex = 10;
-            lbl_dlbg_file_path.Text = "首先打开在线报告<掉落报告> → 文件 → 下载格式 → .xlsx → 保存到本地";
+            lbl_info_password.AutoSize = true;
+            lbl_info_password.Location = new Point(388, 145);
+            lbl_info_password.Name = "lbl_info_password";
+            lbl_info_password.Size = new Size(116, 17);
+            lbl_info_password.TabIndex = 13;
+            lbl_info_password.Text = "表格（信息）密码：";
             // 
-            // btn_dlbg_select_file
+            // txt_info_password
             // 
-            btn_dlbg_select_file.Location = new Point(146, 181);
-            btn_dlbg_select_file.Margin = new Padding(2);
-            btn_dlbg_select_file.Name = "btn_dlbg_select_file";
-            btn_dlbg_select_file.Size = new Size(71, 24);
-            btn_dlbg_select_file.TabIndex = 9;
-            btn_dlbg_select_file.Text = "选择文件";
-            btn_dlbg_select_file.UseVisualStyleBackColor = true;
-            btn_dlbg_select_file.Click += btn_dlbg_select_file_Click;
+            txt_info_password.Location = new Point(510, 142);
+            txt_info_password.Name = "txt_info_password";
+            txt_info_password.Size = new Size(192, 23);
+            txt_info_password.TabIndex = 14;
             // 
-            // lbl_select_dlbg_file_1
+            // btn_select_drop_file
             // 
-            lbl_select_dlbg_file_1.AutoSize = true;
-            lbl_select_dlbg_file_1.Location = new Point(15, 185);
-            lbl_select_dlbg_file_1.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_dlbg_file_1.Name = "lbl_select_dlbg_file_1";
-            lbl_select_dlbg_file_1.Size = new Size(44, 17);
-            lbl_select_dlbg_file_1.TabIndex = 8;
-            lbl_select_dlbg_file_1.Text = "请选择";
+            btn_select_drop_file.Location = new Point(99, 21);
+            btn_select_drop_file.Name = "btn_select_drop_file";
+            btn_select_drop_file.Size = new Size(110, 34);
+            btn_select_drop_file.TabIndex = 4;
+            btn_select_drop_file.Text = "点此选择";
+            btn_select_drop_file.UseVisualStyleBackColor = true;
             // 
-            // btn_yjsc
+            // lbl_drop_file_path
             // 
-            btn_yjsc.Location = new Point(15, 305);
-            btn_yjsc.Margin = new Padding(2);
-            btn_yjsc.Name = "btn_yjsc";
-            btn_yjsc.Size = new Size(71, 24);
-            btn_yjsc.TabIndex = 13;
-            btn_yjsc.Text = "一键生成";
-            btn_yjsc.UseVisualStyleBackColor = true;
-            btn_yjsc.Click += btn_yjsc_Click;
+            lbl_drop_file_path.AutoSize = true;
+            lbl_drop_file_path.ImeMode = ImeMode.NoControl;
+            lbl_drop_file_path.Location = new Point(70, 58);
+            lbl_drop_file_path.Margin = new Padding(4, 0, 4, 0);
+            lbl_drop_file_path.MaximumSize = new Size(509, 0);
+            lbl_drop_file_path.Name = "lbl_drop_file_path";
+            lbl_drop_file_path.Size = new Size(172, 17);
+            lbl_drop_file_path.TabIndex = 3;
+            lbl_drop_file_path.Text = "或将 表格（掉落） 拖拽到此处";
             // 
-            // button1
+            // gbx_drop_file
             // 
-            button1.Font = new Font("Microsoft YaHei UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(15, 11);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(327, 50);
-            button1.TabIndex = 14;
-            button1.Text = "一键生成韩文掉落报告";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            gbx_drop_file.Controls.Add(lbl_drop_file_name);
+            gbx_drop_file.Controls.Add(btn_select_drop_file);
+            gbx_drop_file.Controls.Add(lbl_drop_file_path);
+            gbx_drop_file.Location = new Point(13, 9);
+            gbx_drop_file.Margin = new Padding(4);
+            gbx_drop_file.Name = "gbx_drop_file";
+            gbx_drop_file.Padding = new Padding(4);
+            gbx_drop_file.Size = new Size(314, 129);
+            gbx_drop_file.TabIndex = 13;
+            gbx_drop_file.TabStop = false;
+            gbx_drop_file.Text = "请选择表格（掉落）";
             // 
-            // lbl_select_hwzb_file_3
+            // lbl_drop_file_name
             // 
-            lbl_select_hwzb_file_3.AutoSize = true;
-            lbl_select_hwzb_file_3.Location = new Point(102, 235);
-            lbl_select_hwzb_file_3.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_hwzb_file_3.Name = "lbl_select_hwzb_file_3";
-            lbl_select_hwzb_file_3.Size = new Size(44, 17);
-            lbl_select_hwzb_file_3.TabIndex = 19;
-            lbl_select_hwzb_file_3.Text = "表格：";
+            lbl_drop_file_name.Font = new Font("Microsoft YaHei UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_drop_file_name.ForeColor = Color.Green;
+            lbl_drop_file_name.Location = new Point(3, 75);
+            lbl_drop_file_name.Name = "lbl_drop_file_name";
+            lbl_drop_file_name.Size = new Size(304, 50);
+            lbl_drop_file_name.TabIndex = 6;
+            lbl_drop_file_name.Text = "未选择文件";
             // 
-            // lbl_select_hwzb_file_2
+            // btn_run
             // 
-            lbl_select_hwzb_file_2.AutoSize = true;
-            lbl_select_hwzb_file_2.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_select_hwzb_file_2.Location = new Point(51, 235);
-            lbl_select_hwzb_file_2.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_hwzb_file_2.Name = "lbl_select_hwzb_file_2";
-            lbl_select_hwzb_file_2.Size = new Size(56, 17);
-            lbl_select_hwzb_file_2.TabIndex = 18;
-            lbl_select_hwzb_file_2.Text = "韩文周报";
+            btn_run.Location = new Point(247, 172);
+            btn_run.Name = "btn_run";
+            btn_run.Size = new Size(134, 26);
+            btn_run.TabIndex = 15;
+            btn_run.Text = "点此运行";
+            btn_run.UseVisualStyleBackColor = true;
+            btn_run.Click += btn_run_Click;
             // 
-            // lbl_hwzb_file_path
+            // txt_drop_password
             // 
-            lbl_hwzb_file_path.ForeColor = Color.Red;
-            lbl_hwzb_file_path.Location = new Point(15, 262);
-            lbl_hwzb_file_path.Margin = new Padding(2, 0, 2, 0);
-            lbl_hwzb_file_path.Name = "lbl_hwzb_file_path";
-            lbl_hwzb_file_path.Size = new Size(620, 40);
-            lbl_hwzb_file_path.TabIndex = 17;
-            lbl_hwzb_file_path.Text = "请选择上周提交的韩文周报“”";
+            txt_drop_password.Location = new Point(135, 142);
+            txt_drop_password.Name = "txt_drop_password";
+            txt_drop_password.Size = new Size(192, 23);
+            txt_drop_password.TabIndex = 17;
             // 
-            // btn_hwzb_select_file
+            // lbl_drop_password
             // 
-            btn_hwzb_select_file.Location = new Point(146, 232);
-            btn_hwzb_select_file.Margin = new Padding(2);
-            btn_hwzb_select_file.Name = "btn_hwzb_select_file";
-            btn_hwzb_select_file.Size = new Size(71, 24);
-            btn_hwzb_select_file.TabIndex = 16;
-            btn_hwzb_select_file.Text = "选择文件";
-            btn_hwzb_select_file.UseVisualStyleBackColor = true;
-            btn_hwzb_select_file.Click += btn_hwzb_select_file_Click;
+            lbl_drop_password.AutoSize = true;
+            lbl_drop_password.Location = new Point(13, 145);
+            lbl_drop_password.Name = "lbl_drop_password";
+            lbl_drop_password.Size = new Size(116, 17);
+            lbl_drop_password.TabIndex = 16;
+            lbl_drop_password.Text = "表格（掉落）密码：";
             // 
-            // lbl_select_hwzb_file_1
+            // lbl_minister
             // 
-            lbl_select_hwzb_file_1.AutoSize = true;
-            lbl_select_hwzb_file_1.Location = new Point(15, 235);
-            lbl_select_hwzb_file_1.Margin = new Padding(2, 0, 2, 0);
-            lbl_select_hwzb_file_1.Name = "lbl_select_hwzb_file_1";
-            lbl_select_hwzb_file_1.Size = new Size(44, 17);
-            lbl_select_hwzb_file_1.TabIndex = 15;
-            lbl_select_hwzb_file_1.Text = "请选择";
+            lbl_minister.AutoSize = true;
+            lbl_minister.Location = new Point(13, 177);
+            lbl_minister.Name = "lbl_minister";
+            lbl_minister.Size = new Size(35, 17);
+            lbl_minister.TabIndex = 18;
+            lbl_minister.Text = "BZ：";
             // 
-            // label1
+            // txt_minister
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft YaHei UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Red;
-            label1.Location = new Point(15, 352);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(474, 52);
-            label1.TabIndex = 20;
-            label1.Text = "↑↑ 上面的没做完，不用管";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft YaHei UI", 25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.Red;
-            label2.Location = new Point(81, 456);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(336, 45);
-            label2.TabIndex = 21;
-            label2.Text = "↓↓ 下面的是原有功能";
+            txt_minister.Location = new Point(44, 175);
+            txt_minister.Name = "txt_minister";
+            txt_minister.Size = new Size(82, 23);
+            txt_minister.TabIndex = 19;
+            txt_minister.Text = "오림림";
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(503, 99);
-            Controls.Add(button1);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(lbl_select_hwzb_file_3);
-            Controls.Add(lbl_select_hwzb_file_2);
-            Controls.Add(lbl_hwzb_file_path);
-            Controls.Add(btn_hwzb_select_file);
-            Controls.Add(lbl_select_hwzb_file_1);
-            Controls.Add(btn_yjsc);
-            Controls.Add(lbl_select_dlbg_file_3);
-            Controls.Add(lbl_select_dlbg_file_2);
-            Controls.Add(lbl_dlbg_file_path);
-            Controls.Add(btn_dlbg_select_file);
-            Controls.Add(lbl_select_dlbg_file_1);
-            Controls.Add(lbl_select_zbjl_file_3);
-            Controls.Add(lbl_select_zbjl_file_2);
-            Controls.Add(lbl_zbjl_file_path);
-            Controls.Add(btn_zbjl_select_file);
-            Controls.Add(lbl_select_zbjl_file_1);
-            Controls.Add(lbl_version);
+            ClientSize = new Size(718, 294);
+            Controls.Add(txt_minister);
+            Controls.Add(lbl_minister);
+            Controls.Add(txt_drop_password);
+            Controls.Add(lbl_drop_password);
+            Controls.Add(btn_run);
+            Controls.Add(gbx_drop_file);
+            Controls.Add(txt_info_password);
+            Controls.Add(lbl_info_password);
+            Controls.Add(gbx_info_file);
+            Controls.Add(txt_check_result);
+            Controls.Add(lbl_task_title);
+            Controls.Add(lbl_task);
+            Controls.Add(lbl_remark);
+            Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2);
             MaximizeBox = false;
             Name = "MainForm";
-            Text = "周报助手";
+            Text = "周报助手（版本 1.0.0）";
+            gbx_info_file.ResumeLayout(false);
+            gbx_info_file.PerformLayout();
+            gbx_drop_file.ResumeLayout(false);
+            gbx_drop_file.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Label lbl_version;
-        private Label lbl_select_zbjl_file_1;
-        private Button btn_zbjl_select_file;
-        private Label lbl_zbjl_file_path;
-        private Label lbl_select_zbjl_file_2;
-        private Label lbl_select_zbjl_file_3;
-        private Label lbl_select_dlbg_file_3;
-        private Label lbl_select_dlbg_file_2;
-        private Label lbl_dlbg_file_path;
-        private Button btn_dlbg_select_file;
-        private Label lbl_select_dlbg_file_1;
-        private Button btn_yjsc;
-        private Button button1;
-        private Label lbl_select_hwzb_file_3;
-        private Label lbl_select_hwzb_file_2;
-        private Label lbl_hwzb_file_path;
-        private Button btn_hwzb_select_file;
-        private Label lbl_select_hwzb_file_1;
-        private Label label1;
-        private Label label2;
+        private TextBox txt_check_result;
+        private Label lbl_task;
+        private Label lbl_task_title;
+        private Label lbl_remark;
+        private GroupBox gbx_info_file;
+        private Button btn_select_info_file;
+        private Label lbl_info_file_path;
+        private Label lbl_info_password;
+        private TextBox txt_info_password;
+        private Button btn_select_drop_file;
+        private Label lbl_drop_file_path;
+        private GroupBox gbx_drop_file;
+        private Button btn_run;
+        private Label lbl_info_file_name;
+        private Label lbl_drop_file_name;
+        private TextBox txt_drop_password;
+        private Label lbl_drop_password;
+        private Label lbl_minister;
+        private TextBox txt_minister;
     }
 }

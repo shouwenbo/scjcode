@@ -1,5 +1,9 @@
 ﻿# CHANGELOG
 
+## [WeeklyApp-1.0.0] - 2025-06-25
+### 新增
+- 重构项目
+
 ## [JJBTranslateApp-1.0.3] - 2025-06-25
 ### 修改
 - 修复CDType空值批注问题

@@ -44,4 +44,13 @@
     <Folder Include="template\410920版本\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="ExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
