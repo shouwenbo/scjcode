@@ -29,9 +29,6 @@
     <None Update="template\初版\韩文掉落模板.docx">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
-    <None Update="template\掉落报告模板.xlsx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="template\掉落报告模版.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -191,8 +191,13 @@ namespace WeeklyApp
                                     {
                                         ChineseName = studentSheet.Cells[rowIndex, 1],
                                         KoreanName = studentSheet.Cells[rowIndex, 2],
-                                        Period = studentSheet.Cells[rowIndex, 3],
-                                        Phone = studentSheet.Cells[rowIndex, 4],
+                                        IDCardBirth = studentSheet.Cells[rowIndex, 3],
+                                        Period = studentSheet.Cells[rowIndex, 4],
+                                        BasicLecturer = studentSheet.Cells[rowIndex, 5],
+                                        MidLecturer = studentSheet.Cells[rowIndex, 6],
+                                        AdvancedLecturer = studentSheet.Cells[rowIndex, 7],
+                                        Preacher = studentSheet.Cells[rowIndex, 8],
+                                        Phone = studentSheet.Cells[rowIndex, 9],
                                     };
 
                                     if (Regex.IsMatch(student.Period.Text.Trim(), @"^\d{3}(-\d{1})?$"))
@@ -407,8 +412,13 @@ namespace WeeklyApp
     {
         public ExcelRange ChineseName { get; set; } // A
         public ExcelRange KoreanName { get; set; } // B
-        public ExcelRange Period { get; set; } // C
-        public ExcelRange Phone { get; set; } // C
+        public ExcelRange IDCardBirth { get; set; } // C
+        public ExcelRange Period { get; set; } // D
+        public ExcelRange BasicLecturer { get; set; } // E
+        public ExcelRange MidLecturer { get; set; } // F
+        public ExcelRange AdvancedLecturer { get; set; } // G
+        public ExcelRange Preacher { get; set; } // H
+        public ExcelRange Phone { get; set; } // I
     }
 
     public class Worker

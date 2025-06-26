@@ -265,7 +265,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "MainForm";
-            Text = "周报助手（版本 1.0.0）";
+            Text = "周报助手（版本 1.0.1）";
             gbx_info_file.ResumeLayout(false);
             gbx_info_file.PerformLayout();
             gbx_drop_file.ResumeLayout(false);
